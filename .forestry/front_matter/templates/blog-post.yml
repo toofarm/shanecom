@@ -31,3 +31,5 @@ fields:
     maxSize: 3
   label: Additional images
   description: Add additional images to display in a gallery format
+pages:
+- posts/blog_test.md
