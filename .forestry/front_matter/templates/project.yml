@@ -1,4 +1,54 @@
 ---
 label: Project
 hide_body: false
-fields: []
+fields:
+- name: project_title
+  type: text
+  config:
+    required: true
+  label: Project title
+  description: What is the title of your project?
+- name: project_sub-head
+  type: text
+  config:
+    required: true
+  label: Project sub-head
+  description: Create a project sub-header
+- name: featured_image
+  type: file
+  config:
+    maxSize: 3
+  label: Featured Image
+  description: Upload a header image for your project
+- name: project_body
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Project body
+  description: A complete narrative of your project
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Tag your project with the relevant technologies used
+- name: project_web_link
+  type: text
+  config:
+    required: false
+  label: Project web link
+  description: Add link to the project's website, if available
+- name: project_repo_link
+  type: text
+  config:
+    required: false
+  label: Project Repo Link
+  description: Add a link to the project's repo, if available
+- name: additional_images
+  type: image_gallery
+  config: {}
+  label: Additional Images
+  description: Upload additional project images
