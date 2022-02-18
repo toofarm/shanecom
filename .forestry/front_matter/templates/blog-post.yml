@@ -20,24 +20,14 @@ fields:
     maxSize: 3
   label: Featured image
   description: Add a featured image for your post
-- name: post_body
-  type: textarea
-  default: ''
-  config:
-    required: true
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Post Body
-  description: The primary content of your post
 - name: tags
   type: tag_list
   default: []
   label: Tags
   description: Tag your post by its subject matter
-- name: supplementary_image
+- name: additional_images
   type: file
   config:
     maxSize: 3
-  label: Supplementary image
-  description: Add an image to the main content section of your post
+  label: Additional images
+  description: Add additional images to display in a gallery format
