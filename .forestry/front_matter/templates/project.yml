@@ -52,3 +52,5 @@ fields:
   config: {}
   label: Additional Images
   description: Upload additional project images
+pages:
+- projects/burgas.md
