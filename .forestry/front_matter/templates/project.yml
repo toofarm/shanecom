@@ -20,16 +20,6 @@ fields:
     maxSize: 3
   label: Featured Image
   description: Upload a header image for your project
-- name: project_body
-  type: textarea
-  default: ''
-  config:
-    required: true
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Project body
-  description: A complete narrative of your project
 - name: tags
   type: tag_list
   default: []
