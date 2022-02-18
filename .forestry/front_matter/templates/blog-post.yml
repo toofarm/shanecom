@@ -1,4 +1,43 @@
 ---
 label: Blog post
 hide_body: false
-fields: []
+fields:
+- name: post_title
+  type: text
+  config:
+    required: true
+  label: Post Title
+  description: Add a descriptive title for your post
+- name: post_sub-head
+  type: text
+  config:
+    required: false
+  label: Post Sub-head
+  description: A sub-headline for your post
+- name: featured_image
+  type: file
+  config:
+    maxSize: 3
+  label: Featured image
+  description: Add a featured image for your post
+- name: post_body
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Post Body
+  description: The primary content of your post
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Tag your post by its subject matter
+- name: supplementary_image
+  type: file
+  config:
+    maxSize: 3
+  label: Supplementary image
+  description: Add an image to the main content section of your post
