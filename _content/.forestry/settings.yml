@@ -5,12 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: projects
+  path: _content/projects
   label: Projects
   create: all
   match: "**/*"
 - type: directory
-  path: posts
+  path: _content/posts
   label: Posts
   create: all
   match: "**/*"
@@ -18,7 +18,7 @@ upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ":filename:_:day:_:month:_:year:"
+file_template: ":year:_:month:_:day:_:filename:"
 build:
   preview_output_directory: ".next"
   install_dependencies_command: npm install
