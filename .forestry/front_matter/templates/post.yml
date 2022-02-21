@@ -17,3 +17,23 @@ fields:
 - type: text
   name: additional_images
   label: additional_images
+- name: data_created
+  type: datetime
+  label: Data created
+  description: Date of first publication.
+  config:
+    required: true
+    date_format: YYYY-MM-DD h:mm A
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD h:mm A
+- name: date_updated
+  type: datetime
+  label: Date updated
+  config:
+    required: false
+    date_format: YYYY-MM-DD h:mm A
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD h:mm A
+  description: Latest date the document was updated.
