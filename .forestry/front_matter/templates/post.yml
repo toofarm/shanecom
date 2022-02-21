@@ -1,0 +1,39 @@
+---
+label: Post
+hide_body: false
+fields:
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: post_title
+  label: post_title
+- type: text
+  name: post_sub-head
+  label: post_sub-head
+- type: file
+  name: featured_image
+  label: featured_image
+- type: text
+  name: additional_images
+  label: additional_images
+- name: data_created
+  type: datetime
+  label: Data created
+  description: Date of first publication.
+  config:
+    required: true
+    date_format: YYYY-MM-DD h:mm A
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD h:mm A
+- name: date_updated
+  type: datetime
+  label: Date updated
+  config:
+    required: false
+    date_format: YYYY-MM-DD h:mm A
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD h:mm A
+  description: Latest date the document was updated.
