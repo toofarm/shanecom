@@ -23,7 +23,7 @@ export const getContentBySlug = (slug: string,
   const { data, content } = matter(fileContents)
 
   const items: IContent = {
-    date: new Date(),
+    date: '2022-12-22',
   }
 
   fields.forEach((field) => {

@@ -1,7 +1,7 @@
 export interface IContent {
   [key: string]: unknown;
   content?: string;
-  date: Date;
+  date: string;
 }
 
 export enum EContentTypes {
