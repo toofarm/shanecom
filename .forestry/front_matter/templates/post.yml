@@ -37,3 +37,7 @@ fields:
     display_utc: false
     export_format: YYYY-MM-DD h:mm A
   description: Latest date the document was updated.
+- name: highlighted_post
+  type: boolean
+  label: Highlighted post
+  description: Indicates that the post deserves special attention
