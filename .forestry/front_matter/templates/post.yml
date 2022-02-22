@@ -7,19 +7,19 @@ fields:
   label: tags
 - type: text
   name: post_title
-  label: post_title
+  label: Post Title
 - type: text
-  name: post_sub-head
-  label: post_sub-head
+  name: post_sub_head
+  label: Post Sub-Head
 - type: file
   name: featured_image
-  label: featured_image
+  label: Featured Image
 - type: text
   name: additional_images
-  label: additional_images
-- name: data_created
+  label: Additional Images
+- name: date_created
   type: datetime
-  label: Data created
+  label: Date created
   description: Date of first publication.
   config:
     required: true
@@ -37,3 +37,9 @@ fields:
     display_utc: false
     export_format: YYYY-MM-DD h:mm A
   description: Latest date the document was updated.
+- name: highlighted_post
+  type: boolean
+  label: Highlighted post
+  description: Indicates that the post deserves special attention
+pages:
+- _content/posts/second_post.md
