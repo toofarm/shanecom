@@ -7,22 +7,21 @@ fields:
   label: tags
 - type: text
   name: project_title
-  label: project_title
+  label: Project Title
 - type: text
-  name: project_sub-head
-  label: project_sub-head
+  name: project_sub_head
+  label: Project Sub-Head
 - type: file
   name: featured_image
-  label: featured_image
-- type: text
-  name: project_body
-  label: project_body
+  label: Featured Image
 - type: text
   name: project_web_link
-  label: project_web_link
+  label: Project Web Link
+  description: A link to the project's website
 - type: text
   name: project_repo_link
-  label: project_repo_link
+  label: Project Repo Link
+  description: A link to the project's codebase
 - type: list
   name: additional_images
   label: additional_images
