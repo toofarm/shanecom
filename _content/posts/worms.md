@@ -4,7 +4,7 @@ tags:
 - giggles
 post_title: Can we get the images to show up?
 post_sub_head: I'm afraid we put them in the wrong folder
-featured_image: "/public/2022_02_22_gummi-worms.jpeg"
+featured_image: "/uploads/2022_02_22_gummi-worms.jpeg"
 additional_images: ''
 date_created: 2022-02-09 4:00 PM
 date_updated: 
