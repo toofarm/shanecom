@@ -1,0 +1,28 @@
+---
+label: Project
+hide_body: false
+fields:
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: project_title
+  label: project_title
+- type: text
+  name: project_sub-head
+  label: project_sub-head
+- type: file
+  name: featured_image
+  label: featured_image
+- type: text
+  name: project_body
+  label: project_body
+- type: text
+  name: project_web_link
+  label: project_web_link
+- type: text
+  name: project_repo_link
+  label: project_repo_link
+- type: list
+  name: additional_images
+  label: additional_images
