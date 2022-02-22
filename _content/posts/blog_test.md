@@ -1,7 +1,7 @@
 ---
 tags: []
 post_title: Some superfluous thoughts
-post_sub-head: On the nature of being and matter, these being matters
+post_sub-head: On the nature of being and matter, these  being matters
 featured_image: "/uploads/gettyimages_1218649561_copy-0_18_02_2022.jpg"
 additional_images: ''
 
