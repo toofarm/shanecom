@@ -1,5 +1,8 @@
 ---
-tags: []
+tags:
+- giggles
+- funny stuff
+- javascript
 post_title: Beautiful thoughts for beautiful people
 post_sub_head: Turn away your eyes, ugos
 featured_image: "/uploads/2022_02_22_crocodile.jpeg"
