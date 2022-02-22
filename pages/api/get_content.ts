@@ -43,5 +43,7 @@ export const getAllContentByType = (type = EContentTypes.POSTS, fields: string[]
       fields,
       type))
     .sort((postA, postB) => (postA.date > postB.date ? -1 : 1))
+  console.log('Posts returned by getAllContentByType')
+  console.log(posts)
   return posts
 }

@@ -30,7 +30,8 @@ export const getStaticProps = async ({ params }:TParams) => {
         'additional_images', 
         'content', 
         'date_created', 
-        'date_updated'], 
+        'date_updated',
+        'highlighted_post'], 
       EContentTypes.POSTS)
   const content = await markdownToHtml(post.content || '')
   return {

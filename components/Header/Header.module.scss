@@ -1,0 +1,36 @@
+@import 'styles/constants';
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      margin-right: 2rem;
+      padding-bottom: 4px;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        border-bottom: 1px solid $black;
+      }
+      &:active {
+        color: $link-blue;
+        border-bottom: 1px solid $link-blue;
+      }
+    }
+    li:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.active_route {
+  font-weight: bold;
+  border-bottom: 2px solid $black;
+}
