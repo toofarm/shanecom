@@ -9,10 +9,10 @@ fields:
     use_select: false
     min: 1
 - type: text
-  name: post_title
+  name: title
   label: Post Title
 - type: text
-  name: post_sub_head
+  name: sub_head
   label: Post Sub-Head
 - type: file
   name: featured_image
