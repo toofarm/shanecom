@@ -10,7 +10,7 @@ additional_images: []
 highlighted_project: false
 title: Making your own computer
 sub_head: Money + Time - Complications = Computer
-date_created: 2022-01-11T08:00:00Z
+date_created: 2022-01-11 4:00 PM
 date_updated: 
 highlighted: false
 
