@@ -8,10 +8,10 @@ fields:
   config:
     min: 1
 - type: text
-  name: project_title
+  name: title
   label: Project Title
 - type: text
-  name: project_sub_head
+  name: sub_head
   label: Project Sub-Head
 - type: file
   name: featured_image
@@ -35,6 +35,24 @@ fields:
   type: boolean
   label: Highlighted project
   description: Display this project on the website's homepage
+- name: date_created
+  type: datetime
+  label: Date created
+  description: Provide a publication date for your project
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: date_updated
+  type: datetime
+  label: Date updated
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
 pages:
 - _content/projects/bad-data-into-good.md
 - _content/projects/hacking-the-mainframe.md
