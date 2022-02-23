@@ -11,6 +11,10 @@ project_web_link: https://www.wweek.com/
 project_repo_link: https://github.com/toofarm/shanecom
 additional_images: []
 highlighted_project: false
+date_updated: 
+date_created: 2022-01-28T20:50:40Z
+title: ''
+sub_head: ''
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra massa massa ultricies mi quis hendrerit dolor. 
