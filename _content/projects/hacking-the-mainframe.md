@@ -12,7 +12,7 @@ project_repo_link: https://github.com/toofarm/shanecom
 additional_images: []
 highlighted_project: false
 date_updated: 
-date_created: 2022-01-28T20:50:40Z
+date_created: 2021-12-14 4:00 PM
 title: Hacking the mainframe
 sub_head: Group projects get a bad rap, but they can actually be quite fun
 highlighted: false
