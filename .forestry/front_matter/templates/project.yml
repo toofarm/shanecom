@@ -35,3 +35,5 @@ fields:
   type: boolean
   label: Highlighted project
   description: Display this project on the website's homepage
+pages:
+- _content/projects/hacking-the-mainframe.md
