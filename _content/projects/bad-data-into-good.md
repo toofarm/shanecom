@@ -13,8 +13,8 @@ highlighted_project: false
 title: How to turn bad data into good data
 sub_head: The aphorism holds that numbers don't lie, but liars lie, and sometimes
   liars get a hold of numbers
-date_created: 2022-02-10T08:00:00Z
-date_updated: 2022-02-14T08:00:00Z
+date_created: 2022-02-10 4:00 PM
+date_updated: 2022-02-13 12:00 AM
 highlighted: false
 
 ---
