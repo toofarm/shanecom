@@ -41,18 +41,20 @@ fields:
   description: Provide a publication date for your project
   config:
     required: true
-    date_format: 
-    time_format: 
+    date_format: 'YYYY-MM-DD '
+    time_format: h:mm A
     display_utc: false
+    export_format: YYYY-MM-DD h:mm A
 - name: date_updated
   type: datetime
   label: Date updated
   description: ''
   config:
     required: false
-    date_format: 
+    date_format: YYYY-MM-DD
     time_format: 
     display_utc: false
+    export_format: YYYY-MM-DD h:mm A
 pages:
 - _content/projects/bad-data-into-good.md
 - _content/projects/hacking-the-mainframe.md
