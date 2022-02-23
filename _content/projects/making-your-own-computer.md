@@ -8,10 +8,11 @@ project_web_link: ''
 project_repo_link: https://github.com/toofarm/shanecom
 additional_images: []
 highlighted_project: false
-title: ''
-sub_head: ''
+title: Making your own computer
+sub_head: Money + Time - Complications = Computer
 date_created: 2022-01-11T08:00:00Z
 date_updated: 
+highlighted: false
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
