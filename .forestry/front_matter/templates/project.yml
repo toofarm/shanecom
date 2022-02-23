@@ -16,6 +16,8 @@ fields:
 - type: file
   name: featured_image
   label: Featured Image
+  config:
+    maxSize: 3
 - type: text
   name: project_web_link
   label: Project Web Link
