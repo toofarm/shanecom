@@ -11,8 +11,9 @@ project_web_link: ''
 project_repo_link: ''
 additional_images: []
 highlighted_project: false
-date_created: 2022-02-19T08:00:00Z
+date_created: 2022-02-19 4:00 PM
 date_updated: 
+highlighted: false
 
 ---
 We began this project as a lark, but it came to define our entire company.
