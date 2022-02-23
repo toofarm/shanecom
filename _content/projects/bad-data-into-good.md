@@ -10,10 +10,12 @@ project_web_link: https://www.wweek.com/
 project_repo_link: ''
 additional_images: []
 highlighted_project: false
-title: ''
-sub_head: ''
+title: How to turn bad data into good data
+sub_head: The aphorism holds that numbers don't lie, but liars lie, and sometimes
+  liars get a hold of numbers
 date_created: 2022-02-10T08:00:00Z
 date_updated: 2022-02-14T08:00:00Z
+highlighted: false
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
