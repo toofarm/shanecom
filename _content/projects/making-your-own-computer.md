@@ -8,6 +8,10 @@ project_web_link: ''
 project_repo_link: https://github.com/toofarm/shanecom
 additional_images: []
 highlighted_project: false
+title: ''
+sub_head: ''
+date_created: 2022-01-11T08:00:00Z
+date_updated: 
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
