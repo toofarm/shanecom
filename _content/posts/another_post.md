@@ -10,6 +10,9 @@ additional_images: ''
 date_created: 2022-02-16 4:00 PM
 date_updated: 
 highlighted_post: false
+title: Vacations in warm locations
+sub_head: We want warmth, we crave it, every day
+highlighted: false
 
 ---
 Hi there, here's my post.
