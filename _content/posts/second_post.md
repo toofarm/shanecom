@@ -5,7 +5,7 @@ tags:
 - javascript
 post_title: Beautiful thoughts for beautiful people
 post_sub_head: Turn away your eyes, ugos
-featured_image: "/uploads/2022_02_22_crocodile.jpeg"
+featured_image: "/uploads/2022_02_23_crocodile.jpeg"
 additional_images: ''
 date_created: 2022-02-22 4:00 PM
 date_updated: 
