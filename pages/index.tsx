@@ -8,7 +8,7 @@ import HeadStateful from 'components/HeadStateful'
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      <HeadStateful />
+      <HeadStateful pageTitle='' />
       <Layout />
     </div>
   )

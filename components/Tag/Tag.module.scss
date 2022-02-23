@@ -1,0 +1,11 @@
+@import 'styles/constants';
+
+.tag_wrap {
+  display: inline-block;
+  padding: 0.4rem;
+  background-color: red;
+  border-radius: 4px;
+  font-size: 12px;
+  color: $highlight-text;
+  margin-right: 0.5rem;
+}

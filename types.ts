@@ -1,7 +1,7 @@
 export interface IContent {
   [key: string]: unknown;
   content?: string;
-  date: string;
+  date_created: string;
 }
 
 export enum EContentTypes {
@@ -18,6 +18,7 @@ export type TPost = {
   date_created: string;
   date_updated?: string;
   highlighted_post: boolean;
+  slug: string;
 }
 
 export type TProject = {
@@ -29,4 +30,5 @@ export type TProject = {
   project_repo_link?: string;
   additional_images?: string[];
   highlighted_project: boolean;
+  slug: string;
 }

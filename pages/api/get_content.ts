@@ -22,8 +22,8 @@ export const getContentBySlug = (slug: string,
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
-  const items: IContent = {
-    date: '2022-12-22',
+  const items: IContent = { 
+    date_created : ''
   }
 
   fields.forEach((field) => {
@@ -42,8 +42,6 @@ export const getAllContentByType = (type = EContentTypes.POSTS, fields: string[]
     .map((slug) => getContentBySlug(slug,
       fields,
       type))
-    .sort((postA, postB) => (postA.date > postB.date ? -1 : 1))
-  console.log('Posts returned by getAllContentByType')
-  console.log(posts)
+    .sort((postA, postB) => (postA.date_created > postB.date_created ? -1 : 1))
   return posts
 }

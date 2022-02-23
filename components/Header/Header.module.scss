@@ -5,6 +5,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
+  a {
+    margin: 0.75rem 0;
+  }
 }
 
 .navigation {
@@ -17,20 +21,27 @@
       border-bottom: 1px solid transparent;
 
       &:hover {
-        border-bottom: 1px solid $black;
-      }
-      &:active {
-        color: $link-blue;
-        border-bottom: 1px solid $link-blue;
+        border-bottom: 1px solid $primary-text;
       }
     }
     li:last-of-type {
       margin-right: 0;
     }
   }
+  .active_route {
+    font-weight: bold;
+    border-bottom: 2px solid $primary-text;
+
+    &:hover {
+      border-bottom: 2px solid $primary-text;
+    }
+  }
 }
 
-.active_route {
-  font-weight: bold;
-  border-bottom: 2px solid $black;
+// Tablet
+@media screen and (max-width: $tablet) {
+  .navigation ul li:active {
+    color: $link-blue;
+    border-bottom: 1px solid $link-blue;
+  }
 }

@@ -1,7 +1,12 @@
 import React, { FC } from 'react'
 import { getAllContentByType, getContentBySlug } from 'pages/api/get_content'
-import { EContentTypes } from 'types'
+import { EContentTypes, TPost } from 'types'
 import markdownToHtml from 'lib/markdownToHtml'
+
+// Components
+import Layout from 'components/Layout'
+import HeadStateful from 'components/HeadStateful'
+import PostHeader from 'components/PostHeader'
 
 // Types
 type TParams = {
@@ -9,14 +14,25 @@ type TParams = {
 }
 
 type TProps = {
-    post: string,
+    post: TPost,
     content: string
 }
 
 const Post:FC<TProps> = ({ post, content }) => {
   return (
-    <div dangerouslySetInnerHTML={{ __html : content }}>
-    </div>
+    <>
+      <HeadStateful pageTitle={post.post_title} />
+      <Layout>
+        <PostHeader 
+          title={post.post_title} 
+          sub_head={post.post_sub_head} 
+          img={post.featured_image} 
+          publication_date={post.date_created}
+          tags={post.tags} />
+        <div dangerouslySetInnerHTML={{ __html : content }}>
+        </div>
+      </Layout>
+    </>
   )
 }
 
@@ -25,7 +41,7 @@ export const getStaticProps = async ({ params }:TParams) => {
     getContentBySlug(params.slug, 
       ['tags', 
         'post_title', 
-        'post_sub-head', 
+        'post_sub_head', 
         'featured_image', 
         'additional_images', 
         'content', 
@@ -36,7 +52,7 @@ export const getStaticProps = async ({ params }:TParams) => {
   const content = await markdownToHtml(post.content || '')
   return {
     props: {
-      ...post,
+      post,
       content
     }
   }

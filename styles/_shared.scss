@@ -1,0 +1,10 @@
+@import 'styles/constants';
+
+@mixin index_page {
+  h2 {
+    margin: 0 0 1rem 0;
+    font-size: 2.75rem;
+    border-bottom: 4px solid $primary-text;
+    display: inline-block;
+  }
+}

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { FC } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -22,18 +23,16 @@ const Header:FC = () => {
 
   return (
     <header className={styles.header}>
-      <div>
-        <Link href='/'>
-          <a>
-            <Image
-              src='/shane_logo.png'
-              alt='Shanecom logo'
-              width={200}
-              height={200}
-            />
-          </a>
-        </Link>
-      </div>
+      <Link href='/'>
+        <a>
+          <Image
+            src='/shane_logo_cropped.png'
+            alt='My little internet home'
+            width={120}
+            height={75}
+          />
+        </a>
+      </Link>
       <nav className={styles.navigation}>
         <ul>
           {routes.map((route) => <HeaderLink href={route.href} displayName={route.displayName} key={route.href} />)}
