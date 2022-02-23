@@ -18,6 +18,8 @@ fields:
   label: Featured Image
   config:
     maxSize: 3
+  description: Header image to display with post. Upload a picture with a minimum
+    width of 1000px for best results
 - type: text
   name: project_web_link
   label: Project Web Link
