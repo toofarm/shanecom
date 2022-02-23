@@ -9,6 +9,9 @@ additional_images: ''
 date_created: 2022-02-09 4:00 PM
 date_updated: 
 highlighted_post: false
+title: Why's it being so goofy???
+sub_head: Times were, this was a serious business
+highlighted: false
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
