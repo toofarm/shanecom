@@ -13,8 +13,9 @@ additional_images: []
 highlighted_project: false
 date_updated: 
 date_created: 2022-01-28T20:50:40Z
-title: ''
-sub_head: ''
+title: Hacking the mainframe
+sub_head: Group projects get a bad rap, but they can actually be quite fun
+highlighted: false
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra massa massa ultricies mi quis hendrerit dolor. 
