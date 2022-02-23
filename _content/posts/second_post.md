@@ -10,6 +10,9 @@ additional_images: ''
 date_created: 2022-02-22 4:00 PM
 date_updated: 
 highlighted_post: false
+title: Which rock is the largest rock?
+sub_head: By holding the rocks up next to each other, perhaps we can find out
+highlighted: false
 
 ---
 Here is some content for our post. This, I'm sorry to say, is going to be a short one.
