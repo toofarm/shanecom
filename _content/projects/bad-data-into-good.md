@@ -10,6 +10,10 @@ project_web_link: https://www.wweek.com/
 project_repo_link: ''
 additional_images: []
 highlighted_project: false
+title: ''
+sub_head: ''
+date_created: 2022-02-10T08:00:00Z
+date_updated: 
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
