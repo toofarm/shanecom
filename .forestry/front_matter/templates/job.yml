@@ -7,6 +7,11 @@ fields:
   config:
     required: true
   label: Job title
+- name: company
+  type: text
+  config:
+    required: true
+  label: Company
 - name: start_date
   type: datetime
   label: Start date
