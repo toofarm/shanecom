@@ -26,7 +26,7 @@ const Header:FC = () => {
       <Link href='/'>
         <a>
           <Image
-            src='/shane_logo_cropped.png'
+            src='/shane_logo_v2.png'
             alt='My little internet home'
             width={120}
             height={75}

@@ -1,8 +1,9 @@
-import React, { ElementType, FC } from 'react'
+import React, { FC } from 'react'
 import styles from './Layout.module.scss'
 
 // Components
-import Header from '../Header'
+import Header from 'components/Header'
+import Footer from 'components/Footer'
 
 const Layout:FC = ({ children }) => {
   return (
@@ -11,6 +12,7 @@ const Layout:FC = ({ children }) => {
       <main>
         {children}
       </main>
+      <Footer />
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { getAllContentByType, getContentBySlug } from 'pages/api/get_content'
-import { EContentTypes, TPost } from 'types'
+import { EContentTypes, TProject } from 'types'
 import markdownToHtml from 'lib/markdownToHtml'
 import styles from 'styles/Content.module.scss'
 import 'highlight.js/styles/base16/railscasts.css'
@@ -17,21 +17,21 @@ type TParams = {
 }
 
 type TProps = {
-    post: TPost,
+    project: TProject,
     content: string
 }
 
-const Post:FC<TProps> = ({ post, content }) => {
+const Project:FC<TProps> = ({ project, content }) => {
   return (
     <>
-      <HeadStateful pageTitle={post.title} />
+      <HeadStateful pageTitle={project.title} />
       <Layout>
         <PostHeader 
-          title={post.title} 
-          sub_head={post.sub_head} 
-          img={post.featured_image} 
-          publication_date={post.date_created} />
-        <TagCloud tags={post.tags} />
+          title={project.title} 
+          sub_head={project.sub_head} 
+          img={project.featured_image} 
+          publication_date={project.date_created} />
+        <TagCloud tags={project.tags} />
         <div dangerouslySetInnerHTML={{ __html : content }} className={styles.post_content}>
         </div>
       </Layout>
@@ -40,7 +40,7 @@ const Post:FC<TProps> = ({ post, content }) => {
 }
 
 export const getStaticProps = async ({ params }:TParams) => {
-  const post = 
+  const project = 
     getContentBySlug(params.slug, 
       ['tags', 
         'title', 
@@ -51,23 +51,23 @@ export const getStaticProps = async ({ params }:TParams) => {
         'date_created', 
         'date_updated',
         'highlighted'], 
-      EContentTypes.POSTS)
-  const content = await markdownToHtml(post.content || '')
+      EContentTypes.PROJECTS)
+  const content = await markdownToHtml(project.content || '')
   return {
     props: {
-      post,
+      project,
       content
     }
   }
 }
 
 export const getStaticPaths = async () => {
-  const posts = getAllContentByType(EContentTypes.POSTS, ['slug'])
+  const projects = getAllContentByType(EContentTypes.PROJECTS, ['slug'])
   return {
-    paths: posts.map((post) => {
+    paths: projects.map((project) => {
       return {
         params: {
-          slug: post.slug,
+          slug: project.slug,
         },
       }
     }),
@@ -75,4 +75,4 @@ export const getStaticPaths = async () => {
   }
 }
 
-export default Post
+export default Project

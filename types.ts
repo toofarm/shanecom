@@ -11,24 +11,25 @@ export enum EContentTypes {
 
 export type TPost = {
   tags: string[],
-  post_title: string;
-  post_sub_head?: string;
+  title: string;
+  sub_head?: string;
   featured_image: string;
   additional_images?: string[],
   date_created: string;
   date_updated?: string;
-  highlighted_post: boolean;
+  highlighted: boolean;
   slug: string;
 }
 
 export type TProject = {
   tags: string[];
-  project_title: string;
-  project_sub_head: string;
+  title: string;
+  sub_head: string;
+  date_created: string;
   featured_image: string;
   project_web_link?: string;
   project_repo_link?: string;
   additional_images?: string[];
-  highlighted_project: boolean;
+  highlighted: boolean;
   slug: string;
 }

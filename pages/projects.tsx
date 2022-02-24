@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import Layout from 'components/Layout'
 import { getAllContentByType } from './api/get_content'
-import { EContentTypes, TPost } from 'types'
+import { EContentTypes, TProject } from 'types'
 import styles from 'styles/pages/Posts.module.scss'
 
 // Components
@@ -10,20 +10,20 @@ import HeadStateful from 'components/HeadStateful'
 
 // Types 
 type TProps = {
-  posts: TPost[]
+  projects: TProject[]
 }
 
-const Posts:FC<TProps> = ({ posts }) => {
+const Projects:FC<TProps> = ({ projects }) => {
   return (
     <>
-      <HeadStateful pageTitle='Posts' />
+      <HeadStateful pageTitle='Projects' />
       <Layout>
         <div className={styles.posts_wrap}>
-          <h2>Posts</h2>
-          {posts.map((post) => <PostStub 
-            type={EContentTypes.POSTS}
-            stub={post} 
-            key={post.title} />)}
+          <h2>Projects</h2>
+          {projects.map((project) => <PostStub 
+            stub={project} 
+            type={EContentTypes.PROJECTS} 
+            key={project.title} />)}
         </div>
       </Layout>
     </>
@@ -31,8 +31,8 @@ const Posts:FC<TProps> = ({ posts }) => {
 }
 
 export const getStaticProps = async () => {
-  const posts = 
-    getAllContentByType(EContentTypes.POSTS, 
+  const projects = 
+    getAllContentByType(EContentTypes.PROJECTS, 
       ['tags', 
         'title',
         'featured_image', 
@@ -40,9 +40,9 @@ export const getStaticProps = async () => {
         'slug'])
   return {
     props: {
-      posts
+      projects
     }
   }
 }
 
-export default Posts
+export default Projects

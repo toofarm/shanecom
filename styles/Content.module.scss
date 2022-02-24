@@ -1,0 +1,28 @@
+@import 'styles/constants';
+
+.post_content {
+  p {
+    line-height: 1.35rem;
+    margin: 1.5rem 0;
+  }
+  img {
+    display: block;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  pre {
+    background-color: #383838;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow: scroll;
+  }
+  code {
+    color: #e5e0db;
+    padding: 0.258rem 0;
+  }
+  blockquote {
+    border-left: 4px solid $flag;
+    padding-left: 1rem;
+    font-style: italic;
+  }
+}

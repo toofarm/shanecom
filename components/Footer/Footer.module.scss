@@ -1,0 +1,61 @@
+@import 'styles/constants';
+
+.footer_wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1.5rem 0;
+  font-size: 14px;
+  color: $secondary-text;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: right;
+    position: relative;
+    li {
+      display: inline-block;
+      position: relative;
+      .copy_msg {
+        position: absolute;
+        display: none;
+        justify-content: center;
+        min-width: 350px;
+        top: -60%;
+        left: 33%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+      }
+      .fake_link {
+        display: inline-block;
+      }
+
+      &::after {
+        content: '|';
+        margin: 0 0.5rem;
+      }
+    }
+    li:last-of-type::after {
+      content: '\A';
+      margin: 0;
+    }
+  }
+}
+
+// Desktop
+@media screen and (min-width: $tablet) {
+  .footer_wrap {
+    ul {
+      li {
+        a:hover,
+        .fake_link:hover {
+          cursor: pointer;
+          color: $primary-text;
+          text-decoration: underline;
+        }
+      }
+      .fake_link:hover ~ .copy_msg {
+        display: inline-flex;
+      }
+    }
+  }
+}

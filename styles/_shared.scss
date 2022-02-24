@@ -2,9 +2,9 @@
 
 @mixin index_page {
   h2 {
-    margin: 0 0 1rem 0;
-    font-size: 2.75rem;
-    border-bottom: 4px solid $primary-text;
+    margin: 0;
+    font-size: 2rem;
     display: inline-block;
+    color: $primary-text;
   }
 }

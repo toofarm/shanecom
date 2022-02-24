@@ -1,7 +1,6 @@
 import React, { FC, useState, useEffect } from 'react'
 import styles from './PostHeader.module.scss'
 import format from 'date-fns/format'
-import Tag from 'components/Tag'
 
 // Types
 type TProps = {
@@ -10,10 +9,9 @@ type TProps = {
   img?: string;
   publication_date: string;
   updated_date?: string;
-  tags: string[]
 }
 
-const PostHeader:FC<TProps> = ({ title, sub_head, img, publication_date, tags }) => {
+const PostHeader:FC<TProps> = ({ title, sub_head, img, publication_date }) => {
   const [pubDate, setPubDate] = useState<string>('')
 
   useEffect(() => {
@@ -42,9 +40,6 @@ const PostHeader:FC<TProps> = ({ title, sub_head, img, publication_date, tags })
           {pubDate}
         </span>
       </div>
-      <ul className={styles.tag_wrap}>
-        {tags.map((tag) => <Tag tag={tag} key={`${tag}_${title}`} />)}
-      </ul>
     </div>
   )
 }

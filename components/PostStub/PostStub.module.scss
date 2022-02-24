@@ -3,10 +3,6 @@
 .link_wrap {
   transition: background-color 0.2s ease;
   border-radius: 5px;
-
-  &:hover {
-    background-color: rgba(239, 239, 239, 0.65);
-  }
 }
 .post_stub {
   margin: 1.5rem 0;
@@ -31,4 +27,11 @@
 .date {
   font-size: 14px;
   color: $secondary-text;
+}
+
+// Desktop
+@media screen and (min-width: $tablet) {
+  .link_wrap:hover {
+    background-color: rgba(239, 239, 239, 0.65);
+  }
 }
