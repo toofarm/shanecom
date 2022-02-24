@@ -54,3 +54,5 @@ fields:
     min: 1
     max: 
   label: Tags
+pages:
+- _content/jobs**/*/systems-analyst.md
