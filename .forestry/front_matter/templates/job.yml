@@ -12,6 +12,11 @@ fields:
   config:
     required: true
   label: Company
+- name: company_link
+  type: text
+  config:
+    required: true
+  label: Company link
 - name: start_date
   type: datetime
   label: Start date
