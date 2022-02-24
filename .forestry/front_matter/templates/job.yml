@@ -55,4 +55,5 @@ fields:
     max: 
   label: Tags
 pages:
+- _content/jobs**/*/horse-tickler.md
 - _content/jobs**/*/systems-analyst.md
