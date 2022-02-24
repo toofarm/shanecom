@@ -2,7 +2,7 @@
 label: Job
 hide_body: true
 fields:
-- name: job_title
+- name: title
   type: text
   config:
     required: true
@@ -42,7 +42,7 @@ fields:
       format: markdown
   label: Description
   description: A brief description of your duties. One or two sentences
-- name: company_logo
+- name: logo
   type: file
   config:
     maxSize: 2
