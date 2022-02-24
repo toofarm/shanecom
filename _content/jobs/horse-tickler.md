@@ -8,5 +8,6 @@ description: They want the horses to be in a good mood, so they hired me to go a
 logo: "/uploads/2022_02_23_gunter.png"
 tags:
 - horses
+company_link: https://nytimes.com
 
 ---
