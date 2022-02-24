@@ -1,4 +1,48 @@
 ---
 label: Job
 hide_body: true
-fields: []
+fields:
+- name: job_title
+  type: text
+  config:
+    required: true
+  label: Job title
+- name: start_date
+  type: datetime
+  label: Start date
+  description: ''
+  config:
+    required: true
+    date_format: YYYY-MM-DD
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD h:mm A
+- name: end_date
+  type: datetime
+  label: End date
+  description: ''
+  config:
+    required: false
+    date_format: YYYY-MM-DD
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD h:mm A
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: A brief description of your duties. One or two sentences
+- name: company_logo
+  type: file
+  config:
+    maxSize: 2
+  label: Company logo
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
