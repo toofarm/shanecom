@@ -43,6 +43,9 @@ fields:
     maxSize: 2
   label: Company logo
 - name: tags
-  type: tag_list
-  default: []
+  type: list
+  config:
+    use_select: false
+    min: 1
+    max: 
   label: Tags
