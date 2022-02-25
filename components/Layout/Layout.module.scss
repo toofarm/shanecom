@@ -1,10 +1,20 @@
+@import 'styles/constants';
+
 .meta_wrap {
   display: flex;
   flex-direction: column;
   max-width: 900px;
   min-height: 100vh;
   margin: 0 auto;
+  padding: 0 2rem;
   main {
     flex-grow: 2;
+  }
+}
+
+// Mobile
+@media screen and (max-width: $mobile) {
+  .meta_wrap {
+    padding: 0 1rem;
   }
 }

@@ -35,7 +35,7 @@
     h4,
     h3,
     p {
-      margin: 0.25rem 0;
+      margin: 0.75rem 0;
     }
     h3 {
       font-size: 1.25rem;
@@ -83,12 +83,28 @@
 @media screen and (min-width: $tablet) {
   .job_item:hover {
     &::before {
-      border-color: $marroon;
+      border-color: $aqua;
       clip-path: inset(15% 15%);
       transform: rotate(45deg);
     }
   }
   .job_image_wrap:hover img {
     transform: scale(1.1);
+  }
+}
+
+// Mobile
+@media screen and (max-width: $mobile) {
+  .job_item {
+    margin: 2.5rem 0;
+  }
+  .job_format_meta {
+    flex-direction: column-reverse;
+  }
+  .job_image_wrap {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
   }
 }

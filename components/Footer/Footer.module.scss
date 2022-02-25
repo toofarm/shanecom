@@ -20,7 +20,7 @@
         display: none;
         justify-content: center;
         min-width: 350px;
-        top: -60%;
+        top: -70%;
         left: 33%;
         text-align: center;
         transform: translate(-50%, -50%);
@@ -56,6 +56,22 @@
       .fake_link:hover ~ .copy_msg {
         display: inline-flex;
       }
+    }
+  }
+}
+
+// Mobile
+@media screen and (max-width: $mobile) {
+  .footer_wrap {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    ul {
+      margin-top: 0.25em;
+      text-align: left;
+    }
+    .copy_msg_mobile {
+      margin-top: 0.5rem;
+      font-size: 13px;
     }
   }
 }

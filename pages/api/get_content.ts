@@ -18,7 +18,7 @@ export const getContentBySlug = (slug: string,
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
-  const items: IContent = { 
+  const items: IContent = {  
     date_created : ''
   }
 
@@ -37,7 +37,7 @@ export const getContentBySlug = (slug: string,
   return items
 }
 
-export const getAllContentByType = (type = EContentTypes.POSTS, fields: string[] = []) => {
+export const getAllContentByType = (type:EContentTypes = EContentTypes.POSTS, fields: string[] = []) => {
   const slugs = getSlugs(type)
   const posts = slugs
     .map((slug) => getContentBySlug(slug,

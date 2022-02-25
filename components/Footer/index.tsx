@@ -1,11 +1,13 @@
 import React, { FC, useState, useEffect } from 'react'
 import format from 'date-fns/format'
 import Link from 'next/link'
+import useWindowSize from 'hooks/use_window_size'
 import styles from './Footer.module.scss'
 
 const Footer:FC = () => {
+  const { width } = useWindowSize()
   const [year, setYear] = useState<string>('')
-  const [copyMsg, setCopyMsg] = useState<string>('Click to copy toofarm@gmail.com')
+  const [copyMsg, setCopyMsg] = useState<string>('Click "email" to copy toofarm@gmail.com')
 
   const copyEmail = () => {
     navigator.clipboard.writeText('toofarm@gmail.com')
@@ -26,6 +28,7 @@ const Footer:FC = () => {
       </div>
       <ul>
         <li
+          tabIndex={0}  
           onClick={() => copyEmail()}
           onKeyPress={() => copyEmail()}> 
           <div className={styles.fake_link}>
@@ -48,6 +51,7 @@ const Footer:FC = () => {
           </Link>
         </li>
       </ul>
+      {(width && width <= 767) && <div className={styles.copy_msg_mobile}>{copyMsg}</div>}
     </footer>
   )
 }

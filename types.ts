@@ -8,7 +8,8 @@ export interface IContent {
 export enum EContentTypes {
   POSTS = 'posts',
   PROJECTS = 'projects',
-  JOBS = 'jobs'
+  JOBS = 'jobs',
+  INTRO = 'intro'
 }
 
 export type TPost = {
@@ -47,4 +48,11 @@ export type TJob = {
   description: string;
   tags: string[]
   logo: string;
+}
+
+export type TIntro = {
+  headline: string;
+  linkedin_link: string;
+  github_link: string;
+  profile_photo: string;
 }

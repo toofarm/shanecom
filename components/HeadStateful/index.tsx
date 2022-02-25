@@ -10,9 +10,9 @@ type TProps = {
 const HeadStateful:FC<TProps> = ({ pageTitle }) => {
   return (
     <Head>
-      <title>{`${pageTitle} ${pageTitle ? ' | ' : ''}`} Shane's L'il Internet Home</title>
+      <title>{`${pageTitle} ${pageTitle ? ' | ' : ''}`} Shane Made That</title>
       <meta name='description' 
-        content='Shane&pos;s L&pos;il Internet Home - Software Engineering and Loose Thoughts' />
+        content='Shane Made That - Software Engineering and Loose Thoughts' />
       <link rel='icon' href='/favicon.ico' />
     </Head>
   )

@@ -14,7 +14,9 @@
 @mixin link {
   color: $link-blue;
 
-  &:hover {
-    text-decoration: underline;
+  @media screen and (min-width: $tablet) {
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

@@ -1,17 +1,19 @@
 @import 'styles/constants';
 
 .post_header {
-  display: inline-grid;
+  display: inline-block;
   width: 100%;
   .background_grid {
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.5fr 1fr;
     background-size: cover;
+    background-position: center;
     .arbitrary_shell {
       background-color: white;
       padding: 2rem;
       grid-column-start: 2;
+      min-width: 100%;
       h1 {
         color: $primary-text;
         position: relative;
@@ -54,4 +56,31 @@
   list-style: none;
   padding: 0;
   margin: 1rem 0;
+}
+
+// Mobile
+@media screen and (max-width: $mobile) {
+  .post_header {
+    img {
+      max-width: 100%;
+    }
+    .background_grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0 1fr;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: top;
+      .arbitrary_shell {
+        grid-area: 2 / 1 / 2 / 2;
+        padding: 1rem 0;
+        h1 {
+          padding-bottom: 0;
+        }
+      }
+    }
+    h2 {
+      margin-top: 0;
+    }
+  }
 }

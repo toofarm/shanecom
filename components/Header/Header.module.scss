@@ -12,6 +12,10 @@
 }
 
 .navigation {
+  transition: transform 0.3s ease;
+  .menu_toggle_btn {
+    display: none;
+  }
   ul {
     list-style: none;
     li {
@@ -19,10 +23,6 @@
       margin-right: 2rem;
       padding-bottom: 4px;
       border-bottom: 1px solid transparent;
-
-      &:hover {
-        border-bottom: 1px solid $primary-text;
-      }
     }
     li:last-of-type {
       margin-right: 0;
@@ -31,10 +31,33 @@
   .active_route {
     font-weight: bold;
     border-bottom: 2px solid $primary-text;
+  }
+}
 
-    &:hover {
-      border-bottom: 2px solid $primary-text;
+.mobile_nav_btn {
+  list-style: none;
+  margin: 0 0.5rem 0 0;
+  padding: 0;
+  li {
+    border: 3px solid $secondary-text;
+    border-radius: 10px;
+    margin-bottom: 0.45rem;
+  }
+
+  &:active {
+    li {
+      border: 4px solid $active;
     }
+  }
+}
+
+// Desktop
+@media screen and (min-width: $tablet) {
+  .navigation ul li:hover {
+    border-bottom: 1px solid $primary-text;
+  }
+  .navigation ul .active_route:hover {
+    border-bottom: 1px solid $primary-text;
   }
 }
 
@@ -43,5 +66,71 @@
   .navigation ul li:active {
     color: $link-blue;
     border-bottom: 1px solid $link-blue;
+  }
+}
+
+// Mobile
+@media screen and (max-width: $mobile) {
+  .header {
+    a {
+      max-width: 90px;
+    }
+  }
+  .navigation {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 100;
+    transform: translateX(-100%);
+    ul {
+      li {
+        display: block;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+
+        &:active {
+          border-bottom: 1px solid transparent;
+        }
+      }
+      .active_route {
+        border-bottom: 1px solid transparent;
+      }
+    }
+    .menu_toggle_btn {
+      margin: 1.25rem 1rem 1rem 1rem;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        border: 2px solid $secondary-text;
+        border-radius: 2px;
+        margin: 0 0 5px 0;
+        width: 40px;
+        padding: 0;
+        position: absolute;
+      }
+      li:first-of-type {
+        transform: rotate(45deg);
+      }
+      li:last-of-type {
+        transform: rotate(-45deg);
+      }
+
+      &:active {
+        li {
+          border: 3px solid $active;
+        }
+      }
+    }
+  }
+  .pull_right {
+    transform: translateX(0);
   }
 }

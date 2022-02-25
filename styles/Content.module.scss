@@ -1,6 +1,10 @@
 @use 'styles/shared';
 @import 'styles/constants';
 
+.meta_container {
+  padding: 0 2rem;
+}
+
 .post_content {
   p {
     line-height: 1.35rem;
@@ -31,5 +35,14 @@
     border-left: 4px solid $flag;
     padding-left: 1rem;
     font-style: italic;
+  }
+}
+
+// Mobile
+@media screen and (max-width: $mobile) {
+  .post_content {
+    img {
+      max-width: 100%;
+    }
   }
 }
