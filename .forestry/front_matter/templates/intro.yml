@@ -23,3 +23,5 @@ fields:
     maxSize: 3
   label: Profile photo
   description: Make yourself look nice
+pages:
+- _content/intro/intro_copy.md
