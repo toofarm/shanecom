@@ -19,4 +19,6 @@ Hi there, here's my post.
 
 **Let's bold some text.**
 
+What happens if we try to create a link to [some arbitrary website](https://the-scp.foundation/)?
+
 > Let's also try adding a blockquote
