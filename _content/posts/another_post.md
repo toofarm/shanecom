@@ -22,3 +22,7 @@ Hi there, here's my post.
 What happens if we try to create a link to [some arbitrary website](https://the-scp.foundation/)?
 
 > Let's also try adding a blockquote
+
+## Sub-headings appear larger
+
+More arbitrary text below the sub-head helps to flesh out our above point.
