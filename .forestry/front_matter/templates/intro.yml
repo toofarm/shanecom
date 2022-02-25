@@ -1,4 +1,25 @@
 ---
 label: Intro
 hide_body: false
-fields: []
+fields:
+- name: headline
+  type: text
+  config:
+    required: true
+  label: Headline
+- name: linkedin_link
+  type: text
+  config:
+    required: true
+  label: LinkedIn link
+- name: github_link
+  type: text
+  config:
+    required: true
+  label: GitHub Link
+- name: profile_photo
+  type: file
+  config:
+    maxSize: 3
+  label: Profile photo
+  description: Make yourself look nice
