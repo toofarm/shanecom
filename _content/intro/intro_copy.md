@@ -1,5 +1,5 @@
 ---
-headline: Hi there, my name's Shane
+headline: "\U0001F44B Hi there, my name's Shane"
 linkedin_link: https://www.linkedin.com/in/shaners/
 github_link: https://github.com/toofarm
 profile_photo: "/uploads/2022_02_25_shaner_happy.jpeg"
