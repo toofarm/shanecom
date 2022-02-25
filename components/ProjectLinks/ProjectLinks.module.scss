@@ -1,0 +1,16 @@
+@use 'styles/shared';
+
+.project_links {
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    a {
+      @include shared.link;
+    }
+  }
+}

@@ -4,18 +4,14 @@ import matter from 'gray-matter'
 import { IContent, EContentTypes } from '../../types'
 
 
-const postsDirectory = join(process.cwd(), '_content/posts')
-const projectsDirectory = join(process.cwd(), '_content/projects')
-
-
 const getSlugs = (type : EContentTypes) => {
-  const contentUrl = type === EContentTypes.POSTS ? postsDirectory : projectsDirectory
+  const contentUrl = join(process.cwd(), `_content/${type}`)
   return fs.readdirSync(contentUrl)
 }
 
 export const getContentBySlug = (slug: string,
   fields: string[] = [], type : EContentTypes): IContent => {
-  const contentUrl = type === EContentTypes.POSTS ? postsDirectory : projectsDirectory
+  const contentUrl = join(process.cwd(), `_content/${type}`)
   const realSlug = slug.replace(/\.md$/,
     '')
   const fullPath = join(contentUrl, `${realSlug}.md`)
@@ -29,6 +25,11 @@ export const getContentBySlug = (slug: string,
   fields.forEach((field) => {
     if (field === 'slug') items[field] = realSlug
     if (field === 'content') items[field] = content
+    // We do this so we can sort Jobs as if they were Posts/Projects
+    if (field === 'start_date') {
+      items[field] = data[field]
+      items.date_created = data[field]
+    }
     if (typeof data[field] !== 'undefined') {
       items[field] = data[field]
     }

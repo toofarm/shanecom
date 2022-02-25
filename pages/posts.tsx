@@ -19,7 +19,7 @@ const Posts:FC<TProps> = ({ posts }) => {
       <HeadStateful pageTitle='Posts' />
       <Layout>
         <div className={styles.posts_wrap}>
-          <h2>Posts</h2>
+          <h2>Posts</h2> 
           {posts.map((post) => <PostStub 
             type={EContentTypes.POSTS}
             stub={post} 

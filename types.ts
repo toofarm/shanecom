@@ -2,11 +2,13 @@ export interface IContent {
   [key: string]: unknown;
   content?: string;
   date_created: string;
+  start_date?: string
 }
 
 export enum EContentTypes {
   POSTS = 'posts',
-  PROJECTS = 'projects'
+  PROJECTS = 'projects',
+  JOBS = 'jobs'
 }
 
 export type TPost = {
@@ -32,4 +34,17 @@ export type TProject = {
   additional_images?: string[];
   highlighted: boolean;
   slug: string;
+}
+
+export type TJob = {
+  title: string;
+  company: string;
+  company_logo: string;
+  company_link: string;
+  start_date: string;
+  date_created: string;
+  end_date?: string;
+  description: string;
+  tags: string[]
+  logo: string;
 }

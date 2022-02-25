@@ -1,0 +1,94 @@
+@import 'styles/constants';
+
+.jobs_list_wrap {
+  list-style: none;
+  margin: 2rem 0 0 0;
+  padding: 0;
+  position: relative;
+
+  &::before {
+    content: '\A';
+    border: 3px solid #ccc;
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+    left: 17px;
+  }
+}
+
+.job_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem 0;
+  position: relative;
+  .job_dates {
+    background-color: #eee;
+    color: $primary-text;
+    padding: 0.25rem;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .job_innards {
+    margin: 0.5rem 0;
+    h4,
+    h3,
+    p {
+      margin: 0.25rem 0;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+    h4 {
+      font-size: 1.17rem;
+    }
+    p {
+      line-height: 1.5rem;
+    }
+  }
+
+  &::before {
+    content: '\A';
+    border: 1.25rem solid $flag;
+    border-radius: 50px;
+    display: block;
+    width: 0;
+    height: 0;
+    margin-right: 1.5rem;
+    clip-path: inset(0% 0%);
+    transition: border-color 0.3s ease, clip-path 0.3s ease, transform 0.3s ease;
+  }
+}
+
+.job_format_meta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.job_image_wrap {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  position: relative;
+  margin: 0 1.25rem;
+  img {
+    max-width: 100px;
+    transition: transform 0.3s ease;
+  }
+}
+
+// Desktop
+@media screen and (min-width: $tablet) {
+  .job_item:hover {
+    &::before {
+      border-color: $marroon;
+      clip-path: inset(15% 15%);
+      transform: rotate(45deg);
+    }
+  }
+  .job_image_wrap:hover img {
+    transform: scale(1.1);
+  }
+}

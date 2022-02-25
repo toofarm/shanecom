@@ -1,0 +1,9 @@
+@use 'styles/shared';
+@import 'styles/constants';
+
+.posts_wrap {
+  @include shared.index_page;
+  a {
+    @include shared.link;
+  }
+}
