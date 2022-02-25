@@ -1,4 +1,36 @@
 ---
 label: Intro
 hide_body: true
-fields: []
+fields:
+- name: headline
+  type: text
+  config:
+    required: true
+  label: Headline
+  description: Text to display larger than its companions
+- name: body_content
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Body content
+  description: A couple paragraphs about yourself
+- name: linkedin_link
+  type: text
+  config:
+    required: true
+  label: LinkedIn link
+- name: github_link
+  type: text
+  config:
+    required: true
+  label: Github link
+- name: profile_photo
+  type: file
+  config:
+    maxSize: 3
+  label: Profile photo
+  description: Make yourself look nice
