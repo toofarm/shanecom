@@ -1,0 +1,34 @@
+@import 'styles/constants';
+
+$themes: (
+  lightTheme: (
+    'primary-text-color': $primary-text,
+    'secondary-text-color': $secondary-text,
+    'background-color': $background,
+    'flag-color': $flag,
+    'menu-background-color': $menu-background,
+  ),
+  darkTheme: (
+    'primary-text-color': #efefef,
+    'secondary-text-color': #bbb,
+    'background-color': #161c22,
+    'flag-color': $beige,
+    'menu-background-color': #161c22,
+  ),
+);
+
+$theme-map: null;
+
+@mixin theme() {
+  @each $theme, $map in $themes {
+    $theme-map: $map !global;
+    .#{$theme} & {
+      @content; // the content inside @include theme() {...}
+    }
+  }
+  $theme-map: null !global;
+}
+
+@function theme-get($key) {
+  @return map-get($theme-map, $key);
+}

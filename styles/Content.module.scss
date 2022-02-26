@@ -1,5 +1,6 @@
 @use 'styles/shared';
 @import 'styles/constants';
+@import 'styles/themes';
 
 .meta_container {
   padding: 0 2rem;
@@ -9,6 +10,10 @@
   p {
     line-height: 1.35rem;
     margin: 1.5rem 0;
+
+    @include theme() {
+      color: theme-get('primary-text-color');
+    }
   }
   p:first-of-type {
     margin-top: 0;
