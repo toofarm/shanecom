@@ -45,4 +45,5 @@ fields:
   label: Highlighted post
   description: Indicates that the post deserves special attention
 pages:
+- _content/posts/making-this-very-website.md
 - _content/posts/worms.md
