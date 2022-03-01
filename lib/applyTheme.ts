@@ -14,7 +14,7 @@ const applyTheme = (theme : EThemes):boolean => {
       primaryText: '#efefef',
       secondaryText: '#ccc', 
       backgroundColor: '#26272c',
-      flagColor: '#f3d32c',
+      flagColor: '#d0d9ff',
       linkColor: '#6981ff',
       hoverColor: 'rgb(82 82 82 / 65%)',
     },

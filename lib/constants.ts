@@ -13,10 +13,12 @@ const tagColors:Obj = {
   'diversions': '#4b171f',
   'nextjs': '#C77966',
   'ci/cd': '#66b4c7',
-  'php': '#3b362f',
+  'php': '#df6f50',
   'react.js': '#D44D27',
   'vue.js': '#E2A72E',
-  'node.js': '#048789'
+  'node.js': '#048789',
+  'google analytics': '#009BDF',
+  'google tag manager': '#702A8C'
 }
 
 export default tagColors
