@@ -9,4 +9,4 @@ I'm a software engineer who focuses on front-end development. Right now, I work 
 
 Take a look around to get a feel for the kinds of projects I work on. You can also find free-ranging thoughts on software, work and anything else that crosses my mind.
 
-It's good to meet you; I'm sure we'll be fast friends.
+I'm sure we'll be fast friends.
