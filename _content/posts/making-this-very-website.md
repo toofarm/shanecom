@@ -17,3 +17,5 @@ The website you're viewing right now represents a long-overdue refactor of my or
 Before discussing the refactor itself and the choices I made during that process, let's take a look at the shortcomings of the old site.
 
 ### Version 1.0
+
+I built my original portfolio site shortly after completing a coding bootcamp at City University of New York. 
