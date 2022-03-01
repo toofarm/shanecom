@@ -46,5 +46,4 @@ fields:
   description: Indicates that the post deserves special attention
 pages:
 - _content/posts/another_post.md
-- _content/posts/second_post.md
 - _content/posts/worms.md
