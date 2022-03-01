@@ -61,5 +61,6 @@ fields:
   label: Tags
 pages:
 - _content/jobs/barista.md
+- _content/jobs/fullstack-developer.md
 - _content/jobs/horse-tickler.md
 - _content/jobs/scenery-artist.md
