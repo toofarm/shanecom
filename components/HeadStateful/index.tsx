@@ -13,7 +13,7 @@ const HeadStateful:FC<TProps> = ({ pageTitle }) => {
       <title>{`${pageTitle} ${pageTitle ? ' | ' : ''}`} Shane Made That</title>
       <meta name='description' 
         content='Shane Made That - Software Engineering and Loose Thoughts' />
-      <link rel='icon' href='/favicon.ico' />
+      <link rel='icon' href='/favicon.png' />
     </Head>
   )
 }
