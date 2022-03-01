@@ -1,8 +1,8 @@
 ---
 tags:
-- wordpres
+- wordpress
 - javascript
-- next.js
+- nextjs
 title: Making this very website
 sub_head: How the website you're looking at right now came into being
 featured_image: "/uploads/2022_03_01_sunrise.jpeg"
