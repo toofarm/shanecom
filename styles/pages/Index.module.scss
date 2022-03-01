@@ -1,5 +1,6 @@
 @use 'styles/shared';
 @import 'styles/constants';
+@import 'styles/themes';
 
 .intro_grid {
   display: inline-grid;
@@ -12,6 +13,7 @@
     font-size: 1.25rem;
     p {
       line-height: 1.6rem;
+      color: var(primaryText);
     }
   }
 }

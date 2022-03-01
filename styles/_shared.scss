@@ -1,18 +1,19 @@
 @import 'styles/constants';
+@import 'styles/themes';
 
 @mixin index_page {
   h2 {
     margin: 0 0 1rem 0;
     font-size: 2rem;
     display: block;
-    color: $primary-text;
+    color: var(primaryText);
     padding: 0.5rem 0;
     border-bottom: 1px solid $light-grey;
   }
 }
 
 @mixin link {
-  color: $link-blue;
+  color: var(linkColor);
 
   @media screen and (min-width: $tablet) {
     &:hover {

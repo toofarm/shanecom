@@ -1,11 +1,12 @@
 @import 'styles/constants';
+@import 'styles/themes';
 
 .footer_wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1.5rem 0;
   font-size: 14px;
-  color: $secondary-text;
+  color: var(secondaryText);
   ul {
     padding: 0;
     margin: 0;
@@ -49,7 +50,7 @@
         a:hover,
         .fake_link:hover {
           cursor: pointer;
-          color: $primary-text;
+          color: var(primaryText);
           text-decoration: underline;
         }
       }

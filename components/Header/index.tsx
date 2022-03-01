@@ -4,11 +4,16 @@ import Link from 'next/link'
 import Image from 'next/image'
 import HeaderLink from './HeaderLink'
 import useWindowResize from 'hooks/use_window_size'
+import { useAppDispatch, useAppSelector } from 'hooks/use_redux'
+import { setTheme } from 'store/modules/theme'
 import styles from './Header.module.scss'
+import { EThemes } from 'types'
 
 const Header:FC = () => {
+  const theme = useAppSelector(state => state.theme)
   const [showNav, setShowNav] = useState<boolean>(false)
   const { width } = useWindowResize()
+  const dispatch = useAppDispatch()
 
   useEffect(() => {
     if (width && width <= 767) setShowNav(false)
@@ -34,7 +39,7 @@ const Header:FC = () => {
       <Link href='/'>
         <a>
           <Image
-            src='/shane_logo_v2.png'
+            src={`/${theme === EThemes.LIGHT ? 'shane_logo_v2.png' : 'shane_logo_light.png'}`}
             alt='My little internet home'
             width={120}
             height={75}
@@ -45,6 +50,22 @@ const Header:FC = () => {
         <ul>
           {(width && width <= 767) && <HeaderLink href='/' displayName='Home' />}
           {routes.map((route) => <HeaderLink href={route.href} displayName={route.displayName} key={route.href} />)}
+          <li 
+            tabIndex={0}
+            className={styles.theme_toggle_btn}
+            onClick={() => dispatch(setTheme(theme === EThemes.DARK ? EThemes.LIGHT : EThemes.DARK))} 
+            onKeyPress={() => dispatch(setTheme(theme === EThemes.DARK ? EThemes.LIGHT : EThemes.DARK))}>
+            <input type='checkbox' 
+              id='theme_toggle'
+              name='theme_toggle'
+              onClick={() => dispatch(setTheme(theme === EThemes.DARK ? EThemes.LIGHT : EThemes.DARK))} 
+              onKeyPress={() => dispatch(setTheme(theme === EThemes.DARK ? EThemes.LIGHT : EThemes.DARK))}/>
+            <span 
+              className={`${theme === EThemes.DARK ? styles.left : styles.right} 
+              ${styles.slider}`}>
+              {theme === EThemes.DARK ? '🌑' : '☀️'}
+            </span>
+          </li>
         </ul>
         <ul
           tabIndex={0} 

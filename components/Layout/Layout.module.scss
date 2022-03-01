@@ -1,6 +1,13 @@
 @import 'styles/constants';
+@import 'styles/themes';
 
 .meta_wrap {
+  background-color: var(backgroundColor);
+  color: var(primaryText);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.content_wrap {
   display: flex;
   flex-direction: column;
   max-width: 900px;
@@ -14,7 +21,7 @@
 
 // Mobile
 @media screen and (max-width: $mobile) {
-  .meta_wrap {
+  .content_wrap {
     padding: 0 1rem;
   }
 }

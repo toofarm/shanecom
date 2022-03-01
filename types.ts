@@ -56,3 +56,8 @@ export type TIntro = {
   github_link: string;
   profile_photo: string;
 }
+
+export enum EThemes {
+  DARK = 'darkTheme',
+  LIGHT = 'lightTheme'
+}

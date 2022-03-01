@@ -1,34 +1,23 @@
 @import 'styles/constants';
 
-$themes: (
-  lightTheme: (
-    'primary-text-color': $primary-text,
-    'secondary-text-color': $secondary-text,
-    'background-color': $background,
-    'flag-color': $flag,
-    'menu-background-color': $menu-background,
-  ),
-  darkTheme: (
-    'primary-text-color': #efefef,
-    'secondary-text-color': #bbb,
-    'background-color': #161c22,
-    'flag-color': $beige,
-    'menu-background-color': #161c22,
-  ),
-);
-
-$theme-map: null;
-
-@mixin theme() {
-  @each $theme, $map in $themes {
-    $theme-map: $map !global;
-    .#{$theme} & {
-      @content; // the content inside @include theme() {...}
-    }
-  }
-  $theme-map: null !global;
+.theme_wrapper {
+  --primaryText: $primary-text;
+  --secondaryText: $secondary-text;
+  --backgroundColor: $background;
+  --linkColor: $link-blue;
+  --flagColor: $flag;
+  --hoverColor: rgba(239, 239, 239, 0.65);
 }
 
-@function theme-get($key) {
-  @return map-get($theme-map, $key);
+$variables: (
+  primaryText: var(--primaryText),
+  secondaryText: var(--secondaryText),
+  backgroundColor: var(--backgroundColor),
+  linkColor: var(--linkColor),
+  flagColor: var(--flagColor),
+  hoverColor: var(--hoverColor),
+);
+
+@function var($variable) {
+  @return map-get($variables, $variable);
 }
