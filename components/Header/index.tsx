@@ -55,11 +55,6 @@ const Header:FC = () => {
             className={styles.theme_toggle_btn}
             onClick={() => dispatch(setTheme(theme === EThemes.DARK ? EThemes.LIGHT : EThemes.DARK))} 
             onKeyPress={() => dispatch(setTheme(theme === EThemes.DARK ? EThemes.LIGHT : EThemes.DARK))}>
-            <input type='checkbox' 
-              id='theme_toggle'
-              name='theme_toggle'
-              onClick={() => dispatch(setTheme(theme === EThemes.DARK ? EThemes.LIGHT : EThemes.DARK))} 
-              onKeyPress={() => dispatch(setTheme(theme === EThemes.DARK ? EThemes.LIGHT : EThemes.DARK))}/>
             <span 
               className={`${theme === EThemes.DARK ? styles.left : styles.right} 
               ${styles.slider}`}>

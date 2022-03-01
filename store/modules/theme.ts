@@ -14,7 +14,7 @@ type Action = {
 export const setTheme = (payload : EThemes):Action => ({ type: EThemeActions.SET_THEME, payload })
 
 // Reducer
-const themeReducer = (state: EThemes = EThemes.DARK, {type, payload}:Action) => {
+const themeReducer = (state: EThemes = EThemes.SYSTEM, {type, payload}:Action) => {
   switch (type) {
   case EThemeActions.SET_THEME:
     return (state = payload)

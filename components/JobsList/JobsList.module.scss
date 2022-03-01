@@ -1,4 +1,5 @@
 @import 'styles/constants';
+@import 'styles/themes';
 
 .jobs_list_wrap {
   list-style: none;
@@ -50,7 +51,7 @@
 
   &::before {
     content: '\A';
-    border: 1.25rem solid $flag;
+    border: 1.25rem solid var(flagColor);
     border-radius: 50px;
     display: block;
     width: 0;

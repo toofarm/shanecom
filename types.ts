@@ -59,5 +59,6 @@ export type TIntro = {
 
 export enum EThemes {
   DARK = 'darkTheme',
-  LIGHT = 'lightTheme'
+  LIGHT = 'lightTheme',
+  SYSTEM = 'system'
 }

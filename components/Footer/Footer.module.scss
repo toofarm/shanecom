@@ -54,7 +54,8 @@
           text-decoration: underline;
         }
       }
-      .fake_link:hover ~ .copy_msg {
+      .fake_link:hover ~ .copy_msg,
+      .fake_link:focus ~ .copy_msg {
         display: inline-flex;
       }
     }

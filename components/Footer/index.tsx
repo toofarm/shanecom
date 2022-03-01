@@ -27,11 +27,11 @@ const Footer:FC = () => {
         Copyright {year} - Shane Danaher
       </div>
       <ul>
-        <li
-          tabIndex={0}  
-          onClick={() => copyEmail()}
-          onKeyPress={() => copyEmail()}> 
-          <div className={styles.fake_link}>
+        <li> 
+          <div className={styles.fake_link}
+            tabIndex={0}  
+            onClick={() => copyEmail()}
+            onKeyPress={() => copyEmail()}>
             Email
           </div>
           <div className={styles.copy_msg}>{copyMsg}</div>

@@ -47,7 +47,7 @@
   background-color: var(flagColor);
   display: inline-block;
   span {
-    color: $highlight-text;
+    color: var(backgroundColor);
     font-weight: bold;
     font-size: 14px;
   }

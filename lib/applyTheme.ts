@@ -12,11 +12,19 @@ const applyTheme = (theme : EThemes):boolean => {
     },
     [EThemes.DARK]: {
       primaryText: '#efefef',
-      secondaryText: '#bbb',
+      secondaryText: '#ccc', 
       backgroundColor: '#26272c',
-      flagColor: '#B39D2A',
+      flagColor: '#f3d32c',
       linkColor: '#6981ff',
       hoverColor: 'rgb(82 82 82 / 65%)',
+    },
+    [EThemes.SYSTEM] : {
+      primaryText: '#222',
+      secondaryText: '#888',
+      backgroundColor: '#FFF',
+      flagColor: '#343642',
+      linkColor: '#4646fd',
+      hoverColor: 'rgba(239, 239, 239, 0.65)'
     }
   }
 

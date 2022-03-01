@@ -19,7 +19,7 @@ const PostHeader:FC<TProps> = ({ title, sub_head, img, publication_date }) => {
  
   useEffect(() => {
     setPubDate(format(new Date(publication_date.split(' ')[0]), 'MMMM do, yyyy'))
-    if (width && width < 767) setShowImg(true)
+    if (width && width <= 767) setShowImg(true)
   }, [width]) 
 
   const rowStyles = {
@@ -30,7 +30,7 @@ const PostHeader:FC<TProps> = ({ title, sub_head, img, publication_date }) => {
     <div>
       <div className={`${img ? styles.has_image : ''} ${styles.post_header}`}>
         {showImg && <img src={img} alt={title} />}
-        <div className={styles.background_grid} style={rowStyles}>
+        <div className={styles.background_grid} style={width && width > 767 ? rowStyles : {}}>
           <div>
           </div>
           <div></div>
