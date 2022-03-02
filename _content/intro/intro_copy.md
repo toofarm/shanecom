@@ -7,6 +7,6 @@ profile_photo: "/uploads/2022_02_25_shaner_happy.jpeg"
 ---
 I'm a software engineer who focuses on front-end development. Right now, I work as a full stack dev for [Theo Agency](https://theo.agency/) in Portland, Oregon.
 
-Take a look around to get a feel for the kinds of projects I work on. You can also find free-ranging thoughts on software, work and anything else that crosses my mind.
+Take a look around to get a feel for the kinds of projects I work on. You can also find free-ranging thoughts on software, books and whatever other nonsense crosses my mind.
 
 Glad to meet you; I'm sure we'll be fast friends.
