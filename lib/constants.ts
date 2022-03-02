@@ -2,7 +2,7 @@ type Obj = {
   [key: string] : string
 }
 
-const tagColors:Obj = {
+export const tagColors:Obj = {
   'javascript': '#b39d2a',
   'typescript': '#343642',
   'python': '#348899',
@@ -20,5 +20,3 @@ const tagColors:Obj = {
   'google analytics': '#009BDF',
   'google tag manager': '#702A8C'
 }
-
-export default tagColors

@@ -7,13 +7,13 @@ import styles from './Footer.module.scss'
 const Footer:FC = () => {
   const { width } = useWindowSize()
   const [year, setYear] = useState<string>('')
-  const [copyMsg, setCopyMsg] = useState<string>('Click "email" to copy toofarm@gmail.com')
+  const [copyMsg, setCopyMsg] = useState<string>('Click "Email" to copy toofarm@gmail.com')
 
   const copyEmail = () => {
     navigator.clipboard.writeText('toofarm@gmail.com')
     setCopyMsg('Email copied!')
     setTimeout(() => {
-      setCopyMsg('Click to copy toofarm@gmail.com')
+      setCopyMsg('Click "Email" to copy toofarm@gmail.com')
     }, 5000)
   }
 

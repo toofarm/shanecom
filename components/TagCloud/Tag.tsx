@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import tagColors from 'lib/constants'
+import { tagColors } from 'lib/constants'
 import styles from './Tag.module.scss'
 
 // Types
