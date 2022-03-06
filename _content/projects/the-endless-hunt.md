@@ -15,7 +15,7 @@ date_created: 2022-03-06 4:00 PM
 date_updated: 
 
 ---
-I developed The Endless Hunt during a period of intense job searching, and the app bears the marks of that process both in its theme and the inordinate amount of time I was able to dedicate to its original development.
+I developed The Endless Hunt during a period of intense job searching, and the app bears the marks of that process both in its theme and the inordinate amount of time I was able to dedicate to its development.
 
 The Endless Hunt provides a means for the user to keep track of his or her job search. Users can log information about which jobs they've applied to, which interactions they've had with with hiring managers and how they feel about each job in their docket. 
 
