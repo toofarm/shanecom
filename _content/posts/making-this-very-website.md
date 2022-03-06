@@ -78,4 +78,4 @@ I'd be hesitant to use Forestry for a larger project with multiple users (though
 
 Discounting the week of fruitless work on the WordPress version of my updated portfolio, it took only a week to put this website together. I wound up using a Forestry-GitHub-Next.js (FoGiNx?) stack, which remains lightweight and allows for rapid deployments.
 
-In addition to serving as an online hub for my work, this website has the added benefit of being fun to develop. I couldn't be happier with the results and I hope you fun taking a look around.
+In addition to serving as an online hub for my work, this website has the added benefit of being fun to develop. I couldn't be happier with the results and I hope you have a good time taking a look around.
