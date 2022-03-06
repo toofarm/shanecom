@@ -3,8 +3,8 @@ tags:
 - google tag manager
 - google analytics
 - javascript
-title: Postcards From Anywhere
-sub_head: A fun React.js project that lets users create custom postcards
+title: Samsara Tree Care
+sub_head: A design update and SEO makeover
 featured_image: "/uploads/2022_03_06_forest.JPG"
 project_web_link: https://samsaratreecare.org/
 project_repo_link: ''
