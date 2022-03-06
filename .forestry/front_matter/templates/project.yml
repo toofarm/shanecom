@@ -57,5 +57,4 @@ fields:
     export_format: YYYY-MM-DD h:mm A
 pages:
 - _content/projects/e.p.carrillo-product-pages.md
-- _content/projects/hacking-the-mainframe.md
 - _content/projects/the-endless-hunt.md
