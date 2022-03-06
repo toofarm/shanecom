@@ -13,7 +13,7 @@
 }
 
 .navigation {
-  transition: transform 0.3s ease;
+  transition: transform 0.25s ease, opacity 0.25s ease;
   .menu_toggle_btn {
     display: none;
   }
@@ -118,6 +118,7 @@
     background-color: var(backgroundColor);
     z-index: 100;
     transform: translateX(-100%);
+    opacity: 0;
     ul {
       flex-direction: column;
       align-items: flex-start;
@@ -178,5 +179,6 @@
   }
   .pull_right {
     transform: translateX(0);
+    opacity: 1.0;
   }
 }
