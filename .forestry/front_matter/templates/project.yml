@@ -57,4 +57,5 @@ fields:
     export_format: YYYY-MM-DD h:mm A
 pages:
 - _content/projects/e.p.carrillo-product-pages.md
+- _content/projects/postcards-from-anywhere.md
 - _content/projects/the-endless-hunt.md
