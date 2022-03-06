@@ -23,4 +23,4 @@ The application then compiles this data and allows users to analyze it through a
 
 I built the frontend of this app using React.js. Firebase houses the application data and provides a convenient API.
 
-I originally deployed this app in the months before the release of React 16, and as a result, it is chock-a-block with class-based components. I've lately started to refactor these components into functional components that utilize [React hooks](https://reactjs.org/docs/hooks-intro.html), but that project remains ongoing.
+I originally deployed The Endless Hunt in the months before the release of React 16, and as a result, it is chock-a-block with class-based components. I've lately started to refactor these components into functional components that utilize [React hooks](https://reactjs.org/docs/hooks-intro.html), but that project remains ongoing.
