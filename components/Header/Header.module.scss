@@ -8,6 +8,7 @@
   align-items: center;
   margin-bottom: 1rem;
   a {
+    color: var(primaryText);
     margin: 1rem 0;
   }
 }
@@ -179,6 +180,6 @@
   }
   .pull_right {
     transform: translateX(0);
-    opacity: 1.0;
+    opacity: 1;
   }
 }
