@@ -18,4 +18,4 @@ However, having made a number of sliding menus, here's my take on how to approac
 
 ## Setting up the project
 
-For this tutorial, I'll spin up a small project using [Create React App](https://create-react-app.dev/). The principles at work here can be applied across frontend libraries, but my syntax will use React.js and CSS modules.
+For this tutorial, I'll spin up a small project using [Create React App](https://create-react-app.dev/). The principles at work here can be applied across frontend libraries, but my syntax assumes we're working with React.js and CSS modules.
