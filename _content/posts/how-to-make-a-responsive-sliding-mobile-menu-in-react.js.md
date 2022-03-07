@@ -22,4 +22,4 @@ For this tutorial, I'll spin up a small project using [Create React App](https:/
 
 ## The HTML
 
-If we structure our HTML intelligently, we can use the same markup for our menus on desktop and mobile. 
+If we structure our HTML intelligently, we can make the same markup serve for our menus on both desktop and mobile.
