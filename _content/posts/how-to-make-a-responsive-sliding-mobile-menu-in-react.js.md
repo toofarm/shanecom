@@ -14,7 +14,7 @@ highlighted: false
 ---
 A slide-in mobile menu is an [extremely](https://www.nytimes.com/) [common](https://www.avclub.com/) [design](https://casper.com/m/) [pattern](https://www.converse.com/). As with most web motifs, there are likely as many methods for implementing it as there are implementations.
 
-However, having made a number of sliding menus, here's my take on how to approach this particular component.
+However, having made a number of sliding menus, here's my take on how to approach this component.
 
 ## Setting up the project
 
