@@ -3,7 +3,7 @@ tags:
 - react.js
 - javascript
 - css
-title: Making a responsive, sliding mobile menu in React.js
+title: How to make a responsive, sliding mobile menu in React.js
 sub_head: A few tips for tackling a common design technique
 featured_image: "/uploads/2022_03_07_sliding_door_1024.jpeg"
 additional_images: ''
@@ -55,6 +55,11 @@ Which wraps everything
                     Website name
                 </h1>
                 <Navigation />
+                <ul className={styles.hamburger_toggle}>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </header>
         )
     }
@@ -96,7 +101,7 @@ and...
     
     export default Navigation
 
-Note: The FC that you see after every component declaration comes from TypeScript. It tells the compiler that our function will be returning a Functional Component
+Note: The FC that you see after each component declaration comes from TypeScript. It tells the compiler that our function will be returning a Functional Component
 
 After applying some basic CSS, our components render looking like this:
 
@@ -113,3 +118,52 @@ Note that I'm not just slapping 'display: none' on the nav component; instead, I
     }
 
 ## Toggling the menu on mobile
+
+While looking at the Header component above, you may have noticed an HTML node that initially seems to serve no purpose:
+
+    <ul className={styles.hamburger_toggle}
+      tabIndex={0}
+      role='button'>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+We're actually going to use this empty list to create our 'hamburger' icon that toggles the menu in and out. If you're working on a production app, you might want to import an icon to match the site's visual design, but for our purposes we can whip together a simple icon using CSS:
+
+    .hamburger_toggle {
+      display: none;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .hamburger_toggle li {
+      margin-bottom: 0.35rem;
+      border: 2px solid #888;
+      border-radius: 25px;
+      width: 2rem;
+    }
+
+I've set the toggle button to 'display: none' by default; we can then add a media that displays our icon when we're viewing the website on a mobile phone:
+
+    @media screen and (max-width: 767px) {
+      ...
+      .hamburger_toggle {
+        display: inline-block;
+      }
+    }
+
+In the Navigation component, you'll notice a similar piece of 'superfluous' markup:
+
+     <ul
+    	className={styles.toggle_btn}
+        tabIndex={0}
+        role='button'>
+        <li></li>
+        <li></li>
+      </ul>
+
+We'll be using this to create our 'close' button so users can toggle the menu "off" if they need to. 
+
+Note that we've decorated both these components with 'role' and 'tabIndex' attributes. This helps screen readers identify that we intend the elements to be used as buttons.
