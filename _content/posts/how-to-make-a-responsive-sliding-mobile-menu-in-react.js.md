@@ -103,7 +103,7 @@ and...
     
     export default Navigation
 
-Note: The FC that you see after each component declaration comes from TypeScript. It tells the compiler that our function will be returning a Functional Component
+Note: The FC that you see after each component declaration comes from TypeScript. It tells the TypeScript compiler that our function will be returning a Functional Component. If you're building this in vanilla Javascript, you can ignore the type declarations.
 
 After applying some basic CSS, our components render looking like this:
 
@@ -115,7 +115,7 @@ Note that I'm not just slapping 'display: none' on the nav component; instead, I
 
     @media screen and (max-width: 767px) {
       .main_nav {
-        transform: translateX(-200%);
+        transform: translateX(-100%);
       }
     }
 
