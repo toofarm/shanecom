@@ -321,7 +321,7 @@ This animation looks pretty good, but we can make it "pop" a little bit more by 
       
      ...
      
-       .show_menu {
+     .show_menu {
         transform: translateX(0%);
         opacity: 1;
       }
