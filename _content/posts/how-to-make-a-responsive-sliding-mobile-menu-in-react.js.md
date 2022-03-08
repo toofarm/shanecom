@@ -168,7 +168,7 @@ We'll be using this to create our 'close' button so users can toggle the menu "o
 
 Note that we've decorated both these components with 'role' and 'tabIndex' attributes. This tells screen readers that we intend the elements to be used as buttons.
 
-### Updating state
+### Toggling using state
 
 In order to toggle our menu in and out, we'll employ useState — a [React.js hook](https://reactjs.org/docs/hooks-intro.html). A more complex application might house this value in a Redux store, but useState will serve our purposes here.
 
@@ -203,4 +203,25 @@ After importing useState to our Header component, we'll instantiate a variable, 
     
     export default Header
 
-We house mobile nav state in our Header so that both the Header and Navigation components can have access to it. Having instantiated showMobileNav and setShowMobile nav in our Header, we can then pass this value and its setter function to the Navigation component as props. 
+We house mobile nav state in our Header so that both the Header and Navigation components can have access to it. 
+
+Having instantiated showMobileNav and setShowMobile nav in our Header, we can then pass this value and its setter function to the Navigation component as props. 
+
+Inside the Navigation component, we'll use these values to toggle the nav bar on mobile.
+
+## Putting it all together
+
+Within the Navigation component, we can now ingest our stateful values as props (once again, I'll specify the prop types for the TypeScript compiler):
+
+    type TProps = {
+        toggle: boolean;
+        setToggle: (order: boolean) => void;
+    }
+    
+    const Navigation: FC<TProps> = ({ toggle, setToggle }) => {
+        return (
+            <nav className={`${toggle ? styles.show_menu : ''} ${styles.main_nav}`}>
+                <ul className={styles.link_list}>
+                    ...
+
+Now that we have our 'toggle' value inside Navigation, we can use that value to attach a conditional class to the component whenever 'toggle' is truthy. 
