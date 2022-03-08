@@ -18,13 +18,13 @@ However, having made a number of sliding menus, I'll lay out my take on how to a
 
 ## Setting up the project
 
-For this tutorial, I'll spin up a small project using [Create React App](https://create-react-app.dev/). The principles at work here can be applied across frontend libraries, but my syntax assumes we're working with React.js and CSS modules.
+For this tutorial, I'll spin up a small project using [Create React App](https://create-react-app.dev/). The principles at work here can be applied across frontend libraries, but my syntax assumes we're working with React.js, TypeScript and CSS modules.
 
 ## The JSX
 
 If we structure our JSX intelligently, we can make the same markup serve for our menus on both desktop and mobile.
 
-For this project, I'll create three components:
+First, I'll create three components:
 
 ### App
 
@@ -35,7 +35,7 @@ Which wraps everything
             <div className={styles.App}>
                 <Header />
                 <main>
-                    <h1>A small navigation test</h1>
+                    <h2>A small navigation test</h2>
                     <p>
                         We work hard because we care
                     </p>
@@ -103,7 +103,7 @@ and...
     
     export default Navigation
 
-Note: The FC that you see after each component declaration comes from TypeScript. It tells the TypeScript compiler that our function will be returning a Functional Component. If you're building this in vanilla Javascript, you can ignore the type declarations.
+**Note:** The FC that you see after each component declaration comes from TypeScript. It tells the TypeScript compiler that our function will be returning a Functional Component. If you're building this in vanilla Javascript, you can ignore the type declarations.
 
 After applying some basic CSS, our components render looking like this:
 
