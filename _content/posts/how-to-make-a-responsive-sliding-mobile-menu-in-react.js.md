@@ -23,3 +23,75 @@ For this tutorial, I'll spin up a small project using [Create React App](https:/
 ## The HTML
 
 If we structure our HTML intelligently, we can make the same markup serve for our menus on both desktop and mobile.
+
+For this project, I'll create three components:
+
+### App
+
+Which wraps everything
+
+    const App: FC = () => {
+        return (
+            <div className={styles.App}>
+                <Header />
+                <main>
+                    <h1>A small navigation test</h1>
+                    <p>
+                        We work hard because we care
+                    </p>
+                </main>
+            </div>
+        );
+    }
+    
+    export default App
+
+### Header
+
+    const Header: FC = () => {
+        return (
+            <header className={styles.app_header}>
+                <h1>
+                    Website name
+                </h1>
+                <Navigation />
+            </header>
+        )
+    }
+    
+    export default Header
+
+and...
+
+### Navigation
+
+    const Navigation: FC = () => {
+        return (
+            <nav>
+                <ul className={styles.link_list}>
+                    <li>
+                        <a href="#">
+                            Link 1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Link 2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Link 3
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Link 4
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        )
+    }
+    
+    export default Navigation
