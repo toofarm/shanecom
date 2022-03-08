@@ -111,4 +111,5 @@ Note that I'm not just slapping 'display: none' on the nav component; instead, I
         transform: translateX(-200%);
       }
     }
-    
+
+## Toggling the menu on mobile
