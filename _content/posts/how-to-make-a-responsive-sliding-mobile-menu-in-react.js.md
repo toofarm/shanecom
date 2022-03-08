@@ -20,9 +20,9 @@ However, having made a number of sliding menus, I'll lay out my take on how to a
 
 For this tutorial, I'll spin up a small project using [Create React App](https://create-react-app.dev/). The principles at work here can be applied across frontend libraries, but my syntax assumes we're working with React.js and CSS modules.
 
-## The HTML
+## The JSX
 
-If we structure our HTML intelligently, we can make the same markup serve for our menus on both desktop and mobile.
+If we structure our JSX intelligently, we can make the same markup serve for our menus on both desktop and mobile.
 
 For this project, I'll create three components:
 
