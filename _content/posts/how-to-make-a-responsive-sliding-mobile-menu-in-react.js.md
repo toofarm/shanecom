@@ -203,4 +203,4 @@ After importing useState to our Header component, we'll instantiate a variable, 
     
     export default Header
 
-Note how we've 
+We house mobile nav state in our Header so that both the Header and Navigation components can have access to it. Having instantiated showMobileNav and setShowMobile nav in our Header, we can then pass this value and its setter function to the Navigation component as props. 
