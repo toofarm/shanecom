@@ -302,9 +302,9 @@ At this point, we should be able to put these components together and have a fun
 
 We have our toggle logic working, so now let's add the "slide" part of this sliding menu.
 
-Since we're manipulating our <nav> component in order to show and hide the menu, let's go to its associated CSS in order to add some animation.
+Since we're manipulating our <nav> component in order to show and hide the menu, let's go to its associated CSS in order to add an animation.
 
-Using the 'transition' property, we can add an animation whenever we pull the menu into or out of the viewport:
+Using CSS's 'transition' property, we can animate whenever we pull the menu into or out of the viewport:
 
     .main_nav {
         ...
@@ -325,3 +325,7 @@ This animation looks pretty good, but we can make it "pop" a little bit more by 
         transform: translateX(0%);
         opacity: 1;
       }
+
+## And that does it
+
+Thanks for reading along. Let me know if you have questions, liked the post or know of ways in which it can be improved
