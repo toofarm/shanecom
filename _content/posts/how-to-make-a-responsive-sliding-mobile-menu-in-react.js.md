@@ -95,3 +95,20 @@ and...
     }
     
     export default Navigation
+
+Note: The FC that you see after every component declaration comes from TypeScript. It tells the compiler that our function will be returning a Functional Component
+
+After applying some basic CSS, our components render looking like this:
+
+![](/uploads/2022_03_08_screen-shot-2022-03-07-at-4-09-25-pm.png)
+
+Using media queries, I then hide the actual navigation component when the user is viewing on mobile.
+
+Note that I'm not just slapping 'display: none' on the nav component; instead, I'm using the 'transform' property to pull the navigation outside of the viewport.
+
+    @media screen and (max-width: 767px) {
+      .main_nav {
+        transform: translateX(-200%);
+      }
+    }
+    
