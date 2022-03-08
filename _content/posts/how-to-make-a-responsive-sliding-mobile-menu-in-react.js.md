@@ -14,7 +14,7 @@ highlighted: false
 ---
 A slide-in mobile menu is an [extremely](https://www.nytimes.com/) [common](https://www.avclub.com/) [design](https://casper.com/m/) [pattern](https://www.converse.com/). As with most web motifs, there are likely as many methods for implementing it as there are implementations.
 
-However, having made a number of sliding menus, here's my take on how to approach this component.
+However, having made a number of sliding menus, I'll lay out my take on how to approach this component. Follow along using the code pasted below, or [check out the completed demo on GitHub](https://github.com/toofarm/sliding-nav).
 
 ## Setting up the project
 
@@ -223,5 +223,71 @@ Within the Navigation component, we can now ingest our stateful values as props 
             <nav className={`${toggle ? styles.show_menu : ''} ${styles.main_nav}`}>
                 <ul className={styles.link_list}>
                     ...
+                </ul>
+                <ul
+                    className={styles.toggle_btn}
+                    tabIndex={0}
+                    role='button'
+                    onClick={() => setToggle(!toggle)}
+                    onKeyPress={() => setToggle(!toggle)}>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </nav>
+        )
+    }
+    
+    export default Navigation
 
-Now that we have our 'toggle' value inside Navigation, we can use that value to attach a conditional class to the component whenever 'toggle' is truthy. 
+Now that we have our 'toggle' value inside of Navigation, we can use that value to attach a conditional class to the component whenever 'toggle' is truthy. Thus, whenever the user presses the hamburger menu from inside the Header component, the Navigation component will receive that information and CSS will pull it into the viewport by manipulating the 'transform' property:
+
+    @media screen and (max-width: 767px) {
+      .main_nav {
+        transform: translateX(-200%);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        padding: 1rem;
+      }
+      .link_list li {
+        display: block;
+        margin: 0 0 2rem 0;
+      }
+      .link_list li a {
+        font-size: 1.25rem;
+      }
+      .show_menu {
+        transform: translateX(0%);
+      }
+      .toggle_btn {
+        display: inline-block;
+      }
+    }
+
+Much as I did with the 'hamburger' button in the Header component, I'm going to use CSS to manipulate a <ul> within the Navigation component and give us our 'times' icon, which we'll use to close the menu:
+
+    .toggle_btn {
+      position: absolute;
+      right: 1rem;
+      top: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .toggle_btn li {
+      width: 2.5rem;
+      border: 2px solid #888;
+      border-radius: 4px;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    
+    .toggle_btn li:first-of-type {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
