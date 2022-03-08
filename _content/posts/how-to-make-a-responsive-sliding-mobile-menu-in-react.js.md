@@ -166,4 +166,8 @@ In the Navigation component, you'll notice a similar piece of 'superfluous' mark
 
 We'll be using this to create our 'close' button so users can toggle the menu "off" if they need to. 
 
-Note that we've decorated both these components with 'role' and 'tabIndex' attributes. This helps screen readers identify that we intend the elements to be used as buttons.
+Note that we've decorated both these components with 'role' and 'tabIndex' attributes. This tells screen readers that we intend the elements to be used as buttons.
+
+### Updating state
+
+In order to toggle our menu in and out, we'll employ useState — a [React.js hook](https://reactjs.org/docs/hooks-intro.html). A more complex application might house this value in a Redux store, but a simple, stateful value will serve our purposes here.
