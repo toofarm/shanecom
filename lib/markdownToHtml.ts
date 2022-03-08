@@ -11,11 +11,12 @@ export default async function markdownToHtml(markdown: VFileCompatible):Promise<
   return highlighted.map((code) => {
     if (code.indexOf('<code>') === 0) {
       const chunk = code.split('</code></pre>')
-      chunk[0] = chunk[0].replace('<code>', '')
+      // eslint-disable-next-line max-len
+      chunk[0] = chunk[0].replace('<code>', '').replace(/#x3C;/g, '<')
       chunk[0] = hljs.highlight(chunk[0], { language: 'javascript' }).value
       chunk[0] = '<pre><code>' + chunk[0] + '</code></pre>'
       return chunk.join('')
     }
     return code
-  }).join('')
+  }).join('').replace(/&amp;/g, '')
 }
