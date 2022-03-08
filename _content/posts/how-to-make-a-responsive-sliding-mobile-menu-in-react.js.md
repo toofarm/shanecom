@@ -48,6 +48,8 @@ Which wraps everything
 
 ### Header
 
+Which holds our navigation and website logo
+
     const Header: FC = () => {
         return (
             <header className={styles.app_header}>
