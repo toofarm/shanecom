@@ -310,3 +310,18 @@ Using the 'transition' property, we can add an animation whenever we pull the me
         ...
         transition: 0.3s transform ease;
       }
+
+This animation looks pretty good, but we can make it "pop" a little bit more by animating the menu's opacity at the same time:
+
+    .main_nav {
+        ...
+        opacity: 0;
+        transition: 0.3s transform ease, 0.3s opacity ease;
+      }
+      
+     ...
+     
+       .show_menu {
+        transform: translateX(0%);
+        opacity: 1;
+      }
