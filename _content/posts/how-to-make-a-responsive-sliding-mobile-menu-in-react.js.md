@@ -239,7 +239,9 @@ Within the Navigation component, we can now ingest our stateful values as props 
     
     export default Navigation
 
-Now that we have our 'toggle' value inside of Navigation, we can use that value to attach a conditional class to the component whenever 'toggle' is truthy. Thus, whenever the user presses the hamburger menu from inside the Header component, the Navigation component will receive that information and CSS will pull it into the viewport by manipulating the 'transform' property:
+Now that we have our 'toggle' value inside of Navigation, we can use that value to attach a conditional class to the component whenever 'toggle' is truthy. 
+
+Thus, whenever the user presses the hamburger menu inside the Header component, the Navigation component will receive that information. We can now use CSS to pull a re-styled nav menu into the viewport, using the 'transform' property:
 
     @media screen and (max-width: 767px) {
       .main_nav {
@@ -291,3 +293,20 @@ Much as I did with the 'hamburger' button in the Header component, I'm going to 
     .toggle_btn li:first-of-type {
       transform: translate(-50%, -50%) rotate(45deg);
     }
+
+At this point, we should be able to put these components together and have a functioning mobile menu.
+
+![](/uploads/2022_03_08_screen-shot-2022-03-08-at-3-34-28-pm.png)
+
+## Adding a little pizzaz
+
+We have our toggle logic working, so now let's add the "slide" part of this sliding menu.
+
+Since we're manipulating our <nav> component in order to show and hide the menu, let's go to its associated CSS in order to add some animation.
+
+Using the 'transition' property, we can add an animation whenever we pull the menu into or out of the viewport:
+
+    .main_nav {
+        ...
+        transition: 0.3s transform ease;
+      }
