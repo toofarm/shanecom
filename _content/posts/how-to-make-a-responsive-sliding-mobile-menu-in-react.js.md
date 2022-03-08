@@ -170,4 +170,37 @@ Note that we've decorated both these components with 'role' and 'tabIndex' attri
 
 ### Updating state
 
-In order to toggle our menu in and out, we'll employ useState — a [React.js hook](https://reactjs.org/docs/hooks-intro.html). A more complex application might house this value in a Redux store, but a simple, stateful value will serve our purposes here.
+In order to toggle our menu in and out, we'll employ useState — a [React.js hook](https://reactjs.org/docs/hooks-intro.html). A more complex application might house this value in a Redux store, but useState will serve our purposes here.
+
+After importing useState to our Header component, we'll instantiate a variable, 'showMobileNav', that dictates whether or not the menu will display. This variable defaults to 'false' since we don't want the mobile menu to be visible on page load.
+
+    import React, { FC, useState } from 'react'
+    ...
+    
+    const Header: FC = () => {
+        const [showMobileNav, setShowMobileNav] = useState<boolean>(false)
+    
+        return (
+            <header className={styles.app_header}>
+                <h1>
+                    Website name
+                </h1>
+                <Navigation
+                    toggle={showMobileNav}
+                    setToggle={setShowMobileNav} />
+                <ul className={styles.hamburger_toggle}
+                    tabIndex={0}
+                    role='button'
+                    onClick={() => setShowMobileNav(!showMobileNav)}
+                    onKeyPress={() => setShowMobileNav(!showMobileNav)}>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </header>
+        )
+    }
+    
+    export default Header
+
+Note how we've 
