@@ -6,8 +6,9 @@
 }
 
 .post_content {
+  font-size: 1.25rem;
   p {
-    line-height: 1.45rem;
+    line-height: 1.5rem;
     margin: 1.5rem 0;
   }
   p:first-of-type {
@@ -32,6 +33,7 @@
     overflow: scroll;
   }
   code {
+    font-size: 1.25rem;
     color: #e5e0db;
     padding: 0.258rem 0;
   }
