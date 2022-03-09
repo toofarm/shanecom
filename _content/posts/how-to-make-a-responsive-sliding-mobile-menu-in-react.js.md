@@ -243,7 +243,7 @@ Within the Navigation component, we can now ingest our stateful values as props 
 
 Now that we have our 'toggle' value inside of Navigation, we can use that value to attach a conditional class to the component whenever 'toggle' is truthy. 
 
-Whenever the user presses the hamburger menu inside the Header component, the Navigation component will receive that information. We can now use CSS to pull a re-styled nav menu into the viewport, using the 'transform' property:
+Whenever the user presses the hamburger button inside the Header component, the Navigation component will receive that information. We can now use CSS to pull a re-styled nav menu into the viewport, using the 'transform' property:
 
     @media screen and (max-width: 767px) {
       .main_nav {
