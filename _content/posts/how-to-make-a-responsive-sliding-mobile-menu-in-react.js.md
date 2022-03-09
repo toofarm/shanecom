@@ -7,14 +7,14 @@ title: How to make a responsive, sliding mobile menu in React.js
 sub_head: A few tips for tackling a common design technique
 featured_image: "/uploads/2022_03_07_sliding_door_1024.jpeg"
 additional_images: ''
-date_created: 2022-03-21 2:00 PM
+date_created: 2022-03-09 6:00 AM
 date_updated: 
 highlighted: false
 
 ---
 A slide-in mobile menu is an [extremely](https://www.nytimes.com/) [common](https://www.avclub.com/) [design](https://casper.com/m/) [pattern](https://www.converse.com/). As with most web motifs, there are likely as many methods for implementing it as there are implementations.
 
-However, having made a number of sliding menus, I'll lay out my take on how to approach setting one up. Follow along using the code pasted below, or [check out the completed demo on GitHub](https://github.com/toofarm/sliding-nav).
+However, having made a number of these, I'll lay out my take on how to approach setting one up. Follow along using the code pasted below, or [check out the completed demo on GitHub](https://github.com/toofarm/sliding-nav).
 
 ## Setting up the project
 
@@ -302,7 +302,7 @@ At this point, we should be able to put these components together and have a fun
 
 ## Adding a little pizzaz
 
-We have our toggle logic working, so now let's add the "slide" part of this sliding menu.
+We have our toggle logic working, so now let's add the 'slide' part of this sliding menu.
 
 Since we're manipulating our <nav> component in order to show and hide the menu, let's go to its associated CSS in order to add an animation.
 
