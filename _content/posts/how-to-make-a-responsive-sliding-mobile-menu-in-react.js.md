@@ -213,7 +213,7 @@ Having instantiated showMobileNav and setShowMobileNav, we can then pass these v
 
 ## Putting it all together
 
-Within the Navigation component, we can now ingest our stateful values as props (once again, I'll specify the prop types for the TypeScript compiler):
+Within the Navigation component, we can now ingest our stateful values as props (I'll specify the prop types for the TypeScript compiler):
 
     type TProps = {
         toggle: boolean;
