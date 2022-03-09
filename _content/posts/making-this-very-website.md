@@ -70,11 +70,11 @@ After a week's worth of development work on the WordPress version of my website,
 
 I've built projects using [Strapi](https://strapi.io/) as a headless CMS, and though I found that process easy enough, for my portfolio site refactor, I went with a platform that has an even lower development overhead — [Forestry.io](https://forestry.io/).
 
-Forestry's big selling point is that it allows you to use a Git repository as both the frontend and database layer of your CMS. After creating content in the Forestry admin panel, Forestry will push that content up to a GitHub repo, where you can easily employ a frontend framework to integrate that content with the presentation layer of your application.
+Forestry's big selling point is that it allows you to use a Git repository as the database layer of your CMS. After creating content in the Forestry admin panel, Forestry will push that content up to a GitHub repo, where you can easily employ a frontend framework to integrate that content with the presentation layer of your application.
 
 I elected to store my site content in markdown, through Forestry also allows you export it in a couple other formats, including JSON.
 
-Unlike WordPress, where creating custom content types and properties demands significant dev work, Forestry assumes that the user will specify their content types and fields from scratch. This was perfect for my project, which demanded a small, custom content taxonomy, over whose properties I had absolute control.
+Unlike WordPress, where creating custom content types and properties demands extra dev work, Forestry assumes that the user will specify their content types and properties from scratch. This was perfect for my project, which demanded a small, custom content taxonomy, over whose properties I had absolute control.
 
 I'd be hesitant to use Forestry for a larger project with multiple users (though that hasn't stopped some [rather large companies](https://forestry.io/showcase/)) because of hesitations about its feature set and deployment pipeline. However, for my small, personal project, I found it ideal.
 
