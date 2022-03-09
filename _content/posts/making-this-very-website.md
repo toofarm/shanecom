@@ -68,7 +68,7 @@ After a week's worth of development work on the WordPress version of my website,
 
 ## Forestry
 
-I've built projects using [Strapi](https://strapi.io/) as a headless CMS, and though I enjoyed that process, for my portfolio site refactor, I went with a platform that has an even lower development overhead — [Forestry.io](https://forestry.io/).
+I've built projects using [Strapi](https://strapi.io/) as a headless CMS, and though I found that process easy enough, for my portfolio site refactor, I went with a platform that has an even lower development overhead — [Forestry.io](https://forestry.io/).
 
 Forestry's big selling point is that it allows you to use a Git repository as both the frontend and database layer of your CMS. After creating content in the Forestry admin panel, Forestry will push that content up to a GitHub repo, where you can easily employ a frontend framework to integrate that content with the presentation layer of your application.
 
