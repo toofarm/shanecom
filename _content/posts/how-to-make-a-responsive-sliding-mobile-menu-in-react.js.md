@@ -211,8 +211,6 @@ We house mobile nav state in our Header so that it's easy to pass that value to 
 
 Having instantiated showMobileNav and setShowMobileNav, we can then pass these values to the Navigation component as props. 
 
-Inside the Navigation component, we'll use these values to toggle the nav bar on mobile.
-
 ## Putting it all together
 
 Within the Navigation component, we can now ingest our stateful values as props (once again, I'll specify the prop types for the TypeScript compiler):
