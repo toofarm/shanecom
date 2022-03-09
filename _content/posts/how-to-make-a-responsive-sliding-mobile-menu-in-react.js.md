@@ -109,7 +109,7 @@ After applying some basic CSS, our components render looking like this:
 
 ![](/uploads/2022_03_08_screen-shot-2022-03-07-at-4-09-25-pm.png)
 
-Using media queries, I then hide the actual navigation component when the user is viewing on mobile.
+Using media queries, I then hide the Navigation component when the user is viewing the app on mobile.
 
 Note that I'm not just slapping 'display: none' on the nav component; instead, I'm using the 'transform' property to pull the navigation outside of the viewport.
 
@@ -119,9 +119,9 @@ Note that I'm not just slapping 'display: none' on the nav component; instead, I
       }
     }
 
-## Toggling the menu on mobile
+## Toggling the menu 
 
-While looking at the Header component above, you may have noticed an HTML node that initially seems to serve no purpose:
+While looking at the Header component above, you may have noticed some HTML that initially seems to serve no purpose:
 
     <ul className={styles.hamburger_toggle}
       tabIndex={0}
@@ -131,7 +131,7 @@ While looking at the Header component above, you may have noticed an HTML node t
       <li></li>
     </ul>
 
-We're actually going to use this empty list to create our 'hamburger' icon that toggles the menu in and out. If you're working on a production app, you might want to import an icon to match the site's visual design, but for our purposes we can whip together a simple icon using CSS:
+We're actually going to use this <ul> to create a ['hamburger' button](https://en.wikipedia.org/wiki/Hamburger_button) that toggles the menu in and out. If you're working on a production app, you might want to import an icon to match the site's visual design, but for our purposes we can whip together a simple facsimile using CSS:
 
     .hamburger_toggle {
       display: none;
@@ -147,7 +147,7 @@ We're actually going to use this empty list to create our 'hamburger' icon that 
       width: 2rem;
     }
 
-I've set the toggle button to 'display: none' by default; we can then add a media that displays our icon when we're viewing the website on a mobile phone:
+I've set the toggle button to 'display: none' by default; we can then add a media query that displays our icon when we're viewing the website on a mobile phone:
 
     @media screen and (max-width: 767px) {
       ...
@@ -158,19 +158,21 @@ I've set the toggle button to 'display: none' by default; we can then add a medi
 
 In the Navigation component, you'll notice a similar piece of 'superfluous' markup:
 
-     <ul
+    ...
+    <ul
     	className={styles.toggle_btn}
         tabIndex={0}
         role='button'>
         <li></li>
         <li></li>
       </ul>
+      ...
 
-We'll be using this to create our 'close' button so users can toggle the menu "off" if they need to. 
+We'll be using this to create our 'close' button inside the menu. 
 
-Note that we've decorated both these components with 'role' and 'tabIndex' attributes. This tells screen readers that we intend the elements to be used as buttons.
+Note that we've decorated both these components with 'role' and 'tabIndex' attributes. These attributes tell screen readers that we intend the elements to be used as buttons.
 
-### Toggling using state
+### Toggling with useState
 
 In order to toggle our menu in and out, we'll employ useState — a [React.js hook](https://reactjs.org/docs/hooks-intro.html). A more complex application might house this value in a Redux store, but useState will serve our purposes here.
 
@@ -205,9 +207,9 @@ After importing useState to our Header component, we'll instantiate a variable, 
     
     export default Header
 
-We house mobile nav state in our Header so that both the Header and Navigation components can have access to it. 
+We house mobile nav state in our Header so that it's easy to pass that value to Header's direct child — Navigation. 
 
-Having instantiated showMobileNav and setShowMobile nav in our Header, we can then pass this value and its setter function to the Navigation component as props. 
+Having instantiated showMobileNav and setShowMobileNav, we can then pass these values to the Navigation component as props. 
 
 Inside the Navigation component, we'll use these values to toggle the nav bar on mobile.
 
