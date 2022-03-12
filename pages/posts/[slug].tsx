@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useRef } from 'react'
 import { getAllContentByType, getContentBySlug } from 'pages/api/get_content'
 import { EContentTypes, TPost } from 'types'
 import markdownToHtml from 'lib/markdownToHtml'
@@ -10,6 +10,7 @@ import Layout from 'components/Layout'
 import HeadStateful from 'components/HeadStateful'
 import PostHeader from 'components/PostHeader'
 import TagCloud from 'components/TagCloud'
+import ProgressBar from 'components/ProgressBar'
 
 // Types
 type TParams = {
@@ -22,17 +23,23 @@ type TProps = {
 }
 
 const Post:FC<TProps> = ({ post, content }) => {
+  const article = useRef<HTMLDivElement>(null)
+
   return (
     <>
       <HeadStateful pageTitle={post.title} />
       <Layout>
+        <ProgressBar post={article} />
         <PostHeader 
           title={post.title} 
           sub_head={post.sub_head} 
           img={post.featured_image} 
           publication_date={post.date_created} />
         <TagCloud tags={post.tags} />
-        <div dangerouslySetInnerHTML={{ __html : content }} className={styles.post_content}>
+        <div 
+          dangerouslySetInnerHTML={{ __html : content }} 
+          className={styles.post_content}
+          ref={article}>
         </div>
       </Layout>
     </>
