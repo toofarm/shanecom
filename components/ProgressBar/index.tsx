@@ -1,46 +1,52 @@
-import React, { FC, RefObject, useRef, useState } from 'react'
-import useIntersectionObserver from 'hooks/use_intersection_observer'
+import React, { FC, RefObject, useRef, useState, useEffect } from 'react'
+import useIntersectionObserver from 'hooks/use_intersection_observer' 
+import styles from './ProgressBar.module.scss'
+import useWindowResize from 'hooks/use_window_size'
 
 // Props
 type TProps = {
-  post: RefObject<HTMLDivElement>
+  article: RefObject<HTMLDivElement>
 }
 
-const ProgressBar:FC<TProps> = ({ post }) => {
+const ProgressBar:FC<TProps> = ({ article }) => {
   const [isVisible, setIsVisible] = useState<boolean>(false)
-  const progress = useRef(null)
+  const progress = useRef<HTMLProgressElement>(null)
+  const { height } = useWindowResize()
 
-  // Look at this to fix this issue https://stackoverflow.com/questions/60231307/react-get-element-getboundingclientrect-after-window-resize
   function getScrollProgress(el:RefObject<HTMLDivElement>) {
-    const coords = el.getBoundingClientRect()
-    const height = coords.height
-    let progressPercentage = 0
+    let progressPercentage = 0 
+    if (el.current && isVisible && height) {
+      const coords = el.current.getBoundingClientRect()
+      const elHeight = coords.height - height
   
-    if (isVisible && coords.top < 0) {
-      progressPercentage = (Math.abs(coords.top) / height) * 100
+      if (isVisible && coords.top < 0) {
+        progressPercentage = (Math.abs(coords.top) / elHeight) * 100
+      }
     }
-  
-    return progressPercentage
+    return progressPercentage.toString()
   }
   
   function showReadingProgress() {
-    progress.setAttribute('value', getScrollProgress(post))
+    if (progress.current) {
+      progress.current.setAttribute('value', getScrollProgress(article))
+    }
   }
 
   useIntersectionObserver({
-    target: post,
-    rootMargin: '15px',
+    target: article,
     onIntersect: ([{ isIntersecting }]: any, observerElement: { unobserve: (arg0: HTMLDivElement | null) => void }) => {
-      if (isIntersecting) {
-        setIsVisible(true)
-      } else {
-        setIsVisible(false)
-      }
+      setIsVisible(true)
     }
   })
 
+  useEffect(() => {
+    if (window) window.addEventListener('scroll', showReadingProgress)
+
+    return () => window.removeEventListener('scroll', showReadingProgress)
+  })
+
   return (
-    <progress ref={progress}></progress>
+    <progress ref={progress} className={styles.progress} max={100} value={0}></progress>
   )
 }
 

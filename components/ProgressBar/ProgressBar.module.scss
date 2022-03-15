@@ -1,0 +1,61 @@
+@import 'styles/constants';
+
+$progressVars: (
+  progressWidth: 100%,
+  progressHeight: 8px,
+  progressBarColor: $marroon,
+  progressBg: transparent,
+  progressBorderRadius: 5px,
+);
+
+@function progVar($variable) {
+  @return map-get($progressVars, $variable);
+}
+
+.progress {
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Get rid of default border in Firefox. */
+  border: none;
+
+  width: progVar(progressWidth);
+  height: progVar(progressHeight);
+
+  /* Firefox: any style applied here applies to the container. */
+  background-color: progVar(progressBg);
+  border-radius: progVar(progressBorderRadius);
+
+  /* For IE10 */
+  color: progVar(progressBarColor);
+}
+
+/* For Firefox */
+.progress[value]::-moz-progress-bar {
+  background-color: progVar(progressBarColor);
+  border-radius: progVar(progressBorderRadius);
+}
+
+/* WebKit/Blink browsers:
+    -webkit-progress-bar is to style the container */
+.progress[value]::-webkit-progress-bar {
+  background-color: progVar(progressBg);
+  border-radius: progVar(progressBorderRadius);
+}
+
+/*-webkit-progress-value is to style the progress bar.*/
+.progress[value]::-webkit-progress-value {
+  background-color: progVar(progressBarColor);
+  border-radius: progVar(progressBorderRadius);
+}

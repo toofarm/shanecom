@@ -29,16 +29,16 @@ const Post:FC<TProps> = ({ post, content }) => {
     <>
       <HeadStateful pageTitle={post.title} />
       <Layout>
-        <ProgressBar post={article} />
         <PostHeader 
           title={post.title} 
           sub_head={post.sub_head} 
           img={post.featured_image} 
           publication_date={post.date_created} />
         <TagCloud tags={post.tags} />
+        <ProgressBar article={article} />
         <div 
           dangerouslySetInnerHTML={{ __html : content }} 
-          className={styles.post_content}
+          className={styles.post_content} 
           ref={article}>
         </div>
       </Layout>
