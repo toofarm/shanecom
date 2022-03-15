@@ -21,11 +21,9 @@ const useIntersectionObserver = ({
         threshold
       })
     let current: Element | null = null
-    console.log(target)
     if (target) {
       current = target.current
       if (current) {
-        console.log('setting observer')
         observer.observe(current)
       }
     }
