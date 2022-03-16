@@ -1,6 +1,7 @@
 ---
 years: 3
-name: WordPress development
+name: WordPress
 keySkill: false
+logo: "/uploads/2022_03_16_wordpress_icon.png"
 
 ---
