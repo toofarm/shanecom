@@ -25,4 +25,4 @@ fields:
   description: Toggle to highlight this skill
   default: false
 pages:
-- javascript.md
+- _content/skills/javascript.md

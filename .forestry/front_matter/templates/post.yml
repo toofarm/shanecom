@@ -46,6 +46,4 @@ fields:
   description: Indicates that the post deserves special attention
 pages:
 - _content/posts/how-to-make-a-responsive-sliding-mobile-menu-in-react.js.md
-- _content/posts/how-to-make-a-responsive-sliding-mobile-menu-in-react.js.md
-- _content/posts/making-this-very-website.md
 - _content/posts/making-this-very-website.md
