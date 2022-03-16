@@ -24,3 +24,5 @@ fields:
   label: Key Skill
   description: Toggle to highlight this skill
   default: false
+pages:
+- javascript.md
