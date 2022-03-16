@@ -25,7 +25,7 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: ''
+  path: _content/skills
   label: Skills
   create: all
   match: "**/*"
