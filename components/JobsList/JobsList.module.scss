@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 2rem 0;
+  margin: 2.5rem 0;
   position: relative;
   .job_dates {
     background-color: #eee;
@@ -96,9 +96,6 @@
 
 // Mobile
 @media screen and (max-width: $mobile) {
-  .job_item {
-    margin: 2.5rem 0;
-  }
   .job_format_meta {
     flex-direction: column-reverse;
   }

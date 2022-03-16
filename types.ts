@@ -1,16 +1,14 @@
+// INTERFACES
+
 export interface IContent {
   [key: string]: unknown;
   content?: string;
   date_created: string;
-  start_date?: string
+  start_date?: string;
+  years?: number
 }
 
-export enum EContentTypes {
-  POSTS = 'posts',
-  PROJECTS = 'projects',
-  JOBS = 'jobs',
-  INTRO = 'intro'
-}
+// TYPES
 
 export type TPost = {
   tags: string[],
@@ -57,8 +55,25 @@ export type TIntro = {
   profile_photo: string;
 }
 
+export type TSkill = {
+  name: string;
+  years: number;
+  keySkill: boolean;
+  logo: string
+}
+
+// ENUMS
+
 export enum EThemes {
   DARK = 'darkTheme',
   LIGHT = 'lightTheme',
   SYSTEM = 'system'
+}
+
+export enum EContentTypes {
+  POSTS = 'posts',
+  PROJECTS = 'projects',
+  JOBS = 'jobs',
+  INTRO = 'intro',
+  SKILLS = 'skills'
 }

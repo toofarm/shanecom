@@ -1,9 +1,39 @@
 @use 'styles/shared';
 @import 'styles/constants';
+@import 'styles/themes';
 
 .posts_wrap {
   @include shared.index_page;
   a {
     @include shared.link;
+  }
+}
+
+.skills_section {
+  h2 {
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(primaryText);
+  }
+}
+
+.skills_header {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  margin-bottom: 1.33rem;
+  h4 {
+    font-size: 1.5rem;
+    color: var(secondaryText);
+    font-style: italic;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .skills_header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0.5rem;
+    margin-bottom: 1.5rem;
   }
 }

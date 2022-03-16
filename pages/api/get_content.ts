@@ -10,7 +10,7 @@ const getSlugs = (type : EContentTypes) => {
 }
 
 export const getContentBySlug = (slug: string,
-  fields: string[] = [], type : EContentTypes): IContent => {
+  fields: string[] = [], type : EContentTypes) => {
   const contentUrl = join(process.cwd(), `_content/${type}`)
   const realSlug = slug.replace(/\.md$/,
     '')
@@ -35,6 +35,10 @@ export const getContentBySlug = (slug: string,
     }
   })
   return items
+}
+
+export function getSortedList<T> (list: T[], param: string):T[] {
+  return list.sort((a, b) => (a > b ? 1 : -1))
 }
 
 export const getAllContentByType = (type:EContentTypes = EContentTypes.POSTS, fields: string[] = []) => {
