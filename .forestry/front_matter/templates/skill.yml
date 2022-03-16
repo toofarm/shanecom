@@ -1,4 +1,26 @@
 ---
 label: Skill
 hide_body: true
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+  description: Enter the name of your skill
+- name: years
+  type: number
+  label: Years' experience
+  description: For how many years have you used this skill?
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+    required: true
+- name: keySkill
+  type: boolean
+  label: Key Skill
+  description: Toggle to highlight this skill
+  default: false
