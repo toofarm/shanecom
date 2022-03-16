@@ -27,4 +27,5 @@ fields:
 pages:
 - _content/skills/javascript.md
 - _content/skills/python.md
+- _content/skills/react.md
 - _content/skills/typescript.md
