@@ -8,16 +8,17 @@ fields:
     required: true
   label: Name
   description: Enter the name of your skill
-- name: date_started
-  type: datetime
-  label: Date started
-  description: Select the approximate date when you started using this technology
+- name: years
+  type: number
+  label: Years' experience
+  default: 0
+  required: true
   config:
+    min: 
+    max: 
+    step: 
     required: true
-    date_format: ''
-    time_format: 
-    display_utc: false
-    export_format: YYYY-MM
+  description: Approximate number of years' experience using this technology
 - name: keySkill
   type: boolean
   label: Key Skill
@@ -25,9 +26,12 @@ fields:
   default: false
 pages:
 - _content/skills/d3.md
+- _content/skills/docker.md
 - _content/skills/javascript.md
+- _content/skills/node.md
 - _content/skills/php.md
 - _content/skills/python.md
 - _content/skills/react.md
 - _content/skills/typescript.md
 - _content/skills/vue.md
+- _content/skills/wordpress.md
