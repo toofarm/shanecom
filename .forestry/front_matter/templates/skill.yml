@@ -26,3 +26,4 @@ fields:
   default: false
 pages:
 - _content/skills/javascript.md
+- _content/skills/python.md
