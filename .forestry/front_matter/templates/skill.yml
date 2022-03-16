@@ -24,6 +24,7 @@ fields:
   description: Toggle to highlight this skill
   default: false
 pages:
+- _content/skills/d3.md
 - _content/skills/javascript.md
 - _content/skills/php.md
 - _content/skills/python.md
