@@ -8,17 +8,16 @@ fields:
     required: true
   label: Name
   description: Enter the name of your skill
-- name: years
-  type: number
-  label: Years' experience
-  description: For how many years have you used this skill?
-  default: 0
-  required: true
+- name: date_started
+  type: datetime
+  label: Date started
+  description: Select the approximate date when you started using this technology
   config:
-    min: 
-    max: 
-    step: 
     required: true
+    date_format: ''
+    time_format: 
+    display_utc: false
+    export_format: YYYY
 - name: keySkill
   type: boolean
   label: Key Skill
