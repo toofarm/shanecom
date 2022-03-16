@@ -24,6 +24,13 @@ fields:
   label: Key Skill
   description: Toggle to highlight this skill
   default: false
+- name: logo
+  type: file
+  config:
+    maxSize: 2
+  label: Logo
+  description: Logo for the language or library described
+  default: "/uploads/2022_03_16_code_icon.png"
 pages:
 - _content/skills/d3.md
 - _content/skills/docker.md
