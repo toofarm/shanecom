@@ -17,6 +17,11 @@ fields:
 - type: file
   name: featured_image
   label: Featured Image
+- name: caption
+  type: text
+  config:
+    required: false
+  label: Featured image caption
 - type: text
   name: additional_images
   label: Additional Images
