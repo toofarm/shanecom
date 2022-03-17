@@ -13,12 +13,16 @@ date_updated:
 highlighted: false
 
 ---
-A while back, I worked on a large project that required building a fullstack application with Next.js for its frontend and [Strapi](https://strapi.io/) for its backend.
+I recently had to implement a feature in a web app that allowed users to upload images through a user interface built in [Next.js](https://nextjs.org/), and then store those images in a PostGRES database on top of which sat a [Strapi](https://strapi.io/) API. 
 
-Though I don't have much negative to say about either of these tools, one aspect of the app I was working on proved incredibly frustrating to implement using this stack.
+Since I found this difficult to implement and documentation on the subject lacking, I figured I'd outline my solution for anyone facing a similar issue.
+
+## Structural issues
+
+A while back, I built a large application that used Next.js for its frontend and Strapi for its backend.
+
+Though I don't have much negative to say about either of these frameworks, one aspect of the app proved incredibly frustrating to implement using this stack.
 
 As part of a "contact us" feature, users had to have the ability to upload images from their computer to our system. We would then send these images out to site administrators as email attachments.
 
-Simple, right?
-
-## Problems abound
+Though simple 
