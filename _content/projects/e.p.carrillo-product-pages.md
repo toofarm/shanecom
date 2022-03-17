@@ -12,6 +12,7 @@ additional_images: []
 highlighted: false
 date_created: 2021-11-15 4:00 PM
 date_updated: 
+caption: E.P. Carrillo
 
 ---
 I completed this job while working for [Theo Agency](https://theo.agency/). E.P. Carrillo was a client of the firm's and they wanted to update the look of their product pages, which lived within their WordPress website.
