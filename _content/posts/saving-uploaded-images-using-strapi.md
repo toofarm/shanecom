@@ -17,12 +17,8 @@ I recently had to implement a feature in a web app that allowed users to upload 
 
 Since I found this difficult to implement and documentation on the subject lacking, I figured I'd outline my solution for anyone facing a similar issue.
 
-## Structural issues
+## App structure
 
-A while back, I built a large application that used Next.js for its frontend and Strapi for its backend.
+The app we were building called for a "contact us" feature, which would allow users to upload images via a form. We would then store these images server-side and send them out to site administrators as email attachments.
 
-Though I don't have much negative to say about either of these frameworks, one aspect of the app proved incredibly frustrating to implement using this stack.
-
-As part of a "contact us" feature, users had to have the ability to upload images from their computer to our system. We would then send these images out to site administrators as email attachments.
-
-Though simple 
+Though simple in theory, doing this within the context of our app proved to be a significant challenge.
