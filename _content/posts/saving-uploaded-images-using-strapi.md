@@ -15,7 +15,7 @@ highlighted: false
 ---
 I recently had to implement a feature in a web app that allowed users to upload images through a user interface built in [Next.js](https://nextjs.org/), and then store those images in a PostGRES database via a [Strapi](https://strapi.io/) API. 
 
-Since I found this difficult to implement and documentation on the subject lacking, I figured I'd outline my solution for anyone facing a similar issue.
+Since I found this difficult to implement, and documentation on the subject lacking, I figured I'd outline my solution for anyone facing a similar issue.
 
 ## App structure
 
