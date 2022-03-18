@@ -63,3 +63,7 @@ We eventually concluded that in order to reconstitute the images as FormData, we
 This meant our file upload workflow actually had four stages:
 
 **_User attaches file, sends to Next.js > Next.js stores image in server-side file system > Next.js passes stored image to Strapi as FormData > Next.js deletes image from server-side file system_**
+
+In order to implement this, we used [Multer](https://www.npmjs.com/package/multer) and [fs](https://nodejs.org/api/fs.html) in our Next.js API endpoint. Multer helped us parse the incoming form data, then we used fs to save our form data to the local file system.
+
+Once we had the files saved, we could create a new FormData object, reference our temporary saved files, and upload them to the database in a form Strapi would accept.  
