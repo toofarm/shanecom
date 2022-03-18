@@ -56,6 +56,10 @@ The solution required a hacky workaround that made use of the Next.js server's f
 
 ## A functional workaround
 
-Our solutions to the issue kept failing because we would receive the uploaded images as binaries on the Next.js server. However, Strapi wouldn't accept the binaries as a payload; in order for Strapi to work with the data, it had to be formatted as FormData.
+Our solutions kept failing because we would receive the uploaded images as binaries on the Next.js server. However, Strapi wouldn't accept binaries as a payload; in order for Strapi to work with the data, it had to be formatted as FormData.
 
 We eventually concluded that in order to reconstitute the images as FormData, we would have to store them within the Next.js server's file structure, then "upload" them into a new FormData object, which we could then pass along to Strapi. 
+
+This meant our file upload workflow actually had four stages:
+
+**_User attaches file, sends to Next.js > Next.js stores image in server-side file system > Next.js passes stored image to Strapi as FormData > Next.js deletes image from server-side file system_**
