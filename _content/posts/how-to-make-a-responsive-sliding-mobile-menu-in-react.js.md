@@ -331,4 +331,4 @@ This animation looks pretty good, but we can make it "pop" a little bit more by 
 
 ## And that does it
 
-Thanks for reading along. Let me know if you have questions, liked the post or know of ways in which it can be improved
+Thanks for reading along. Let me know if you have questions or know of ways in which it can be improved
