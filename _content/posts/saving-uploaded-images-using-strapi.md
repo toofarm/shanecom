@@ -48,10 +48,14 @@ Strapi [provides a plugin](https://docs.strapi.io/developer-docs/latest/plugins/
 
 However, Strapi's docs assume that you'll be uploading files directly to Strapi from the frontend. As such, Strapi's upload plugin will only accept FormData in its payload.
 
-Our app broke this pattern, since we had to pass FormData to the Next.js server, then pass it again to Strapi after authenticating. As it turned out, reconstituting our FormData server-side within Next.js proved extremely frustrating.
+Our app broke this pattern, since we had to pass FormData to the Next.js server, then pass it again to Strapi after authenticating. As it turned out, reconstituting our [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData) server-side within Next.js proved extremely frustrating.
 
 I won't go through all the approaches we tried to fix this issue, but suffice to say that we burned a host of productive hours with little to show for the effort to but a wide array of error messages. Despite our efforts, the best we could come up with was a useless blob of file binaries sitting on our Next.js server. 
 
 The solution required a hacky workaround that made use of the Next.js server's file structure.
 
-## Our solution
+## A functional workaround
+
+Our solutions to the issue kept failing because we would receive the uploaded images as binaries on the Next.js server. However, Strapi wouldn't accept the binaries as a payload; in order for Strapi to work with the data, it had to be formatted as FormData.
+
+We eventually concluded that in order to reconstitute the images as FormData, we would have to store them within the Next.js server's file structure, then "upload" them into a new FormData object, which we could then pass along to Strapi. 
