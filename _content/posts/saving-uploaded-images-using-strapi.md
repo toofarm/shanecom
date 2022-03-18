@@ -3,7 +3,7 @@ tags:
 - node.js
 - next.js
 - strapi
-title: Saving uploaded images using Strapi
+title: Saving uploaded images using Strapi and Next.js
 sub_head: A challenging proposition to say the least
 featured_image: "/uploads/2022_03_17_file_cabinet.jpeg"
 caption: Wikimedia Commons / rrafson
