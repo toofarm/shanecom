@@ -46,9 +46,9 @@ Everything within the /api directory executes on the server, including the call 
 
 Strapi [provides a plugin](https://docs.strapi.io/developer-docs/latest/plugins/upload.html#configuration) for handling file uploads and offers decent documentation on the same.
 
-However, Strapi's docs assume that you'll be uploading files directly to Strapi from the frontend. As such, Strapi's upload plugin will only accept FormData in its payload.
+However, Strapi's docs assume that you'll be uploading files directly to Strapi from the browser. Thus, Strapi's upload plugin will only accept FormData in its payload.
 
-Our app broke this pattern, since we had to pass FormData to the Next.js server, then pass it again to Strapi after authenticating. As it turned out, reconstituting our [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData) server-side within Next.js proved extremely frustrating.
+Our app broke this pattern, since we had to pass our images to the server on which Next.js executed its server-side code, then pass those same images along to Strapi after authenticating. As it turned out, reconstituting our [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData) server-side within Next.js proved extremely frustrating.
 
 I won't go through all the approaches we tried to fix this issue, but suffice to say that we burned a host of productive hours with little to show for the effort to but a wide array of error messages. Despite our efforts, the best we could come up with was a useless blob of file binaries sitting on our Next.js server. 
 
@@ -62,16 +62,18 @@ We eventually concluded that in order to reconstitute the images as FormData, we
 
 This meant our file upload workflow actually had four stages:
 
-**_User attaches file, sends to Next.js > Next.js stores image in server-side file system > Next.js passes stored image to Strapi as FormData > Next.js deletes image from server-side file system_**
+_User attaches file, sends to Next.js > Next.js stores image in server-side file system > Next.js passes stored image to Strapi as FormData > Next.js deletes image from server-side file system_
 
-In order to implement this, we used [Multer](https://www.npmjs.com/package/multer) and [fs](https://nodejs.org/api/fs.html) in our Next.js API endpoint. Multer helped us parse the incoming form data, then we used fs to save our form data to the local file system.
+In order to implement this solution, we used [Multer](https://www.npmjs.com/package/multer) and [fs](https://nodejs.org/api/fs.html) in our Next.js API endpoint. Multer helped us parse the incoming form data, then we used fs to save our form data to the local file system.
 
-Once we had the files saved, we could create a new FormData object, reference our temporary saved files, and upload them to the database in a form Strapi would accept.  
+Once we had the files saved, we could create a new FormData object, reference our temporary saved files, and upload them to the database in a form Strapi would accept. 
+
+After confirming that Strapi had saved the images successfully in our database, we then deleted the images from temporary storage within our Next.js server. 
 
 ## News you can use
 
-Your own implementation of this workaround will likely vary based on which stack you're using, but the workflow should remain the same:
+Your own implementation of this workaround will likely vary based on which stack you're using, but the workflow should remain roughly the same:
 
 1. Upload file to SSR server
 2. Save in SSR server-side file system
-3. Upload as FormData from SSR file system to API
+3. Upload as FormData from SSR file system to backend API
