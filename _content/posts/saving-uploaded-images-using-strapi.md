@@ -67,3 +67,11 @@ This meant our file upload workflow actually had four stages:
 In order to implement this, we used [Multer](https://www.npmjs.com/package/multer) and [fs](https://nodejs.org/api/fs.html) in our Next.js API endpoint. Multer helped us parse the incoming form data, then we used fs to save our form data to the local file system.
 
 Once we had the files saved, we could create a new FormData object, reference our temporary saved files, and upload them to the database in a form Strapi would accept.  
+
+## News you can use
+
+Your own implementation of this workaround will likely vary based on which stack you're using, but the workflow should remain the same:
+
+1. Upload file to SSR server
+2. Save in SSR server-side file system
+3. Upload as FormData from SSR file system to API
