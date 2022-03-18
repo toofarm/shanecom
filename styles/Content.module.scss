@@ -7,6 +7,26 @@
 
 .post_content {
   font-size: 1.25rem;
+
+  // Style internal scrollbars
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #aaa transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 0;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 20px;
+    border: 3px solid transparent;
+  }
   p {
     line-height: 1.75rem;
     margin: 1.5rem 0;
@@ -14,8 +34,9 @@
   p:first-of-type {
     margin-top: 0;
   }
-  ul li {
-    line-height: 1.45rem;
+  ul li,
+  ol li {
+    line-height: 1.75rem;
     margin: 1.5rem 0;
   }
   img {

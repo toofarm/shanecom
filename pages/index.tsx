@@ -84,7 +84,7 @@ export const getStaticProps = async () => {
           'slug'])
 
   projects = projects.slice(0, 3)
-  posts = posts.slice(0, 2)
+  posts = posts.slice(0, 3)
 
   return {
     props : {
