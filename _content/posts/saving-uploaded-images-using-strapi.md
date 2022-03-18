@@ -46,4 +46,4 @@ Everything within the /api directory executes on the server, including the call 
 
 Strapi [provides a plugin](https://docs.strapi.io/developer-docs/latest/plugins/upload.html#configuration) for handling file uploads and offers decent documentation on the same.
 
-However, Strapi's docs assume that you'll be uploading files directly to Strapi from the frontend. 
+However, Strapi's docs assume that you'll be uploading files directly to Strapi from the frontend. As such, Strapi's upload plugin will only accept FormData in its payload.
