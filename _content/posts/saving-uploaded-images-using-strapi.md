@@ -13,7 +13,7 @@ date_updated:
 highlighted: false
 
 ---
-I recently had to implement a feature in a web app that allowed users to upload images through a user interface built in [Next.js](https://nextjs.org/), and then store those images in a PostGRES database via a [Strapi](https://strapi.io/) API. 
+I recently had to implement a feature in a web app that allowed users to upload images through a user interface built in [Next.js](https://nextjs.org/). We then had to store those images in a PostGRES database via a [Strapi](https://strapi.io/) API. 
 
 Since I found this difficult to implement, and documentation on the subject lacking, I figured I'd outline my solution for anyone facing a similar issue.
 
@@ -47,3 +47,11 @@ Everything within the /api directory executes on the server, including the call 
 Strapi [provides a plugin](https://docs.strapi.io/developer-docs/latest/plugins/upload.html#configuration) for handling file uploads and offers decent documentation on the same.
 
 However, Strapi's docs assume that you'll be uploading files directly to Strapi from the frontend. As such, Strapi's upload plugin will only accept FormData in its payload.
+
+Our app broke this pattern, since we had to pass FormData to the Next.js server, then pass it again to Strapi after authenticating. As it turned out, reconstituting our FormData server-side within Next.js proved extremely frustrating.
+
+I won't go through all the approaches we tried to fix this issue, but suffice to say that we burned a host of productive hours with little to show for the effort to but a wide array of error messages. Despite our efforts, the best we could come up with was a useless blob of file binaries sitting on our Next.js server. 
+
+The solution required a hacky workaround that made use of the Next.js server's file structure.
+
+## Our solution
