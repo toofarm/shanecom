@@ -87,4 +87,4 @@ Your own implementation of this workaround will likely vary based on which stack
 2. _Save file in SSR server-side file system_
 3. _Upload as FormData from SSR file system to backend API_
 
-I hope this saves someone a headache
+I hope this saves someone a headache!
