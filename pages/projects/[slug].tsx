@@ -31,6 +31,7 @@ const Project:FC<TProps> = ({ project, content }) => {
           title={project.title} 
           sub_head={project.sub_head} 
           img={project.featured_image} 
+          caption={project.caption}
           publication_date={project.date_created} />
         <TagCloud tags={project.tags} />
         <ProjectLinks 
@@ -55,6 +56,7 @@ export const getStaticProps = async ({ params }:TParams) => {
         'date_created', 
         'date_updated',
         'highlighted',
+        'caption',
         'project_web_link',
         'project_repo_link'], 
       EContentTypes.PROJECTS)

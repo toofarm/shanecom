@@ -40,6 +40,13 @@
   }
 }
 
+.caption {
+  color: var(secondaryText);
+  font-size: 14px;
+  margin: 5px 0;
+  font-style: italic;
+}
+
 .date_wrap {
   padding: 0.5rem 1rem 0.5rem 1.5rem;
   border-radius: 0 15px 15px 0;

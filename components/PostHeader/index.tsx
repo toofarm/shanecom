@@ -10,9 +10,10 @@ type TProps = {
   img?: string;
   publication_date: string;
   updated_date?: string;
+  caption?: string;
 }
 
-const PostHeader:FC<TProps> = ({ title, sub_head, img, publication_date }) => {
+const PostHeader:FC<TProps> = ({ title, sub_head, img, publication_date, caption }) => {
   const { width } = useWindowSize()
   const [pubDate, setPubDate] = useState<string>('')
   const [showImg, setShowImg] = useState<boolean>(false)
@@ -30,6 +31,7 @@ const PostHeader:FC<TProps> = ({ title, sub_head, img, publication_date }) => {
     <div>
       <div className={`${img ? styles.has_image : ''} ${styles.post_header}`}>
         {showImg && <img src={img} alt={title} />}
+        {caption && width && width <= 767 && <div className={styles.caption}>{caption}</div>}
         <div className={styles.background_grid} style={width && width > 767 ? rowStyles : {}}>
           <div>
           </div>
@@ -39,6 +41,7 @@ const PostHeader:FC<TProps> = ({ title, sub_head, img, publication_date }) => {
           </div>
           <div></div>
         </div>
+        {caption && width && width > 767 && <div className={styles.caption}>{caption}</div>}
         <h2>{sub_head}</h2>
       </div>
       <div className={styles.date_wrap}>

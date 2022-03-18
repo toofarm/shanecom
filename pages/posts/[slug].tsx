@@ -33,7 +33,8 @@ const Post:FC<TProps> = ({ post, content }) => {
           title={post.title} 
           sub_head={post.sub_head} 
           img={post.featured_image} 
-          publication_date={post.date_created} />
+          publication_date={post.date_created}
+          caption={post.caption} />
         <TagCloud tags={post.tags} />
         <ProgressBar article={article} />
         <div 
@@ -57,6 +58,7 @@ export const getStaticProps = async ({ params }:TParams) => {
         'content', 
         'date_created', 
         'date_updated',
+        'caption',
         'highlighted'], 
       EContentTypes.POSTS)
   const content = await markdownToHtml(post.content || '')

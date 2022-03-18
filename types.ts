@@ -15,6 +15,7 @@ export type TPost = {
   title: string;
   sub_head?: string;
   featured_image: string;
+  caption?: string;
   additional_images?: string[],
   date_created: string;
   date_updated?: string;
@@ -28,6 +29,7 @@ export type TProject = {
   sub_head: string;
   date_created: string;
   featured_image: string;
+  caption: string;
   project_web_link?: string;
   project_repo_link?: string;
   additional_images?: string[];
