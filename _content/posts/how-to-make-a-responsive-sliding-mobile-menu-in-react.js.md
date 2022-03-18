@@ -120,7 +120,7 @@ Note that I'm not just slapping 'display: none' on the nav component; instead, I
       }
     }
 
-## Toggling the menu 
+## Toggling the menu
 
 While looking at the Header component above, you may have noticed some HTML that initially seems to serve no purpose:
 
@@ -169,7 +169,7 @@ In the Navigation component, you'll notice a similar piece of 'superfluous' mark
       </ul>
       ...
 
-We'll be using this to create our 'close' button inside the menu. 
+We'll be using this to create our 'close' button inside the menu.
 
 Note that we've decorated both these components with 'role' and 'tabIndex' attributes. These attributes tell screen readers that we intend the elements to be used as buttons.
 
@@ -208,9 +208,9 @@ After importing useState to our Header component, we'll instantiate a variable, 
     
     export default Header
 
-We house mobile nav state in our Header so that it's easy to pass that value to Header's direct child — Navigation. 
+We house mobile nav state in our Header so that it's easy to pass that value to Header's direct child — Navigation.
 
-Having instantiated showMobileNav and setShowMobileNav, we can then pass these values to the Navigation component as props. 
+Having instantiated showMobileNav and setShowMobileNav, we can then pass these values to the Navigation component as props.
 
 ## Putting it all together
 
@@ -242,7 +242,7 @@ Within the Navigation component, we can now ingest our stateful values as props 
     
     export default Navigation
 
-Now that we have our 'toggle' value inside of Navigation, we can use that value to attach a conditional class to the component whenever 'toggle' is truthy. 
+Now that we have our 'toggle' value inside of Navigation, we can use that value to attach a conditional class to the component whenever 'toggle' is truthy.
 
 Whenever the user presses the hamburger button inside the Header component, the Navigation component will receive that information. We can now use CSS to pull a re-styled nav menu into the viewport, using the 'transform' property:
 
@@ -272,7 +272,7 @@ Whenever the user presses the hamburger button inside the Header component, the 
       }
     }
 
-Much as I did with the 'hamburger' button in the Header component, I'm going to use CSS to manipulate a <ul> within the Navigation component and give us our 'times' icon, which we'll use to close the menu:
+Much as I did with the 'hamburger' button in the Header component, I'm going to use CSS to manipulate a 'ul' within the Navigation component and give us our 'times' icon, which we'll use to close the menu:
 
     .toggle_btn {
       position: absolute;
