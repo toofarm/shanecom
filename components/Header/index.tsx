@@ -40,7 +40,7 @@ const Header:FC = () => {
         <a>
           <Image
             src={`/${theme === EThemes.LIGHT ? 'shane_logo_v2.png' : 'shane_logo_light.png'}`}
-            alt='My little internet home'
+            alt='Shane Made That'
             width={120}
             height={75}
           />
