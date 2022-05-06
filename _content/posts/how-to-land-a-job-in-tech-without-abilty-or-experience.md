@@ -86,7 +86,7 @@ Once you're in, as they say, you're in.
 
 ## The secret of my success
 
-Both in my bootcamp cohort and amongst my acquaintances, I've seen people struggle to find development jobs, or else wash out of the industry entirely. My success vis-a-vie their difficulty owes in my opinion to several factors, technical talent not being among them.
+Both in my bootcamp cohort and amongst my acquaintances, I've seen people struggle to find tech jobs, or else wash out of the industry entirely. My success vis-a-vie their difficulty owes in my opinion to several factors, technical talent being least among them.
 
 If there's a single reason why I've been able to build myself a career as a developer (such as it is), it's because I enjoy the process of making things with code. Banging my head for hours against a difficult coding problem, then breaking through that difficulty, is intensely satisfying to me. I can spend 6 or 8 or 10 hours working in this mode and feel good about it at the end of the day.
 
