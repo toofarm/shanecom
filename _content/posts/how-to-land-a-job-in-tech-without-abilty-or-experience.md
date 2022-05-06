@@ -22,55 +22,55 @@ For nearly a decade after graduating from college, I wandered around working ign
 
 Since this work was intermittent and low-paying, I often had to supplement my income by taking on side gigs. I wrote descriptions of fiber optic products, worked as an incredibly ineffective mover, and, for a brief spell, made lattes and smoothies at a coffee bar embedded in a Williamsburg, Brooklyn Whole Foods.
 
-My only scoop as a journalist came when I discovered that the economics of the job I was pursuing were no longer viable.
+My only scoop as a journalist came when I discovered the unviable economics of the job I was pursuing.
 
 Broke and disappointed, I demurred to the reality that I would be happier doing something else.
 
 ## Faking it until you make it
 
-I decided to pursue a programming career with the barest minimum of knowledge about what I was getting into.
+I decided to pursue a programming career with limited knowledge of what I was getting into.
 
 In college, I had taken an introductory class on web development. This class covered HTML and CSS, then spent a single day introducing Javascript, which the instructor implied was an optional embellishment.
 
-I enjoyed the class. The process of building something and seeing it pop up on my computer monitor was rewarding, as was the air, still novel at that point, of being a secular wizard, capable of unlocking the secrets of technologies popularly regarded  as baffling.
+I enjoyed the class. The process of building something and seeing it pop up on my computer monitor was rewarding, as was the air, still novel at that time, of being a secular wizard, capable of unlocking secrets popularly regarded  as baffling.
 
-Later, I worked as a reporter for a digital news startup in Bangkok (that's another blog post), where I sat close to several web developers and overheard them talking about the work involved in building a website.
+Later, I worked as a reporter for a digital news startup in Bangkok (that's another blog post), where I sat close to several web developers and overheard them talking about building a website.
 
-This meager experience proved to be an asset, as it fixed me with the idea that programming was a) something I could do, and b) significantly easier than it in fact turned out to be.
+These experiences fixed me with the ideas that programming was a) something I could do, and b) significantly easier than it in fact turned out to be.
 
 With my journalism career coughing out its dying breaths, I spent a couple months working through Codeacademy.com courses and decided to commit to a career in tech by attending a bootcamp.
 
 ## Bootcamps for better and worse
 
-Bootcamps have sullied their reputation over the past five years by trying to con students with unrealistic expectations, and employers with half-baked students. Nevertheless, I am convinced I would not be a developer were it not for coding bootcamps, and I have no regrets about attending one.
+There is a popular belief among developers that you can teach yourself to be a professional engineer. This is true, but with a couple caveats.
 
-There is a popular belief among developers that you can teach yourself all the skills needed to become a professional engineer. This is true, but with several large caveats:
+For one, every self-taught develop who I know has a natural affinity for processes and abstractions. These are the people who taught themselves shell scripting at 15 and refer to calculus as "easy".
 
-Every self-taught developer who I know has had several advantages going into the process. For one, they are all left-brained people with a natural affinity for processes and abstractions. These are the people who taught themselves shell scripting during high school and refer to calculus as "easy".
+These individuals have also taught themselves to program while enjoying few financial obligations and lots of free time. Whether that means they were living with their parents, relying on a generous girlfriend, or sitting on a chunk of money they got off of the GI Bill, they were all in a position to spend 8 uninterrupted hours per day hunched over their computers, figuring out how to configure a server.
 
-Also, these individuals have taught themselves to program during stretches of life during which they have few financial obligations and an excess of free time. Whether that means they were living with their parents, relying on a largess of a generous girlfriend, or cooling their heels with money they got off of the GI Bill, they were all in a position to spend 8+ hours per day hunched over their computers, trying to figure out how to configure a server.
+When I decided to become a developer, I had neither the mental disposition nor the finances to pursue the self-teaching route, so I went to a bootcamp.
 
-I had neither the mental disposition nor the financial comfort to pursue the self-teaching route, so I sought out a bootcamp.
+Bootcamps have sullied their reputation over the past five years by trying to con students with unrealistic expectations, and employers with half-baked graduates. Nevertheless, I am convinced I would not be a developer were it not for coding bootcamps.
 
 A word of advice: if you're going to attend a bootcamp, spend the smallest amount of money on it that you possibly can.
 
 For-profit bootcamps will saddle you with as much as $17k in non-dischargable debt, which is crazy, especially when you consider another of my core theses:
 
-### Upon completing a bootcamp, you will not be ready to work an actual programming job
+### Upon completing a bootcamp, you will not be ready to work a programming job
 
-Bootcamps are great starting points, but after graduating from a 3-month web development course, you're still  looking at 6-to-12 months worth of work before you're hireable. In total, I'd say it takes about a year to go from "not a developer" to "developer"; and that's a year in which your full-time, 40-hour-a-week occupation is learning to code.
+Bootcamps are great starting points, but after graduating from a 3-month web development course, you're still  looking at 6-to-12 months worth of work before you're hire-able. In total, I'd say it takes about a year to go from "not a developer" to "developer"; and that's a year in which your full-time, 40-hour-a-week occupation is learning to code.
 
 I didn't know this going in, so it was pure luck that led me to choose the [Full Stack Web Development program at CUNY Brooklyn](https://cuny-catalog.skillstorm.com/courses/cuny-full-stack-java-development) over a number of pricier bootcamps. 
 
 The program at CUNY provided a less robust background than some of the private bootcamps, but its sticker price was $2,500, whereas [General Assembly](https://generalassemb.ly/education/software-engineering-immersive/portland) was around that time charging $13,000 for its fullstack course. 
 
-To my mind, the biggest advantage of attending a bootcamp is having someone around who can help you get past the brick-wall frustrations you run into as a junior developer. I'm certain that had I not attended a bootcamp, I would have given up on web development completely when I got to server-side scripting. Instead, a jovial man in a Hawaiian shirt helped explain to me that PHP executes on a different machine than Javascript, and with that advice I was able to proceed.
+To my mind, the biggest advantage of attending a bootcamp is having someone around who can help you get past the brick-wall frustrations you run into as a junior developer. I'm certain that had I not attended a bootcamp, I would have given up on web development completely when I got to server-side scripting. Instead, a jovial man in a Hawaiian shirt explained to me that PHP executes on a different machine than Javascript, and with that knowledge I took flight.
 
-Before moving on from bootcamps, it's important to mention a couple things that made the process worthwhile for me. For one, I _worked_ while attending that class. Not only did I do weeks worth of prep work, but I pushed myself to turn in ridiculously ambitious projects during the course. The hours I spent working on those projects meant that I came out of the course with more knowledge than I otherwise might have. 
+I've heard people have negative experiences of bootcamps, and there are a couple things particular to my experience that made it worthwhile. For one, I _worked_ while attending that class. Not only did I do weeks worth of prep work, but I pushed myself to turn in ridiculously ambitious projects during the course. The hours I spent working on those projects meant that I came out of the course with more knowledge than I otherwise might have. 
 
-I was also ready to continue working after I graduated. This is a result of my personality, but I held myself to a comically high standard when starting out, and pushed myself to keep working until my projects resembled something professional.
+I was also prepared to continue studying after I graduated. I held myself to a comically high standard when starting out, and pushed myself to keep working until my projects resembled something professional.
 
-Success, in software development as in many things, is more often a result of effort than of talent.
+Success, in software development as in other things, is more often a result of effort than of talent.
 
 ## Actually getting a job
 
