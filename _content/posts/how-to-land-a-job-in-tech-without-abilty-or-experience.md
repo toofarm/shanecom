@@ -88,13 +88,13 @@ Once you're in, as they say, you're in.
 
 Both in my bootcamp cohort and amongst my acquaintances, I've seen people struggle to find tech jobs, or else wash out of the industry entirely. My success contra their difficulty owes in my opinion to several factors, technical talent being the lesser among them.
 
-If there's a single reason why I've been able to build myself a career as a developer, it's because I enjoy the process of making things with code. Banging my head for hours against a difficult coding problem, then breaking through that difficulty, is intensely satisfying to me. I can spend 6 or 8 or 10 hours working in this mode and feel good about it at the end of the day.
+If there's a single reason why I've been able to build myself a career as a developer, it's because I enjoy making things with code. Banging my head for hours against a difficult coding problem, then breaking through that difficulty, is intensely satisfying to me. I can spend 6 or 8 or 10 hours working in this mode and feel good about it at the end of the day.
 
-I consider myself more or less bereft of technical talent. Programming has never been intuitive for me, nor has any other activity involving high levels of abstraction. In high school, I barely passed trigonometry and bowed out of calculus entirely; I majored in English Literature in college, satisfying my school's STEM requirement by taking Intro to Statistics and passing based only on the strength of an essay I turned in for extra credit.
+Programming has never been intuitive for me, nor has any other activity involving high levels of abstraction. In high school, I barely passed trigonometry and bowed out of calculus entirely; I majored in English Literature in college, satisfying my school's STEM requirement by taking Intro to Statistics and passing based on the strength of an essay I turned in for extra credit.
 
 That I have had meager success as a software engineer owes largely to the fact that I enjoy doing it. 
 
-Making little machines out of logic puzzles is intensely satisfying to me. My drive to make those machines function smoothly borders on compulsive.
+Making little machines out of logic puzzles can command my complete attention. My drive to make those machines function smoothly borders on compulsive.
 
 Because I derive so much enjoyment from writing software, I've spent a huge number of hours doing so, and, despite myself, become kind of good at it. 
 
