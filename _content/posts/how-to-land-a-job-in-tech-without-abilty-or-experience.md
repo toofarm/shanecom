@@ -14,15 +14,15 @@ highlighted: false
 ---
 This past week I read [Lowly Midwestern Engineer's article](https://lowlyswe.substack.com/p/my-experience-getting-a-tech-job) about finding a job in tech without any industry experience.
 
-I sympathized with much of his narrative, and thought it would be interesting to share my thoughts on the same theme. There are no straight lines in nature and, for what it's worth, here's some info about the squiggly path that led me to where I am.
+I sympathized with much of his narrative, and thought it would be interesting to share my thoughts on the same theme. There are no straight lines in nature and, for what it's worth, here's some info about the squiggly line that led me to where I am.
 
 ## Life before tech
 
-For nearly a decade after graduating from college, I wandered around working a series of ignominious jobs that had little or nothing to do with technology. I was trying to be a journalist, and spent large amounts of time writing for alt weeklies, magazines, and digital news startups.
+For nearly a decade after graduating from college, I wandered around working ignominious jobs that had nothing to do with programming software. I was trying to be a journalist, and spent large amounts of time writing for alt weeklies, magazines, and digital news startups.
 
 Since this work was intermittent and low-paying, I often had to supplement my income by taking on side gigs. I wrote descriptions of fiber optic products, worked as an incredibly ineffective mover, and, for a brief spell, made lattes and smoothies at a coffee bar embedded in a Williamsburg, Brooklyn Whole Foods.
 
-My biggest scoop as a journalist came when I discovered that the economics of the job I was pursuing were no longer viable.
+My only scoop as a journalist came when I discovered that the economics of the job I was pursuing were no longer viable.
 
 Broke and disappointed, I demurred to the reality that I would be happier doing something else.
 
