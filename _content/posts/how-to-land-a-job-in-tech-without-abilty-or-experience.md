@@ -84,7 +84,7 @@ Though the journey since has involved a couple twists, it's fair to summarize th
 
 Once you're in, as they say, you're in.
 
-## The secret of my success
+## The secret(s) of my success
 
 Both in my bootcamp cohort and amongst my acquaintances, I've seen people struggle to find tech jobs, or else wash out of the industry entirely. My success vis-a-vie their difficulty owes in my opinion to several factors, technical talent being least among them.
 
