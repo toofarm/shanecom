@@ -98,4 +98,6 @@ Making little machines out of logic puzzles is intensely satisfying to me. My dr
 
 Because I derive so much enjoyment from writing software, I've spent a huge number of hours doing so, and, despite myself, become kind of good at it. 
 
-I'm not among the world's programming elite, and I never will be. In order to develop remarkable talent, you have to start when you're a teenager and your brain is still squishy. I began programming in earnest shortly before I turned 30, and suffered from the natural handicap of mind that thinks foremost in stories and feelings. However, with moderate intelligence and loads of tenacity, I've managed to make it work for me.
+I'm not among the world's programming elite, and I never will be. In order to develop remarkable talent, you have to start when you're a teenager and your brain is still squishy. I began programming in earnest shortly before I turned 30, and suffered from the natural handicap of mind that thinks foremost in stories and feelings. However, with moderate intelligence, loads of tenacity, and propitious economic circumstances I've managed to make it work for me.
+
+### Code switching
