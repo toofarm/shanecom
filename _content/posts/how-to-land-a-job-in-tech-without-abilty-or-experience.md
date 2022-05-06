@@ -96,7 +96,7 @@ That I have had meager success as a software engineer owes largely to the fact t
 
 Making little machines out of logic puzzles can command my complete attention. My drive to make those machines function smoothly borders on compulsive.
 
-Because I derive so much enjoyment from writing software, I've spent a huge number of hours doing so, and, despite myself, become kind of good at it. 
+Because I get so much enjoyment from writing software, I've spent a huge number of hours doing so, and, despite myself, become kind of good at it. 
 
 I'm not among the world's programming elite, nor will I ever be. In order to develop that kind of talent, you have to start when you're a teenager. I began programming in earnest shortly before I turned 30, and suffer from the natural handicap of a mind most comfortable with stories and feelings. 
 
