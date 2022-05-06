@@ -90,14 +90,14 @@ Both in my bootcamp cohort and amongst my acquaintances, I've seen people strugg
 
 If there's a single reason why I've been able to build myself a career as a developer (such as it is), it's because I enjoy the process of making things with code. Banging my head for hours against a difficult coding problem, then breaking through that difficulty, is intensely satisfying to me. I can spend 6 or 8 or 10 hours working in this mode and feel good about it at the end of the day.
 
-I consider myself more or less bereft of technical talent. Programming has never been intuitive for me, nor has any other activety involving high levels of abstraction. In high school, I barely passed trigonometry and bowed out of calculus entirely; I majored in English Literature in college, satisfying my school's STEM requirement by taking Intro to Statistics and passing based on the strength of an essay I turned in for extra credit.
+I consider myself more or less bereft of technical talent. Programming has never been intuitive for me, nor has any other activity involving high levels of abstraction. In high school, I barely passed trigonometry and bowed out of calculus entirely; I majored in English Literature in college, satisfying my school's STEM requirement by taking Intro to Statistics and passing based only on the strength of an essay I turned in for extra credit.
 
 That I have had meager success as a software engineer owes largely to the fact that I enjoy doing it. 
 
-Making little machines out of logic puzzles is intensely satisfying to me. My drive to make those machines function smoothly borders at times on compulsive.
+Making little machines out of logic puzzles is intensely satisfying to me. My drive to make those machines function smoothly borders on compulsive.
 
 Because I derive so much enjoyment from writing software, I've spent a huge number of hours doing so, and, despite myself, become kind of good at it. 
 
-I'm not among the world's programming elite, and I never will be. In order to develop remarkable talent, you have to start when you're a teenager and your brain is still squishy. I began programming in earnest shortly before I turned 30, and suffered from the natural handicap of mind that thinks foremost in stories and feelings. However, with moderate intelligence, loads of tenacity, and propitious economic circumstances I've managed to make it work for me.
+I'm not among the world's programming elite, and I never will be. In order to develop that kind of talent, you have to start when you're a teenager. I began programming in earnest shortly before I turned 30, and suffered from the natural handicap of mind that thinks foremost in stories and feelings. However, with moderate intelligence, loads of tenacity, and propitious economic circumstances I've managed to make it work for me.
 
 ### Code switching
