@@ -78,7 +78,7 @@ Since I had never worked in tech, I concocted a scheme to use my existing skills
 
 This plan worked pretty well. Shortly after graduating from the bootcamp, I was offered a job with a publishing house that consisted of 50% content writing and 50% development on a couple of Wordpress sites. 
 
-The publishing house, I soon discovered, had entered dire financial straits; a sale was eminent. Working for a failing company, however, turned out to be a great deal. Management gave me free reign to pursue whichever kinds of development projects I pleased, and when the ship sank at last, I received a sizeable "sorry for giving you the sack" bonus, which kept me happy and healthy while I traded up into a full-time development job.
+The publishing house, I soon discovered, had entered dire financial straits; a sale was eminent. Working for a failing company, however, turned out to be a great deal. Management gave me free reign to pursue whichever  development projects I pleased, and when the ship sank at last, I received a sizeable "sorry for giving you the sack" bonus, which kept me happy and healthy while I traded up into a full-time development job.
 
 Though the journey since has involved a couple twists, it's fair to summarize the trajectory as upward-facing, with each chapter bringing more complex technical responsibilities and more Scrooge McDuck-ian amounts of compensation. 
 
@@ -86,15 +86,13 @@ Once you're in, as they say, you're in.
 
 ## The secret(s) of my success
 
-Both in my bootcamp cohort and amongst my acquaintances, I've seen people struggle to find tech jobs, or else wash out of the industry entirely. My success contra their difficulty owes in my opinion to several factors, technical talent being the lesser among them.
+Both in my bootcamp cohort and amongst my acquaintances, I've seen people struggle to find tech jobs, or else wash out of the industry entirely. My relative success owes in my opinion to several factors, technical talent being the lesser among them.
 
 If there's a single reason why I've been able to build myself a career as a developer, it's because I enjoy making things with code. Banging my head for hours against a difficult coding problem, then breaking through that difficulty, is intensely satisfying to me. I can spend 6 or 8 or 10 hours working in this mode and feel good about it at the end of the day.
 
 Programming has never been intuitive for me, nor has any other activity involving high levels of abstraction. In high school, I barely passed trigonometry and bowed out of calculus entirely; I majored in English Literature in college, satisfying my school's STEM requirement by taking Intro to Statistics and passing based on the strength of an essay I turned in for extra credit.
 
 That I have had meager success as a software engineer owes largely to the fact that I enjoy doing it. 
-
-Making little machines out of logic puzzles can command my complete attention. My drive to make those machines function smoothly borders on compulsive.
 
 Because I get so much enjoyment from writing software, I've spent a huge number of hours doing so, and, despite myself, become kind of good at it. 
 
