@@ -64,9 +64,9 @@ I didn't know this going in, so it was pure luck that led me to pick the [Full S
 
 The program at CUNY provided a less robust background than some of the private bootcamps, but its sticker price was $2,500. [General Assembly](https://generalassemb.ly/education/software-engineering-immersive/portland), by contrast, was around that time charging $13,000 for its fullstack course. 
 
-To my mind, the biggest advantage of attending a bootcamp is having someone around who can help you get past the brick-wall frustrations you run into as a junior developer. I'm certain that had I not attended a bootcamp, I would have given up on web development completely when I got to server-side scripting. Instead, a jovial man in a Hawaiian shirt explained to me that PHP executes on a different machine than Javascript, and with that knowledge I took flight.
+To my mind, the biggest advantage of attending a bootcamp is having someone around who can help you get past the brick-wall frustrations you run into as a junior developer. I'm certain that had I not attended a bootcamp, I would have given up on web development completely when I got to server-side scripting. Instead, a jovial man in a Hawaiian shirt explained to me that PHP executes on a different machine than Javascript, and with that knowledge I have soared.
 
-I've heard people have negative experiences of bootcamps, and there are a couple things particular to my experience that made it worthwhile. For one, I _worked_ while attending that class. Not only did I do weeks worth of prep work, but I pushed myself to turn in ridiculously ambitious projects during the course. The hours I spent working on those projects meant that I came out of the course with more knowledge than I otherwise might have. 
+I've heard about people having negative experiences of bootcamps, and there are a couple things particular to my experience that made it worthwhile. For one, I _worked_ while attending that class. Not only did I do weeks worth of prep work, but I pushed myself to turn in ridiculously ambitious projects during the course. The hours I spent working on those projects meant that I came out of the course with more knowledge than I otherwise might have. 
 
 I was also prepared to continue studying after I graduated. I held myself to a comically high standard when starting out, and pushed myself to keep working until my projects resembled something professional.
 
@@ -86,11 +86,13 @@ Once you're in, as they say, you're in.
 
 ## The secret(s) of my success
 
-Both in my bootcamp cohort and amongst my acquaintances, I've seen people struggle to find tech jobs, or else wash out of the industry entirely. My relative success owes in my opinion to several factors, technical talent being the lesser among them.
+Both in my bootcamp cohort and among my acquaintances, I've seen people struggle to find tech jobs, or else wash out of the industry entirely. 
 
-If there's a single reason why I've been able to build myself a career as a developer, it's because I enjoy making things with code. Banging my head for hours against a difficult coding problem, then breaking through that difficulty, is intensely satisfying to me. I can spend 6 or 8 or 10 hours working in this mode and feel good about it at the end of the day.
+My relative success owes in my opinion to the fact that I simply enjoy making things with code. 
 
-Programming has never been intuitive for me, nor has any other activity involving high levels of abstraction. In high school, I barely passed trigonometry and bowed out of calculus entirely; I majored in English Literature in college, satisfying my school's STEM requirement by taking Intro to Statistics and passing based on the strength of an essay I turned in for extra credit.
+Banging my head for hours against a difficult coding problem, then breaking through that difficulty, is intensely satisfying to me. I can spend 6 or 8 or 10 hours working in this mode and feel good about it at the end of the day.
+
+Programming has never been intuitive for me, nor has any other activity involving high levels of abstraction. In high school, I barely passed trigonometry and bowed out of calculus entirely; I majored in English Literature in college, and only passed the required Intro to Statistics course on the strength of an essay I turned in for extra credit.
 
 That I have had meager success as a software engineer owes largely to the fact that I enjoy doing it. 
 
@@ -101,3 +103,7 @@ I'm not among the world's programming elite, nor will I ever be. In order to dev
 However, with moderate intelligence, loads of tenacity, and a propitious job market, I've managed to make it work.
 
 ### Code switching
+
+Among the people who I've seen wash out of coding as a profession, I've noticed their difficulty  rarely arises from lack of technical talent.
+
+People who genuinely have difficulty learning to program will often quit before they invest months of their lives and thousands of dollars into the project. 
