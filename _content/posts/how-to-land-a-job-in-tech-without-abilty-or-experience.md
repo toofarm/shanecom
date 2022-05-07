@@ -42,9 +42,9 @@ With my journalism career coughing out its dying breaths, I spent a couple month
 
 ## Bootcamps for better and worse
 
-There is a popular belief among developers that you can teach yourself to be a professional engineer. This is true, but with a couple caveats.
+There is a popular belief among developers that you can teach yourself to be an engineer. This is true, but with a couple caveats.
 
-For one, every self-taught develop who I know has a natural affinity for processes and abstractions. These are the people who taught themselves shell scripting at 15 and refer to calculus as "easy".
+For one, every self-taught developer who I know has a natural affinity for processes and abstractions. These are the people who taught themselves shell scripting at 15 and refer to calculus as "easy".
 
 These individuals have also taught themselves to program while enjoying few financial obligations and lots of free time. Whether that means they were living with their parents, relying on a generous girlfriend, or sitting on a chunk of money they got off of the GI Bill, they were all in a position to spend 8 uninterrupted hours per day hunched over their computers, figuring out how to configure a server.
 
