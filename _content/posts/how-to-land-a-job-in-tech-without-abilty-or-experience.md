@@ -50,19 +50,19 @@ These individuals have also taught themselves to program while enjoying few fina
 
 When I decided to become a developer, I had neither the mental disposition nor the finances to pursue the self-teaching route, so I went to a bootcamp.
 
-Bootcamps have sullied their reputation over the past five years by trying to con students with unrealistic expectations, and employers with half-baked graduates. Nevertheless, I am convinced I would not be a developer were it not for coding bootcamps.
+Bootcamps have sullied their reputation over the past five years by trying to con students with unrealistic expectations, and employers with half-baked graduates. Nevertheless, I doubt I would be a developer were it not for coding bootcamps.
 
 A word of advice: if you're going to attend a bootcamp, spend the smallest amount of money on it that you possibly can.
 
 For-profit bootcamps will saddle you with as much as $17k in non-dischargable debt, which is crazy, especially when you consider another of my core theses:
 
-### Upon completing a bootcamp, you will not be ready to work a programming job
+> ### Upon completing a bootcamp, you will not be ready to work a programming job
 
-Bootcamps are great starting points, but after graduating from a 3-month web development course, you're still  looking at 6-to-12 months worth of work before you're hire-able. In total, I'd say it takes about a year to go from "not a developer" to "developer"; and that's a year in which your full-time, 40-hour-a-week occupation is learning to code.
+Bootcamps are great starting points, but after graduating from a 3-month software development course, you're still looking at 6-to-12 months worth of work before you're hire-able. In total, I'd say it takes about a year to go from "not a developer" to "developer"; and that's a year in which your full-time, 40-hour-a-week occupation is learning to code.
 
-I didn't know this going in, so it was pure luck that led me to choose the [Full Stack Web Development program at CUNY Brooklyn](https://cuny-catalog.skillstorm.com/courses/cuny-full-stack-java-development) over a number of pricier bootcamps. 
+I didn't know this going in, so it was pure luck that led me to pick the [Full Stack Web Development program at CUNY Brooklyn](https://cuny-catalog.skillstorm.com/courses/cuny-full-stack-java-development) over a number of pricier bootcamps. 
 
-The program at CUNY provided a less robust background than some of the private bootcamps, but its sticker price was $2,500, whereas [General Assembly](https://generalassemb.ly/education/software-engineering-immersive/portland) was around that time charging $13,000 for its fullstack course. 
+The program at CUNY provided a less robust background than some of the private bootcamps, but its sticker price was $2,500. [General Assembly](https://generalassemb.ly/education/software-engineering-immersive/portland), by contrast, was around that time charging $13,000 for its fullstack course. 
 
 To my mind, the biggest advantage of attending a bootcamp is having someone around who can help you get past the brick-wall frustrations you run into as a junior developer. I'm certain that had I not attended a bootcamp, I would have given up on web development completely when I got to server-side scripting. Instead, a jovial man in a Hawaiian shirt explained to me that PHP executes on a different machine than Javascript, and with that knowledge I took flight.
 
