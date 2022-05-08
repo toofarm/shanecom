@@ -98,12 +98,18 @@ That I have had meager success as a software engineer owes largely to the fact t
 
 Because I get so much enjoyment from writing software, I've spent a huge number of hours doing so, and, despite myself, become kind of good at it. 
 
-I'm not among the world's programming elite, nor will I ever be. In order to develop that kind of talent, you have to start when you're a teenager. I began programming in earnest shortly before I turned 30, and suffer from the natural handicap of a mind most comfortable with stories and feelings. 
+I'm not among the world's programming elite, nor will I ever be; in order to develop that kind of talent, you have to start when you're a teenager. I began programming in earnest shortly before I turned 30, and suffer from the natural handicap of a mind most comfortable with stories and feelings. 
 
-However, with moderate intelligence, loads of tenacity, and a propitious job market, I've managed to make it work.
+However, with moderate intelligence, tenacity, and a propitious job market, I've managed to make it work.
 
 ### Code switching
 
-Among the people who I've seen wash out of coding as a profession, I've noticed their difficulty  rarely arises from lack of technical talent.
+I've seen a number of people wash out of the development profession, not from lack of talent, but rather from their inability to adapt to the tech industry's social mores.
 
-People who genuinely have difficulty learning to program will often quit before they invest months of their lives and thousands of dollars into the project. 
+The technology industry largely draws its membership from the white American middle and upper-middle class. Tech workers generally hail from well-to-do suburbs, from which they swan their way into good colleges, then step directly from those colleges into lucrative professional lives.
+
+I grew up in a place where the parents expected similar career paths of their children. Kids were expected to grow up and become doctors or lawyers or engineers; to take ski vacations in the winter and to have visited Europe often enough to discuss it in detail.
+
+I spent a large part of my adult life recoiling from this group of people, but when I decided to start working as a developer, I nonetheless benefited from my familiarity. I "get" them, for better and worse. To sit in on a negotiation where several million dollars are at stake and listen to the principal parties refer to each other as "dude" perhaps should make one's head explode. The ability to approach such a situation with nonchalance forms a prerequisite to working in tech.
+
+For people who did not grow up in the comfort of American wealth, the day-to-day interactions at a tech company can be bizarre and alienating. I don't believe this owes to a conscious prejudice on the part of tech workers. Rather, it's a matter of tribal affiliation. 
