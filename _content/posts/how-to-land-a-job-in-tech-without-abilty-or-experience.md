@@ -118,7 +118,7 @@ More often than technical challenge, I've seen this sense of wrongfootedness end
 
 ## The work itself
 
-I may lack the talents of a [10x developer](https://medium.com/ingeniouslysimple/the-origins-of-the-10x-developer-2e0177ecef60), but a slew of ancillary skills have sanctioned my career nonetheless. 
+I lack the talents of a [10x developer](https://medium.com/ingeniouslysimple/the-origins-of-the-10x-developer-2e0177ecef60), but a slew of ancillary skills have sanctioned my career nonetheless. 
 
 First and foremost, I enjoy coding; I can work for hours at a time on a difficult problem without succumbing to frustration, and I thrive in a working environment that calls on me infrequently to talk with other people. Not everyone can do this, and even fewer people can enjoy it.
 
