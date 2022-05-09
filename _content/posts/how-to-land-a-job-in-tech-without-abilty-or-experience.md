@@ -18,13 +18,13 @@ I sympathized with much of his narrative, and thought it would be interesting to
 
 ## Life before tech
 
-For nearly a decade after graduating from college, I wandered around working ignominious jobs that had nothing to do with programming software. I was trying to be a journalist, and spent large amounts of time writing for alt weeklies, magazines, and digital news startups.
+For nearly a decade after graduating from college, I wandered around working ignominious jobs that had nothing to do with programming software. My goals was to be a journalist, and I spent large amounts of time writing for alt weeklies, magazines, and digital news startups.
 
-Since this work was intermittent and low-paying, I often had to supplement my income by taking on side gigs. I wrote descriptions of fiber optic products, worked as an incredibly ineffective mover, and, for a brief spell, made lattes and smoothies at a coffee bar embedded in a Williamsburg, Brooklyn Whole Foods.
+Since this work was intermittent and low-paying, I often had to supplement my income by taking on side gigs. I wrote descriptions of fiber optic products, worked as an ineffective mover, and, for a brief spell, made lattes and smoothies at a coffee bar embedded in a Williamsburg, Brooklyn Whole Foods.
 
-My only scoop as a journalist came when I discovered the unviable economics of the job I was pursuing.
+Years of this activity served mostly to prove the economic in-viability of my dreams.
 
-Broke and disappointed, I demurred to the reality that I would be happier doing something else.
+I was 28 when I found myself abruptly fired from an awful job doing legal research and stymied in all other attempts to find gainful employment. Broke and disappointed, I demurred to the reality that I would be happier doing something else.
 
 ## Faking it until you make it
 
@@ -46,11 +46,11 @@ There is a popular belief among developers that you can teach yourself to be an 
 
 For one, every self-taught developer who I know has a natural affinity for processes and abstractions. These are the people who taught themselves shell scripting at 15 and refer to calculus as "easy".
 
-These individuals have also taught themselves to program while enjoying few financial obligations and lots of free time. Whether that means they were living with their parents, relying on a generous girlfriend, or sitting on a chunk of money they got off of the GI Bill, they were all in a position to spend 8 uninterrupted hours per day hunched over their computers, figuring out how to configure a server.
+These individuals have also taught themselves to program while enjoying few financial obligations and lots of free time. Whether that means they were living with their parents, relying on a generous girlfriend, or sitting on a chunk of money from the GI Bill, they were all in a position to spend 8 uninterrupted hours per day hunched over their computers, trying to code.
 
 When I decided to become a developer, I had neither the mental disposition nor the finances to pursue the self-teaching route, so I went to a bootcamp.
 
-Bootcamps have sullied their reputation over the past five years by trying to con students with unrealistic expectations, and employers with half-baked graduates. Nevertheless, I doubt I would be a developer were it not for coding bootcamps.
+Bootcamps have sullied their reputation over the past five years by trying to con students with unrealistic expectations, and employers with half-baked graduates. Nevertheless, I doubt I would be a developer today were it not for coding bootcamps.
 
 A word of advice: if you're going to attend a bootcamp, spend the smallest amount of money on it that you possibly can.
 
@@ -78,7 +78,7 @@ Since I had never worked in tech, I concocted a scheme to use my existing skills
 
 This plan worked pretty well. Shortly after graduating from the bootcamp, I was offered a job with a publishing house that consisted of 50% content writing and 50% development on a couple of Wordpress sites. 
 
-The publishing house, I soon discovered, had entered dire financial straits; a sale was eminent. Working for a failing company, however, turned out to be a great deal. Management gave me free reign to pursue whichever  development projects I pleased, and when the ship sank at last, I received a sizeable "sorry for giving you the sack" bonus, which kept me happy and healthy while I traded up into a full-time development job.
+The publishing house, I soon discovered, had entered dire financial straits; a sale was eminent. Working for a failing company, however, turned out to be a good deal. Management gave me free reign to pursue whichever  development projects I pleased, and when the ship sank at last, I received a sizeable "sorry for giving you the sack" bonus, which kept me happy and healthy while I traded up into a full-time development job.
 
 Though the journey since has involved a couple twists, it's fair to summarize the trajectory as upward-facing, with each chapter bringing more complex technical responsibilities and more Scrooge McDuck-ian amounts of compensation. 
 
@@ -96,7 +96,7 @@ Programming has never been intuitive for me, nor has any other activity involvin
 
 That I have had meager success as a software engineer owes largely to the fact that I enjoy doing it. 
 
-Because I get so much enjoyment from writing software, I've spent a huge number of hours doing so, and, despite myself, become kind of good at it. 
+Because I get so much enjoyment from writing software, I've spent a huge number of hours doing so, and, despite myself, developed competency in the discipline. 
 
 I'm not among the world's programming elite, nor will I ever be; in order to develop that kind of talent, you have to start when you're a teenager. I began programming in earnest shortly before I turned 30, and suffer from the natural handicap of a mind most comfortable with stories and feelings. 
 
@@ -106,10 +106,24 @@ However, with moderate intelligence, tenacity, and a propitious job market, I've
 
 I've seen a number of people wash out of the development profession, not from lack of talent, but rather from their inability to adapt to the tech industry's social mores.
 
-The technology industry largely draws its membership from the white American middle and upper-middle class. Tech workers generally hail from well-to-do suburbs, from which they swan their way into good colleges, then step directly from those colleges into lucrative professional lives.
+The technology industry largely draws its membership from the white American middle and upper-middle class. Tech workers generally hail from well-to-do suburbs, from which they swan their way into good colleges, then step directly from those colleges into lucrative professionals.
 
-I grew up in a place where the parents expected similar career paths of their children. Kids were expected to grow up and become doctors or lawyers or engineers; to take ski vacations in the winter and to have visited Europe often enough to discuss it in detail.
+I grew up in a place where the parents expected similar career paths for their children. Kids were expected to grow up and become doctors or lawyers or engineers; to take ski vacations in the winter and to have visited Europe often enough to discuss it in detail.
 
-I spent a large part of my adult life recoiling from this group of people, but when I decided to start working as a developer, I nonetheless benefited from my familiarity. I "get" them, for better and worse. To sit in on a negotiation where several million dollars are at stake and listen to the principal parties refer to each other as "dude" perhaps should make one's head explode. The ability to approach such a situation with nonchalance forms a prerequisite to working in tech.
+I spent a large part of my adult life recoiling from this group of people, but when I decided to start working as a developer, I nonetheless benefited from my familiarity. I "get" this tribe, for better and worse. To sit in on a negotiation where several million dollars are at stake and listen to the principal parties refer to each other as "dude" perhaps should make one's head explode, but it's a situation I can deal with.
 
-For people who did not grow up in the comfort of American wealth, the day-to-day interactions at a tech company can be bizarre and alienating. I don't believe this owes to a conscious prejudice on the part of tech workers. Rather, it's a matter of tribal affiliation. 
+For people who did not grow up in the comfort of American wealth, the social milieu at a tech company can be bizarre and alienating. I don't believe this owes to discourtesy on the part of tech workers, who will generally trip over themselves to avoid an implication of conscious prejudice. Rather, it's a matter of feeling that one has sneaked into a clubhouse where one doesn't belong, no matter how many times the vetted members insist otherwise.
+
+More often than technical challenge, I've seen this sense of wrongfootedness end developers' careers before they had a chance to properly begin.
+
+## The work itself
+
+I may lack the talents of a 10x developer, but a slew of ancillary skills have sanctioned my career. 
+
+First and foremost, I enjoy coding; I can work for hours at a time on a difficult problem without succumbing to frustration, and I thrive in a working environment that calls on me infrequently to talk with other people. Not everyone can do this, and even fewer people can enjoy it.
+
+Shortly before I started programming professionally, I worked a part-time job making lattes and smoothies. This was horrible work, which was physically demanding, low-paying, and emotionally draining.
+
+Sometimes, while working programming jobs, I might miss Bangkok or else scratch my head in confusion as to how I wound up throwing in my lot with this-or-that group of unscrupulous hustlers. 
+
+My worst day programming, however, is far better than my best day making smoothies. The work pays ridiculously well, I'm respected by my peers, and, crucially, I can pick up stakes and find a different job anytime I want.
