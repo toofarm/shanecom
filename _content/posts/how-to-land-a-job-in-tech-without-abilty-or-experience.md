@@ -118,7 +118,7 @@ More often than technical challenge, I've seen this sense of wrongfootedness end
 
 ## The work itself
 
-I may lack the talents of a 10x developer, but a slew of ancillary skills have sanctioned my career nonetheless. 
+I may lack the talents of a [10x developer](https://medium.com/ingeniouslysimple/the-origins-of-the-10x-developer-2e0177ecef60), but a slew of ancillary skills have sanctioned my career nonetheless. 
 
 First and foremost, I enjoy coding; I can work for hours at a time on a difficult problem without succumbing to frustration, and I thrive in a working environment that calls on me infrequently to talk with other people. Not everyone can do this, and even fewer people can enjoy it.
 
@@ -126,8 +126,8 @@ Shortly before I started programming professionally, I worked a part-time job ma
 
 Sometimes, while working programming jobs, I might miss Bangkok or else scratch my head in confusion as to how I wound up throwing in my lot with this-or-that group of unscrupulous hustlers. 
 
-My worst day programming, however, is far better than my best day making smoothies. The work pays ridiculously well, I'm respected by my peers, and, crucially, I can pick up stakes and find a different job anytime I want.
+My worst day programming, however, is far better than my best day making smoothies. Programming work pays ridiculously well, I'm respected by my peers, and, crucially, I can pick up stakes and find a different job anytime I want.
 
 It's good work, or at least it will be until the bottom falls out of the tech economy and you find me writing an essay about my transition to a career treating and selling beaver pelts.
 
-In the meantime I wish you luck, and let me know if you're in the market for a well-treated beaver pelt.
+In the meantime I wish you luck, and let me know if you're ever in the market for a well-treated beaver pelt.
