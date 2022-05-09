@@ -124,7 +124,7 @@ First and foremost, I enjoy coding; I can work for hours at a time on a difficul
 
 Shortly before I started programming professionally, I worked a part-time job making lattes and smoothies. This was horrible work, which was physically demanding, low-paying, and, on occasion, emotionally abusive.
 
-I will every so often hear colleagues in the technology business complain about the demanding nature of their work, but they are mistaken — their work is not demanding. Making 50 coconut milk lattes in a row or carrying a sea trunk up five flights of stairs is demanding. Sitting in a comfortable chair building little machines for people who respect and throw money at you is not difficult.
+I will every so often hear colleagues in the technology business complain about the demanding nature of their work, but they are mistaken — their work is not demanding. Making 15 coconut milk lattes for someone who scarcely regards you as human, or carrying a sea trunk up five flights of stairs is demanding. Sitting in a comfortable chair building little machines for people who respect and throw money at you is not.
 
 Sometimes, while working programming jobs, I might miss Bangkok or scratch my head as to why I threw in my lot with this-or-that group of unscrupulous hustlers. My worst day programming, however, is far better than my best day making smoothies. Programming work pays ridiculously well, I'm respected by my peers, and, crucially, I can pick up stakes and find a different job anytime I want.
 
