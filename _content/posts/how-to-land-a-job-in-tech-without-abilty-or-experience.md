@@ -129,3 +129,5 @@ Sometimes, while working programming jobs, I might miss Bangkok or else scratch 
 My worst day programming, however, is far better than my best day making smoothies. The work pays ridiculously well, I'm respected by my peers, and, crucially, I can pick up stakes and find a different job anytime I want.
 
 It's good work, or at least it will be until the bottom falls out of the tech economy and you find me writing an essay about my transition to a career treating and selling beaver pelts.
+
+In the meantime I wish you luck, and let me know if you're in the market for a well-treated beaver pelt.
