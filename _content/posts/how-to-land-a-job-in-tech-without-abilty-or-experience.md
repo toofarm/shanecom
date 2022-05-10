@@ -116,10 +116,6 @@ More often than technical challenge, I've seen this sense of wrongfootedness end
 
 ## The work itself
 
-I lack the talents of a [10x developer](https://medium.com/ingeniouslysimple/the-origins-of-the-10x-developer-2e0177ecef60), but ancillary skills have sanctioned my career nonetheless. 
-
-First and foremost, I enjoy coding; I can work for hours at a time on a difficult problem without succumbing to frustration, and I thrive in a working environment that calls on me infrequently to talk with other people. Not everyone can do this, and even fewer people can enjoy it.
-
 Shortly before I started programming professionally, I worked a part-time job making lattes and smoothies. This work was physically demanding, low-paying, and, on occasion, emotionally abusive.
 
 I will every so often hear colleagues in the technology business complain about the demanding nature of their work, but they are mistaken — their work is not demanding. Making 15 coconut milk lattes for someone who scarcely regards you as human, or carrying a sea trunk up five flights of stairs in the July heat, is demanding. Sitting in a comfortable chair solving little logic puzzles is not.
