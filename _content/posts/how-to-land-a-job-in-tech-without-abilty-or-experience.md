@@ -124,7 +124,7 @@ Shortly before I started programming professionally, I worked a part-time job ma
 
 I will every so often hear colleagues in the technology business complain about the demanding nature of their work, but they are mistaken — their work is not demanding. Making 15 coconut milk lattes for someone who scarcely regards you as human, or carrying a sea trunk up five flights of stairs in the July heat, is demanding. Sitting in a comfortable chair solving little logic puzzles is not.
 
-Sometimes, while working programming jobs, I might miss Bangkok or scratch my head as to why I threw in my lot with this-or-that group of fiends. My worst day programming, however, is better than my best day making smoothies. Programming work pays well, I'm respected by my peers, and, crucially, I can pick up stakes and find a different job anytime I want.
+Sometimes, while working programming jobs, I might miss Bangkok or scratch my head as to why I threw in my lot with this-or-that group of fiends. My worst day programming, however, is better than my best day making smoothies. Programming pays well, commands the respect of my peers, and, crucially, allows me to pick up stakes and find a different job anytime I want.
 
 It's good work, or at least it will be until the bottom falls out of the tech economy and you find me writing an essay about my transition to a career treating and selling beaver pelts.
 
