@@ -2,10 +2,10 @@
 tags:
 - life
 - work
-title: How to Land a Job in Tech Without Abilty or Experience
-sub_head: Or - "The Secret of My Success"
-featured_image: "/uploads/2022_05_06_tech_trolly.JPG"
-caption: All aboard / Wikimedia commons
+title: How to land a job in tech without ability or experience
+sub_head: Or, 'The Secret of My Success'
+featured_image: "/uploads/2022_05_10_beaver.jpg"
+caption: NasserHalaweh / Wikimedia commons
 additional_images: ''
 date_created: 2022-05-06 2:00 PM
 date_updated: 
@@ -102,7 +102,7 @@ I'm not among the world's programming elite, nor will I ever be; in order to dev
 
 However, with moderate intelligence, tenacity, and a propitious job market, I've managed to make it work.
 
-### Code switching
+## Code switching
 
 Tech workers generally hail from well-to-do suburbs, from which they graduate to good colleges, then move directly from those colleges into lucrative professions.
 
