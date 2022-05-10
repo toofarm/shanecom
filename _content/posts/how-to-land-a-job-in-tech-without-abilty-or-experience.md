@@ -14,7 +14,7 @@ highlighted: false
 ---
 This past week I read [Lowly Midwestern Engineer's article](https://lowlyswe.substack.com/p/my-experience-getting-a-tech-job) about finding a job in tech without any industry experience.
 
-I sympathized with much of his narrative, and thought it would be interesting to share my thoughts on the same theme. There are no straight lines in nature and, for what it's worth, here's some info about the squiggly line that led me to where I am.
+I sympathized with his narrative, and thought it would be interesting to share my thoughts on the same theme. There are no straight lines in nature and, for what it's worth, here's some info about the squiggly line that led me to where I am.
 
 ## Life before tech
 
@@ -22,7 +22,7 @@ For nearly a decade after graduating from college, I wandered around working ign
 
 Since this work was intermittent and low-paying, I often had to supplement my income by taking on side gigs. I wrote descriptions of fiber optic products, worked as an ineffective mover, and, for a brief spell, made lattes and smoothies at a coffee bar embedded in a Williamsburg, Brooklyn Whole Foods.
 
-Years of this activity served mostly to prove the economic in-viability of my dreams.
+Years of such activity served mostly to prove the economic in-viability of my ambitions.
 
 I was 28 when I found myself abruptly fired from an awful job doing legal research and stymied in all other attempts to find gainful employment. Broke and disappointed, I demurred to the reality that I would be happier doing something else.
 
@@ -38,7 +38,7 @@ Later, I worked as a reporter for a digital news startup in Bangkok (that's anot
 
 These experiences fixed me with the ideas that programming was a) something I could do, and b) significantly easier than it in fact turned out to be.
 
-With my journalism career coughing out its dying breaths, I spent a couple months working through Codeacademy.com courses and decided to commit to a career in tech.
+With my journalism career coughing out its dying breaths, I spent a couple months working through [Code Academy](https://www.codecademy.com/) courses and decided to commit to a career in tech.
 
 ## Bootcamps for better and worse
 
@@ -66,7 +66,7 @@ The program at CUNY provided a less robust background than some of the private b
 
 To my mind, the biggest advantage of attending a bootcamp is having someone around who can help you get past the brick-wall frustrations you run into as a junior developer. I'm certain that had I not attended a bootcamp, I would have given up on web development completely when I got to server-side scripting. Instead, a jovial man named Julio explained to me that PHP executes on a different machine than Javascript, and with that knowledge I was able to keep going.
 
-I've heard about people having negative experiences of bootcamps, and there are a couple things particular to my experience that made it worthwhile. For one, I _worked_ while attending that class. Not only did I do weeks worth of prep work, but I pushed myself to turn in ridiculously ambitious projects during the course. The hours I spent working on those projects meant that I came out of the course with more knowledge than I otherwise might have. 
+I've heard about people having negative experiences of bootcamps, and there are a couple things particular to my experience that made it worthwhile. For one, I _worked_ while attending that class. Not only did I do weeks worth of prep work, but I pushed myself to turn in ridiculously ambitious projects during the course.
 
 I was also prepared to continue studying after I graduated. I held myself to a comically high standard when starting out, and pushed myself to keep working until my projects resembled something professional.
 
@@ -104,11 +104,9 @@ However, with moderate intelligence, tenacity, and a propitious job market, I've
 
 ### Code switching
 
-I've seen a number of people abandon the development profession because of their difficulty in adapting to the tech industry's social mores.
+Tech workers generally hail from well-to-do suburbs, from which they graduate to good colleges, then move directly from those colleges into lucrative professions.
 
-Tech workers generally hail from well-to-do suburbs, from which they swan their way into good colleges, then move directly from those colleges into lucrative professions.
-
-I grew up in a place where the parents expected similar career paths for their children. Kids were expected to grow up and become doctors or lawyers or engineers; to take ski vacations in the winter and to have visited Europe often enough to discuss the experience in detail.
+I grew up in a place where the parents expected similar career paths for their children. Kids were expected to grow up and become doctors or lawyers or engineers; to take ski vacations and have visited Europe.
 
 I spent a large part of my adult life recoiling from this group of people, but when I decided to start working as a developer, I nonetheless benefited from my familiarity. I "get" this tribe, for better and worse. To sit in on a negotiation where several million dollars are at stake and listen to the principal parties refer to each other as "dude" should perhaps make one's head explode, but it's a situation I can live with.
 
@@ -122,11 +120,11 @@ I lack the talents of a [10x developer](https://medium.com/ingeniouslysimple/the
 
 First and foremost, I enjoy coding; I can work for hours at a time on a difficult problem without succumbing to frustration, and I thrive in a working environment that calls on me infrequently to talk with other people. Not everyone can do this, and even fewer people can enjoy it.
 
-Shortly before I started programming professionally, I worked a part-time job making lattes and smoothies. This was horrible work, which was physically demanding, low-paying, and, on occasion, emotionally abusive.
+Shortly before I started programming professionally, I worked a part-time job making lattes and smoothies. This work was physically demanding, low-paying, and, on occasion, emotionally abusive.
 
-I will every so often hear colleagues in the technology business complain about the demanding nature of their work, but they are mistaken — their work is not demanding. Making 15 coconut milk lattes for someone who scarcely regards you as human, or carrying a sea trunk up five flights of stairs, is demanding. Sitting in a comfortable chair solving little logic puzzles, is not.
+I will every so often hear colleagues in the technology business complain about the demanding nature of their work, but they are mistaken — their work is not demanding. Making 15 coconut milk lattes for someone who scarcely regards you as human, or carrying a sea trunk up five flights of stairs in the July heat, is demanding. Sitting in a comfortable chair solving little logic puzzles is not.
 
-Sometimes, while working programming jobs, I might miss Bangkok or scratch my head as to why I threw in my lot with this-or-that group of scheming hustlers. My worst day programming, however, is far better than my best day making smoothies. Programming work pays well, I'm respected by my peers, and, crucially, I can pick up stakes and find a different job anytime I want.
+Sometimes, while working programming jobs, I might miss Bangkok or scratch my head as to why I threw in my lot with this-or-that group of fiends. My worst day programming, however, is better than my best day making smoothies. Programming work pays well, I'm respected by my peers, and, crucially, I can pick up stakes and find a different job anytime I want.
 
 It's good work, or at least it will be until the bottom falls out of the tech economy and you find me writing an essay about my transition to a career treating and selling beaver pelts.
 
