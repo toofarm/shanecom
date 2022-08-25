@@ -19,9 +19,15 @@
 }
 
 .profile_pic {
-  img {
+  position: relative;
+  .profile_wrap {
     border-radius: 5px;
-    max-width: 100%;
+    width: 100%;
+    min-height: 278px;
+    overflow: hidden;
+    .hero {
+      border-radius: 5px;
+    }
   }
 }
 

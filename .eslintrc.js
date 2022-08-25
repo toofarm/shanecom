@@ -34,10 +34,10 @@ module.exports = {
     'no-await-in-loop': 0,
     'max-len': ['error', { code: 120 }],
     'jsx-quotes': ['warn', 'prefer-single'],
-    quotes: ['error', 'single'],
+    quotes: ['warn', 'single'],
     semi: ['warn', 'never'],
     'dot-notation': 'error',
-    indent: ['error', 2],
+    indent: ['warn', 2],
     'function-paren-newline': ['error', { minItems: 4 }],
   },
   overrides: [

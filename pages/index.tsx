@@ -9,6 +9,7 @@ import styles from 'styles/pages/Index.module.scss'
 import Layout from 'components/Layout'
 import HeadStateful from 'components/HeadStateful'
 import PostStub from 'components/PostStub'
+import Image from 'next/image'
 
 // Types
 type TProps = {
@@ -25,7 +26,14 @@ const Home: NextPage<TProps> = ({ intro, projects, posts, content }) => {
       <Layout>
         <div className={styles.intro_grid}>
           <div className={styles.profile_pic}>
-            <img src='/uploads/2022_02_25_shaner_happy.jpeg' alt='Shane Made That' />
+            <div className={styles.profile_wrap}>
+              <Image
+                src='/uploads/2022_02_25_shaner_happy.jpeg'
+                alt='Shane Made That'
+                layout='fill'
+                className={styles.hero}
+              />
+            </div>
             <ul className={styles.links}>
               <li>
                 <a href={intro.linkedin_link} target='_blank' rel='noreferrer'>

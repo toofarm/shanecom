@@ -48,6 +48,7 @@ const Post:FC<TProps> = ({ post, content }) => {
 }
 
 export const getStaticProps = async ({ params }:TParams) => {
+
   const post = 
     getContentBySlug(params.slug, 
       ['tags', 
@@ -61,13 +62,16 @@ export const getStaticProps = async ({ params }:TParams) => {
         'caption',
         'highlighted'], 
       EContentTypes.POSTS)
+
   const content = await markdownToHtml(post.content || '')
+
   return {
     props: {
       post,
       content
     }
   }
+  
 }
 
 export const getStaticPaths = async () => {
