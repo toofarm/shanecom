@@ -1,0 +1,17 @@
+@use 'styles/shared' as s;
+@import 'styles/themes';
+
+.post_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0.5rem 0 1rem 0;
+  padding: 0.5rem 0 0 0;
+  border-top: 1px solid var(primaryText);
+
+  a {
+    @include s.link;
+    font-size: 20px;
+  }
+}

@@ -36,9 +36,9 @@ module.exports = {
     'jsx-quotes': ['warn', 'prefer-single'],
     quotes: ['warn', 'single'],
     semi: ['warn', 'never'],
-    'dot-notation': 'error',
+    'dot-notation': 'warn',
     indent: ['warn', 2],
-    'function-paren-newline': ['error', { minItems: 4 }],
+    'function-paren-newline': ['warn', { minItems: 2 }]
   },
   overrides: [
     // Tell ESLint we don't need prop checking on our .tsx components

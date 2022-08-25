@@ -5,17 +5,30 @@ import { IContent, EContentTypes } from '../../types'
 
 
 const getSlugs = (type : EContentTypes) => {
-  const contentUrl = join(process.cwd(), `_content/${type}`)
+  const contentUrl = join(
+    process.cwd(), `_content/${type}`
+  )
   return fs.readdirSync(contentUrl)
 }
 
-export const getContentBySlug = (slug: string,
-  fields: string[] = [], type : EContentTypes) => {
-  const contentUrl = join(process.cwd(), `_content/${type}`)
-  const realSlug = slug.replace(/\.md$/,
-    '')
-  const fullPath = join(contentUrl, `${realSlug}.md`)
-  const fileContents = fs.readFileSync(fullPath, 'utf8')
+export const getContentBySlug = (
+  slug: string,
+  fields: string[] = [], 
+  type : EContentTypes
+) => {
+  const contentUrl = join(
+    process.cwd(), `_content/${type}`
+  )
+  const realSlug = slug.replace(
+    /\.md$/,
+    ''
+  )
+  const fullPath = join(
+    contentUrl, `${realSlug}.md`
+  )
+  const fileContents = fs.readFileSync(
+    fullPath, 'utf8'
+  )
   const { data, content } = matter(fileContents)
 
   const items: IContent = {  
@@ -37,16 +50,28 @@ export const getContentBySlug = (slug: string,
   return items
 }
 
-export function getSortedList<T> (list: T[], param: string):T[] {
-  return list.sort((a, b) => (a > b ? 1 : -1))
+export function getSortedList<T> (
+  list: T[], 
+  param: string
+):T[] {
+  return list.sort((
+    a, b
+  ) => (a > b ? 1 : -1))
 }
 
-export const getAllContentByType = (type:EContentTypes = EContentTypes.POSTS, fields: string[] = []) => {
+export const getAllContentByType = (
+  type:EContentTypes = EContentTypes.POSTS, 
+  fields: string[] = []
+) => {
   const slugs = getSlugs(type)
   const posts = slugs
-    .map((slug) => getContentBySlug(slug,
+    .map((slug) => getContentBySlug(
+      slug,
       fields,
-      type))
-    .sort((postA, postB) => (postA.date_created > postB.date_created ? -1 : 1))
+      type
+    ))
+    .sort((
+      postA, postB
+    ) => (postA.date_created > postB.date_created ? -1 : 1))
   return posts
 }

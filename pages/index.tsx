@@ -31,6 +31,7 @@ const Home: NextPage<TProps> = ({ intro, projects, posts, content }) => {
                 src='/uploads/2022_02_25_shaner_happy.jpeg'
                 alt='Shane Made That'
                 layout='fill'
+                priority
                 className={styles.hero}
               />
             </div>
@@ -66,33 +67,44 @@ const Home: NextPage<TProps> = ({ intro, projects, posts, content }) => {
 }
 
 export const getStaticProps = async () => {
-  const intro = getContentBySlug('intro_copy', 
+
+  const intro = getContentBySlug(
+    'intro_copy', 
     ['headline', 
       'linkedin_link', 
       'github_link', 
       'profile_photo',
       'content'],
-    EContentTypes.INTRO)
+    EContentTypes.INTRO
+  )
   const content = await markdownToHtml(intro.content || '')
 
   let projects = 
-    getAllContentByType(EContentTypes.PROJECTS, 
+    getAllContentByType(
+      EContentTypes.PROJECTS, 
       ['tags', 
         'title',
         'featured_image', 
         'date_created',
-        'slug'])
+        'slug']
+    )
 
   let posts = 
-      getAllContentByType(EContentTypes.POSTS, 
+      getAllContentByType(
+        EContentTypes.POSTS, 
         ['tags', 
           'title',
           'featured_image', 
           'date_created',
-          'slug'])
+          'slug']
+      )
 
-  projects = projects.slice(0, 3)
-  posts = posts.slice(0, 3)
+  projects = projects.slice(
+    0, 3
+  )
+  posts = posts.slice(
+    0, 3
+  )
 
   return {
     props : {

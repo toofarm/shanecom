@@ -5,7 +5,9 @@ export interface IContent {
   content?: string;
   date_created: string;
   start_date?: string;
-  years?: number
+  years?: number;
+  slug?: string;
+  title?: string
 }
 
 // TYPES
