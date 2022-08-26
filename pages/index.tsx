@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import { getAllContentByType, getContentBySlug } from './api/get_content'
 import { EContentTypes, TIntro, TPost, TProject } from 'types'
 import { markdownToHtml } from 'lib'
-import useWindowResize from 'hooks/use_window_size'
 import shared_styles from '../styles/Content.module.scss'
 import styles from 'styles/pages/Index.module.scss'
 
@@ -10,7 +9,6 @@ import styles from 'styles/pages/Index.module.scss'
 import Layout from 'components/Layout'
 import HeadStateful from 'components/HeadStateful'
 import PostStub from 'components/PostStub'
-import Image from 'next/image'
 
 // Types
 type TProps = {
@@ -21,8 +19,6 @@ type TProps = {
 }
 
 const Home: NextPage<TProps> = ({ intro, projects, posts, content }) => {
-  const { width } = useWindowResize()
-
   return (
     <div>
       <HeadStateful pageTitle='' />
