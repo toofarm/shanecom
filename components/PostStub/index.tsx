@@ -16,9 +16,13 @@ type TProps = {
 const PostStub:FC<TProps> = ({ stub, type }) => {
   const [date, setDate] = useState<string>('')
 
-  useEffect(() => {
-    setDate(format(new Date(stub.date_created.split(' ')[0]), 'MMMM do, yyyy'))
-  }, [stub])
+  useEffect(
+    () => {
+      setDate(format(
+        new Date(stub.date_created.split(' ')[0]), 'MMMM do, yyyy'
+      ))
+    }, [stub]
+  )
   
   return (
     <div className={styles.link_wrap}>

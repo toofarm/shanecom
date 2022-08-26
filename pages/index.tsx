@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
 import { getAllContentByType, getContentBySlug } from './api/get_content'
 import { EContentTypes, TIntro, TPost, TProject } from 'types'
-import markdownToHtml from 'lib/markdownToHtml'
+import { markdownToHtml } from 'lib'
+import useWindowResize from 'hooks/use_window_size'
 import shared_styles from '../styles/Content.module.scss'
 import styles from 'styles/pages/Index.module.scss'
 
@@ -20,21 +21,19 @@ type TProps = {
 }
 
 const Home: NextPage<TProps> = ({ intro, projects, posts, content }) => {
+  const { width } = useWindowResize()
+
   return (
     <div>
       <HeadStateful pageTitle='' />
       <Layout>
         <div className={styles.intro_grid}>
           <div className={styles.profile_pic}>
-            <div className={styles.profile_wrap}>
-              <Image
-                src='/uploads/2022_02_25_shaner_happy.jpeg'
-                alt='Shane Made That'
-                layout='fill'
-                priority
-                className={styles.hero}
-              />
-            </div>
+            <img
+              src='/uploads/2022_02_25_shaner_happy.jpeg'
+              alt='Shane Made That'
+              className={styles.hero}
+            />
             <ul className={styles.links}>
               <li>
                 <a href={intro.linkedin_link} target='_blank' rel='noreferrer'>

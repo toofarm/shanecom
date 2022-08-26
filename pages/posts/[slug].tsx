@@ -1,8 +1,7 @@
 import React, { FC, useRef } from 'react'
 import { getAllContentByType, getContentBySlug } from 'pages/api/get_content'
 import { EContentTypes, IContent, TPost } from 'types'
-import markdownToHtml from 'lib/markdownToHtml'
-import findArrayIndex from 'lib/findArrayIndex'
+import { findArrayIndex, markdownToHtml } from 'lib'
 import styles from 'styles/Content.module.scss'
 import 'highlight.js/styles/base16/railscasts.css'
 
@@ -82,19 +81,22 @@ export const getStaticProps = async ({ params }:TParams) => {
     )
 
   const posts = getAllContentByType(
-    EContentTypes.POSTS, ['slug']
+    EContentTypes.POSTS, [
+      'slug',
+      'date_created'
+    ]
   )
 
   const sortedPosts = posts.sort((
     a:IContent, b:IContent
   ) => {
-    if (a.slug && b.slug && a.slug > b.slug) return 1
-    else if (a.slug && b.slug && a.slug < b.slug) return -1
+    if (a.date_created && b.date_created && a.date_created > b.date_created) return 1
+    else if (a.date_created && b.date_created && a.date_created < b.date_created) return -1
     else return 0
   })
 
   const postIndex = findArrayIndex(
-    sortedPosts, params.slug, 'slug'
+    sortedPosts, post.date_created, 'date_created'
   )
 
   if (postIndex !== null) {
@@ -103,20 +105,16 @@ export const getStaticProps = async ({ params }:TParams) => {
       getContentBySlug(
       posts[postIndex - 1].slug as string, 
       [ 'slug', 
-        'sub_head', 
-        'featured_image', 
-        'date_created'], 
+        'title'], 
       EContentTypes.POSTS
       ) :
       null
 
-    nextPost = postIndex <= posts.length - 1 ?
+    nextPost = postIndex < posts.length - 1 ?
       getContentBySlug(
       posts[postIndex + 1].slug as string, 
       [ 'slug', 
-        'sub_head', 
-        'featured_image', 
-        'date_created'], 
+        'title'], 
       EContentTypes.POSTS
       ) :
       null

@@ -1,16 +1,20 @@
 const findArrayIndex = 
   (
-    arr:any[], target:any, param: any
+    arr:any[], target:string, param:string
   ):number | null => {
     let start = 0
     let end = arr.length - 1
 
+    const targetDate = new Date(target.split(' ')[0])
+
     while(start <= end) {
       const mid = Math.floor((start + end) / 2)
 
-      if (arr[mid][param] === target) return mid
+      const pivotDate = new Date(arr[mid][param].split(' ')[0])
 
-      else if (arr[mid][param] < target) 
+      if (pivotDate.getTime() === targetDate.getTime()) return mid
+
+      else if (pivotDate.getTime() < targetDate.getTime()) 
         start = mid + 1
 
       else end = mid - 1
