@@ -17,4 +17,4 @@ date_updated:
 ---
 While at [Theo Agency](https://theo.agency/), I led a project to develop a single-game tickets app for the Sacramento Kings. The application pulls data from the NBA's APIs, then mixes that data with ticket information entered by the Kings' marketing team before presenting it to the user.
 
-The application lives within a NextJS project. Component logic is facilitated through ReactJS and Redux helps manage the application data in state.
+The application lives within a NextJS project. Component logic is facilitated through ReactJS and Redux helps manage the application data.
