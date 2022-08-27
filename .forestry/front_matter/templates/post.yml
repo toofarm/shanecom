@@ -50,6 +50,7 @@ fields:
   label: Highlighted post
   description: Indicates that the post deserves special attention
 pages:
+- _content/posts/first-impressions-of-svelte.md
 - _content/posts/how-to-land-a-job-in-tech-without-abilty-or-experience.md
 - _content/posts/how-to-make-a-responsive-sliding-mobile-menu-in-react.js.md
 - _content/posts/making-this-very-website.md
