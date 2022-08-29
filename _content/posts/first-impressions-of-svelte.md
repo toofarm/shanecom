@@ -13,4 +13,6 @@ date_updated:
 highlighted: false
 
 ---
-Over the past couple years, I noticed Svelte creeping more frequently into the debate about which frontend framework is "best". 
+I had spent a year or so noting the increasing frequency with which [Svelte](https://svelte.dev/) kept showing up in debates as to which frontend framework was "best". 
+
+Already curious, [an article](https://javascript.plainenglish.io/javascript-frameworks-and-core-web-vitals-b5581f1c8962) comparing the Core Web Vitals performance of common frontend frameworks persuaded me to give Svelte a try. In this article, the author revealed that, according to Google's data on the subject, Svelte was wiping the floor with both React.js and Angular across all CWVs. 
