@@ -13,4 +13,4 @@ date_updated:
 highlighted: false
 
 ---
-Over the past couple years, I had noticed Svelte creeping more frequently into the perpetual conversation about, "Which frontend framework is the best?"
+Over the past couple years, I noticed Svelte creeping more frequently into the debate about which frontend framework is "best". 
