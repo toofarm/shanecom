@@ -50,3 +50,9 @@ Svelte allows developers to send data through their applications using prop dril
 In Svelte, however, Stores come bundled with the library and require no third-party package. They are also, in my opinion, far easier to write and maintain than Redux or Vuex stores. The latter libraries present a significant hurdle for newcomes to the React and VueJS ecosystems, and obviating that difficulty at the start scores a significant point in Svelte's favor.
 
 ## The Bad (or at least the frustrating)
+
+### Limited community/tooling
+
+Svelte does not have a community the same size as React or Vue's, which makes Svelte projects more difficult for a couple of reasons.
+
+For one, Svelte developers are much more difficult to come by than developers for better-known frameworks. I think one of Svelte's advantages is how easy it is learn, but still, you'll have trouble finding someone with the framework on their resume. 
