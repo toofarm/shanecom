@@ -44,3 +44,9 @@ Svelte also allows developers to employ TypeScript and SCSS within these single-
 In reading about Svelte I've been surprised at relatively uncommon mention of the library's state management solutions. 
 
 Svelte allows developers to send data through their applications using prop drilling, just like VueJS and React. However, unlike the aforementioned, Svelte comes with flux-like capability baked in!
+
+[Stores](https://svelte.dev/tutorial/writable-stores), as they're known in Svelte parlance, allow developers to distribute data throughout their apps, much in the same way libraries such as Redux and Vuex provide similar capabilities to React and Vue applications.
+
+In Svelte, however, Stores come bundled with the library and require no third-party package. They are also, in my opinion, far easier to write and maintain than Redux or Vuex stores. The latter libraries present a significant hurdle for newcomes to the React and VueJS ecosystems, and obviating that difficulty at the start scores a significant point in Svelte's favor.
+
+## The Bad (or at least the frustrating)
