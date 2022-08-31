@@ -27,4 +27,6 @@ Before going into the positives, I should note that this article comprises my ro
 
 ### Speed
 
-Unlike React and Vue, Svelte does away entirely with the virtual DOM, instead relying on a compiler to transform your .svelte components into highly optimized Javascript. As a result, Svelte ships a minuscule payload to the browser, resulting in blinding-fast page performance.
+Unlike React and Vue, Svelte does away entirely with the virtual DOM, instead relying on a compiler to transform your .svelte components into highly optimized Javascript. As a result, Svelte ships a minuscule payload to the browser, resulting in blinding-fast on-page performance.
+
+Svelte's migration way from the virtual DOM and toward the compiler is its banner feature. Framework founder [Rich Harris](https://github.com/Rich-Harris) has maintained that the virtual DOM is bloats React payloads unnecessarily and Svelte makes a compelling argument for this statement's truth.
