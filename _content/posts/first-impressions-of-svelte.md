@@ -35,4 +35,10 @@ The app I developed while playing around with Svelte was too small to validate t
 
 ### Syntax
 
-Svelte has what is (to my mind) an advantage over React in that it bundles component markup, logic, and styling into single files. VueJS employs this technique as well, and I've always found it lacking in React. 
+Svelte has what is (to my mind) an advantage over React in that it bundles component markup, logic, and styling into single files. VueJS employs this technique as well, and I've always found it much more convenient than trying to parse these elements into separate files - as is suggested but not demanded by React.
+
+Svelte also allows developers to employ TypeScript and SCSS within these single-file components, though this feature (as we'll see) is touch-and-go at present.
+
+### State management
+
+In reading about Svelte I've felt like mention of the library's state management solutions remain. 
