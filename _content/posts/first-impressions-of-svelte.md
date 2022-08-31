@@ -41,4 +41,6 @@ Svelte also allows developers to employ TypeScript and SCSS within these single-
 
 ### State management
 
-In reading about Svelte I've felt like mention of the library's state management solutions remain. 
+In reading about Svelte I've been surprised at relatively uncommon mention of the library's state management solutions. 
+
+Svelte allows developers to send data through their applications using prop drilling, just like VueJS and React. However, unlike the aforementioned, Svelte comes with flux-like capability baked in!
