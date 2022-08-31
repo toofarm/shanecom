@@ -23,10 +23,16 @@ My curiosity piqued, I decided to try using Svelte on a modest "Hello World" app
 
 ## The Good
 
-Before going into the positives, I should note that this article comprises my rough first impressions. A thorough technical investigation into any of these frameworks falls outside this article's scope, though perhaps I'll go into that in a later post.
+Before going into the positives, I should note that this article comprises my rough first impressions. A thorough technical investigation into any of these frameworks falls outside this article's scope, though perhaps I'll get to that in a later post.
 
 ### Speed
 
-Unlike React and Vue, Svelte does away entirely with the virtual DOM, instead relying on a compiler to transform your .svelte components into highly optimized Javascript. As a result, Svelte ships a minuscule payload to the browser, resulting in blinding-fast on-page performance.
+Unlike React and Vue, Svelte does not use a virtual DOM, instead relying on a compiler to transform .svelte components into highly optimized Javascript. As a result, Svelte apps ship a minuscule payload to the browser, resulting in remarkably fast on-page performance.
 
-Svelte's migration way from the virtual DOM and toward the compiler is its banner feature. Framework founder [Rich Harris](https://github.com/Rich-Harris) has maintained that the virtual DOM is bloats React payloads unnecessarily and Svelte makes a compelling argument for this statement's truth.
+Svelte's compiler is its banner feature. Framework founder [Rich Harris](https://github.com/Rich-Harris) has maintained that the virtual DOM bloats conventional SPA payloads unnecessarily, whereas Svelte outpaces these competitors by shipping only vanilla Javascript.
+
+The app I developed while playing around with Svelte was too small to validate this theory meaningfully, but it at least allowed me to see that Svelte ships a miniscule bundle to the browser (in my case TK kb), which helps dramatically with load times.
+
+### Syntax
+
+Svelte has what is (to my mind) an advantage over React in that it bundles component markup, logic, and styling into single files. VueJS employs this technique as well, and I've always found it lacking in React. 
