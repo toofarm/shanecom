@@ -13,9 +13,9 @@ date_updated:
 highlighted: false
 
 ---
-I've spent a year or so noting the frequency with which [Svelte](https://svelte.dev/) keeps showing up in debates as to which frontend framework is "the best".
+I've spent a year or so noting the frequency with which [Svelte](https://svelte.dev/) keeps showing up in [debates](https://survey.stackoverflow.co/2022/#most-loved-dreaded-and-wanted-webframe-love-dread) about which frontend framework is "the best".
 
-Already curious about the framework, I decided to give Svelte a try after reading [an article](https://javascript.plainenglish.io/javascript-frameworks-and-core-web-vitals-b5581f1c8962) comparing the [Core Web Vitals](https://support.google.com/webmasters/answer/9205520?hl=en) performance of common frontend frameworks. In this article, the author revealed that, according to Google's data on the subject, Svelte was wiping the floor with both React.js and Angular across all CWVs. SvelteKit, Svelte's server-side rendering library, performed even better.
+Already curious about the framework, I decided to give Svelte a try after reading [an article](https://javascript.plainenglish.io/javascript-frameworks-and-core-web-vitals-b5581f1c8962) comparing its [Core Web Vitals](https://support.google.com/webmasters/answer/9205520?hl=en) performance to that of other common frontend frameworks. In this article, the author revealed that, according to Google's data on the subject, Svelte was wiping the floor with both React.js and Angular across all CWVs. SvelteKit, Svelte's server-side rendering library, performed even better.
 
 My curiosity piqued, I decided to try using Svelte on a [modest "Hello World" app](https://github.com/toofarm/InflationCalculator), and see how it compared to React.js and VueJS - my two favorite presentation-layer frameworks to date.
 
