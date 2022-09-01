@@ -41,7 +41,7 @@ Svelte also allows developers to employ TypeScript and SCSS within these single-
 
 ### State management
 
-In reading about Svelte I've been surprised at relatively uncommon mention of the library's state management solutions. 
+In reading about Svelte I've been surprised at relatively uncommon mention of the library's state management solutions.
 
 Svelte allows developers to send data through their applications using prop drilling, just like VueJS and React. However, unlike the aforementioned, Svelte comes with flux-like capability baked in!
 
@@ -51,8 +51,14 @@ In Svelte, however, Stores come bundled with the library and require no third-pa
 
 ## The Bad (or at least the frustrating)
 
-### Limited community/tooling
+### Limited community
 
-Svelte does not have a community the same size as React or Vue's, which makes Svelte projects more difficult for a couple of reasons.
+Svelte does not have a community the size of React or Vue's, which creates several difficulties.
 
-For one, Svelte developers are much more difficult to come by than developers for better-known frameworks. I think one of Svelte's advantages is how easy it is learn, but still, you'll have trouble finding someone with the framework on their resume. 
+For one, Svelte developers are much more difficult to come by than developers for better-known frameworks. I think one of Svelte's advantages is how easy it is learn, but still, you'll have trouble finding someone with the framework on their resume.
+
+This means as well that problems you run into in your development process will be much harder to resolve. On StackOverflow, as of this writing, there are 411,344 about React and 7,839 about Svelte. Yikes.
+
+### Tooling
+
+For my sample project, I elected to use TypeScript and SCSS. Thought Svelte 
