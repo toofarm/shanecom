@@ -19,7 +19,7 @@ Already curious about the framework, I decided to give Svelte a try after readin
 
 My curiosity piqued, I decided to try using Svelte on a [modest "Hello World" app](https://github.com/toofarm/InflationCalculator), and see how it compared to React.js and VueJS - my two favorite presentation-layer frameworks to date.
 
-**TL;DR** Though it's not without downsides, Svelte has a great many advantages over both React.js and VueJS. I hope Svelte becomes more common as a go-to web development framework.
+**TL;DR** _Though it's not without downsides, Svelte has a great many advantages over both React.js and VueJS. I hope Svelte becomes more common as a go-to web development framework._
 
 ## The Good
 
@@ -71,6 +71,8 @@ Similar tooling issues plagued the early years of React and Vue development, so 
 
 ## The final verdict
 
-I like Svelte a lot. It's clear that Svelte is a thoughtfully designed framework; it boasts some impressive performance benchmarks and an easily comprehensible syntax.
+I like Svelte a lot; it boasts some impressive performance benchmarks and an easily comprehensible syntax.
 
-The next couple years will tell whether or not it can build the momentum necessary to become a permanent fixture of the frontend landscape. 
+The next couple years will tell whether or not it can build the momentum necessary to become a permanent fixture of the frontend landscape. React and Vue (especially React) have a significant head start, and I worry that if Svelte does approach "escape velocity", one of the major tech firms will create an imitator to flood the space with their own tech.
+
+However, I could also see a world in which Svelte joins ReactJS, Vue and Angular as one of the essential building blocks of the modern web. And I hope that happens, because the framework does some very good things. 
