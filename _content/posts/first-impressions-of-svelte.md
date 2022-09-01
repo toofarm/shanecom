@@ -68,3 +68,9 @@ I  had bootstrapped my project with SvelteKit and Vite, [per Svelte's recommenda
 In addition to wrestling with TypeScript and SCSS, I also had trouble with erroneous errors popping up in Visual Studio Code, even when using [Svelte's VS Code extension](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). Though I eventually succeeded in getting my code to compile, I never did get rid of the syntax errors in VS Code, which simply could not comprehend TypeScript and HTML existing in the same file.
 
 Similar tooling issues plagued the early years of React and Vue development, so there's reason to believe Svelte's tooling will come around, but until then it may be rough going.
+
+## The final verdict
+
+I like Svelte a lot. It's clear that Svelte is a thoughtfully designed framework; it boasts some impressive performance benchmarks and an easily comprehensible syntax.
+
+The next couple years will tell whether or not it can build the momentum necessary to become a permanent fixture of the frontend landscape. 
