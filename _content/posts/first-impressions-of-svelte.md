@@ -17,7 +17,7 @@ I've spent a year or so noting the frequency with which [Svelte](https://svelte.
 
 Already curious about the framework, I decided to give Svelte a try after reading [an article](https://javascript.plainenglish.io/javascript-frameworks-and-core-web-vitals-b5581f1c8962) comparing the [Core Web Vitals](https://support.google.com/webmasters/answer/9205520?hl=en) performance of common frontend frameworks. In this article, the author revealed that, according to Google's data on the subject, Svelte was wiping the floor with both React.js and Angular across all CWVs. SvelteKit, Svelte's server-side rendering library, performed even better.
 
-My curiosity piqued, I decided to try using Svelte on a modest "Hello World" app, and see how it compared to React.js and VueJS - my two favorite presentation-layer frameworks to date.
+My curiosity piqued, I decided to try using Svelte on a [modest "Hello World" app](https://github.com/toofarm/InflationCalculator), and see how it compared to React.js and VueJS - my two favorite presentation-layer frameworks to date.
 
 **TL;DR** Though it's not without downsides, Svelte has a great many advantages over both React.js and VueJS. I hope Svelte becomes more common as a go-to web development framework.
 
@@ -61,4 +61,4 @@ This means as well that problems you run into in your development process will b
 
 ### Tooling
 
-For my sample project, I elected to use TypeScript and SCSS. Thought Svelte 
+For my sample project, I elected to use TypeScript for application logic and SCSS for styling. Thought Svelte claims to support both libraries, I found it very difficult to get them both to work.
