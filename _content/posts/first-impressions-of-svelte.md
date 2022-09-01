@@ -47,7 +47,7 @@ Svelte allows developers to send data through their applications using prop dril
 
 [Stores](https://svelte.dev/tutorial/writable-stores), as they're known in Svelte parlance, allow developers to distribute data throughout their apps, much in the same way libraries such as Redux and Vuex provide similar capabilities to React and Vue applications.
 
-In Svelte, however, Stores come bundled with the library and require no third-party package. They are also, in my opinion, far easier to write and maintain than Redux or Vuex stores. The latter libraries present a significant hurdle for newcomes to the React and VueJS ecosystems, and obviating that difficulty at the start scores a significant point in Svelte's favor.
+In Svelte, however, Stores come bundled with the library and require no third-party package. They are also, in my opinion, far easier to write and maintain than Redux or Vuex stores. The latter libraries present a significant hurdle for newcomers to the React and VueJS ecosystems, and obviating that difficulty at the start scores a significant point in Svelte's favor.
 
 ## The Bad (or at least the frustrating)
 
@@ -61,7 +61,7 @@ This means as well that problems you run into in your development process will b
 
 ### Tooling
 
-For my sample project, I elected to use TypeScript for application logic and SCSS for styling. Thought Svelte supports both libraries, I found it very difficult to get them both to work.
+For my sample project, I elected to use TypeScript for application logic and SCSS for styling. Thought Svelte supports both libraries, I found it difficult to get them both to work.
 
 I  had bootstrapped my project with SvelteKit and Vite, [per Svelte's recommendation](https://kit.svelte.dev/docs/introduction#introduction-before-we-begin), but even within Svelte's recommended dev environment, getting to the "Hello World" phase was a challenge. Only after writing three separate config files, downloading a half-dozen helper libraries, and scrapping the project entirely to restart from scratch did I manage to get the app to compile from my preferred languages into something viewable in the browser.
 
@@ -73,6 +73,6 @@ Similar tooling issues plagued the early years of React and Vue development, so 
 
 I like Svelte a lot; it boasts some impressive performance benchmarks and an easily comprehensible syntax.
 
-The next couple years will tell whether or not it can build the momentum necessary to become a permanent fixture of the frontend landscape. React and Vue (especially React) have a significant head start, and I worry that if Svelte does approach "escape velocity", one of the major tech firms will create an imitator to flood the space with their own tech.
+The next couple years will tell whether or not it can build the momentum necessary to become a permanent fixture of the frontend development ecosystem. React and Vue (especially React) have a significant head start, and I worry that if Svelte does approach "escape velocity", one of the major tech firms will create an imitator to flood the space with their own tech.
 
 However, I could also see a world in which Svelte joins ReactJS, Vue and Angular as one of the essential building blocks of the modern web. And I hope that happens, because the framework does some very good things. 
