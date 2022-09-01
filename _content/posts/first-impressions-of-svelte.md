@@ -57,7 +57,7 @@ Svelte does not have a community the size of React or Vue's, which creates sever
 
 For one, Svelte developers are much more difficult to come by than developers for better-known frameworks. I think one of Svelte's advantages is how easy it is learn, but still, you'll have trouble finding someone with the framework on their resume.
 
-This means as well that problems you run into in your development process will be much harder to resolve. On StackOverflow, as of this writing, there are 411,344 about React and 7,839 about Svelte. Yikes.
+This means as well that problems you run into in your development process will be much harder to resolve. On StackOverflow, as of this writing, there are 411,344 posts about ReactJS and 7,839 about Svelte. Yikes.
 
 ### Tooling
 
@@ -65,4 +65,6 @@ For my sample project, I elected to use TypeScript for application logic and SCS
 
 I  had bootstrapped my project with SvelteKit and Vite, [per Svelte's recommendation](https://kit.svelte.dev/docs/introduction#introduction-before-we-begin), but even within Svelte's recommended dev environment, getting to the "Hello World" phase was a challenge. Only after writing three separate config files, downloading a half-dozen helper libraries, and scrapping the project entirely to restart from scratch did I manage to get the app to compile from my preferred languages into something viewable in the browser.
 
-In addition to wrestling with TypeScript and SCSS, I also had loads of trouble with erroneous errors popping up in Visual Studio Code, even when using [Svelte's VS Code extension](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). Though I eventually succeeded in getting my code to compile, I never did get rid of the syntax errors in VS Code.
+In addition to wrestling with TypeScript and SCSS, I also had trouble with erroneous errors popping up in Visual Studio Code, even when using [Svelte's VS Code extension](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). Though I eventually succeeded in getting my code to compile, I never did get rid of the syntax errors in VS Code, which simply could not comprehend TypeScript and HTML existing in the same file.
+
+Similar tooling issues plagued the early years of React and Vue development, so there's reason to believe Svelte's tooling will come around, but until then it may be rough going.
