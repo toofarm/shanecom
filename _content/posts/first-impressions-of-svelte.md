@@ -75,4 +75,4 @@ I like Svelte a lot; it boasts some impressive performance benchmarks and an eas
 
 The next couple years will tell whether or not it can build the momentum necessary to become a permanent fixture of the frontend development ecosystem. React and Vue (especially React) have a significant head start, and I worry that if Svelte does approach "escape velocity", one of the major tech firms will create an imitator to flood the space with their own tech.
 
-However, I could also see a world in which Svelte joins ReactJS, Vue and Angular as one of the essential building blocks of the modern web. And I hope that happens, because the framework does some very good things. 
+However, I could also see a world in which Svelte joins ReactJS, Vue and Angular as one of the essential building blocks of the modern web. And I hope that happens, because the framework does a lot of things that I appreciate and would like to see more of.
