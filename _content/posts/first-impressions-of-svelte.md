@@ -61,4 +61,8 @@ This means as well that problems you run into in your development process will b
 
 ### Tooling
 
-For my sample project, I elected to use TypeScript for application logic and SCSS for styling. Thought Svelte claims to support both libraries, I found it very difficult to get them both to work.
+For my sample project, I elected to use TypeScript for application logic and SCSS for styling. Thought Svelte supports both libraries, I found it very difficult to get them both to work.
+
+I  had bootstrapped my project with SvelteKit and Vite, [per Svelte's recommendation](https://kit.svelte.dev/docs/introduction#introduction-before-we-begin), but even within Svelte's recommended dev environment, getting to the "Hello World" phase was a challenge. Only after writing three separate config files, downloading a half-dozen helper libraries, and scrapping the project entirely to restart from scratch did I manage to get the app to compile from my preferred languages into something viewable in the browser.
+
+In addition to wrestling with TypeScript and SCSS in order to try to get them to compile, I also had loads of trouble with erroneous errors popping up in Visual Studio Code, even when using [Svelte's VS Code extension](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). Though I eventually succeeded in getting my code to compile, I never did get rid of the false syntax errors in VS Code.
