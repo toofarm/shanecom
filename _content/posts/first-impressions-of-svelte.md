@@ -4,7 +4,7 @@ tags:
 - svelte
 - javascript
 title: First impressions of Svelte
-sub_head: Is it better than React? In a word, yes
+sub_head: Is it better than React? Mostly, yeah
 featured_image: "/uploads/2022_08_29_svelte_logo-svg.png"
 caption: ''
 additional_images: ''
@@ -13,13 +13,11 @@ date_updated:
 highlighted: false
 
 ---
-I've spent a year or so noting the frequency with which [Svelte](https://svelte.dev/) keeps showing up in [debates](https://survey.stackoverflow.co/2022/#most-loved-dreaded-and-wanted-webframe-love-dread) about which frontend framework is "the best".
-
 Already curious about the framework, I decided to give Svelte a try after reading [an article](https://javascript.plainenglish.io/javascript-frameworks-and-core-web-vitals-b5581f1c8962) comparing its [Core Web Vitals](https://support.google.com/webmasters/answer/9205520?hl=en) performance to that of other common frontend frameworks. In this article, the author revealed that, according to Google's data on the subject, Svelte was wiping the floor with both React.js and Angular across all CWVs.
 
 My curiosity piqued, I decided to try using Svelte on a [modest "Hello World" app](https://github.com/toofarm/InflationCalculator), and see how it compared to React.js and VueJS - my two favorite presentation-layer frameworks to date.
 
-**TL;DR** _Though it's not without downsides, Svelte has a great many advantages over both React.js and VueJS._ 
+**TL;DR** _Though it's not without downsides, Svelte has a great many advantages over both React.js and VueJS._
 
 ## The Good
 
@@ -35,13 +33,13 @@ The app I developed while playing around with Svelte was too small to validate t
 
 ### Syntax
 
-Svelte has what is (to my mind) an advantage over React in that it bundles component markup, logic, and styling into single files. VueJS employs this technique as well, and I've always found it much more convenient than trying to parse these elements into separate files, as is suggested but not demanded by React.
+Svelte has what is (to my mind) an advantage over React in that it bundles component markup, logic, and styling into single files. VueJS employs this technique as well, and I've always found it more convenient than trying to parse these elements into separate files, as is suggested but not demanded by React.
 
 Svelte also allows developers to employ different languages such as TypeScript and SASS within these single-file components, though this feature (as we'll see) is touch-and-go at present.
 
 ### State management
 
-In reading about Svelte I've been surprised at relatively uncommon mention of the library's state management solutions.
+In reading about Svelte I've been surprised at relatively uncommon mention of the library's state management solution.
 
 Svelte allows developers to send data through their applications using prop drilling, just like VueJS and React. However, unlike the aforementioned, Svelte comes with flux-like capability baked in!
 
@@ -73,6 +71,6 @@ Similar tooling issues plagued the early years of React and Vue development, so 
 
 I like Svelte a lot; it boasts some impressive performance benchmarks and an easily comprehensible syntax.
 
-The next couple years will tell whether or not it can build the momentum necessary to become a permanent fixture of the frontend development ecosystem. React and Vue (especially React) have a significant head start, and I worry that if Svelte does approach "escape velocity", one of the major tech firms will create an imitator to flood the space with their own tech.
+The next couple years will tell whether or not it can build the momentum necessary to become a permanent fixture of the frontend development ecosystem. React and Vue (especially React) have a significant head start, but Svelte's popularity bodes well.
 
-However, I could also see a world in which Svelte joins ReactJS, Vue and Angular as one of the essential building blocks of the modern web. And I hope that happens, because the framework does a lot of things that I appreciate and would like to see more of.
+I could also see a world in which Svelte joins ReactJS, Vue and Angular as one of the essential building blocks of the modern web. And I hope that happens, because the framework does a lot of things that I appreciate and would like to see more of.
