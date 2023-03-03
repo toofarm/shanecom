@@ -1,18 +1,19 @@
 ---
 tags:
-- react.js
-- svelte
-- javascript
+  - react.js
+  - svelte
+  - javascript
 title: First impressions of Svelte
-sub_head: Is it better than React? In a word, yes
-featured_image: "/uploads/2022_08_29_svelte_logo-svg.png"
+sub_head: 'Is it better than React? In a word, yes'
+featured_image: /uploads/2022_08_29_svelte_logo-svg.png
 caption: ''
 additional_images: ''
-date_created: 2022-09-02 2:00 PM
-date_updated: 
+date_created: '2022-09-02 2:00 PM'
+date_updated: null
 highlighted: false
-
+_template: post
 ---
+
 I've spent a year or so noting the frequency with which [Svelte](https://svelte.dev/) keeps showing up in [debates](https://survey.stackoverflow.co/2022/#most-loved-dreaded-and-wanted-webframe-love-dread) about which frontend framework is "the best".
 
 Already curious about the framework, I decided to give Svelte a try after reading [an article](https://javascript.plainenglish.io/javascript-frameworks-and-core-web-vitals-b5581f1c8962) comparing its [Core Web Vitals](https://support.google.com/webmasters/answer/9205520?hl=en) performance to that of other common frontend frameworks. In this article, the author revealed that, according to Google's data on the subject, Svelte was wiping the floor with both React.js and Angular across all CWVs.

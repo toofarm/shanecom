@@ -1,18 +1,19 @@
 ---
 tags:
-- node.js
-- next.js
-- strapi
+  - node.js
+  - next.js
+  - strapi
 title: Saving uploaded images using Strapi and Next.js
 sub_head: A challenging proposition to say the least
-featured_image: "/uploads/2022_03_17_file_cabinet.jpeg"
+featured_image: /uploads/2022_03_17_file_cabinet.jpeg
 caption: Wikimedia Commons / rrafson
 additional_images: ''
-date_created: 2022-03-21 2:00 PM
-date_updated: 
+date_created: '2022-03-21 2:00 PM'
+date_updated: null
 highlighted: false
-
+_template: post
 ---
+
 I recently had to implement a feature in a web app that allowed users to upload images.  
 
 The frontend of this app was built in [Next.js](https://nextjs.org/) and connections to our database were handled via a [Strapi](https://strapi.io/) API.
