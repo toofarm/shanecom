@@ -5,7 +5,7 @@ tags:
 - javascript
 title: Making this very website
 sub_head: My journey from a pretty bad website, to a pretty good one
-featured_image: "/uploads/2022_03_01_sunrise.jpeg"
+featured_image: "/uploads/compressed/2022_03_01_sunrise.jpeg"
 additional_images: ''
 date_created: 2022-03-01 4:00 PM
 date_updated: 

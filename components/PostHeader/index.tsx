@@ -1,7 +1,7 @@
 import React, { FC, useState, useEffect } from 'react'
-import styles from './PostHeader.module.scss'
 import format from 'date-fns/format'
 import useWindowSize from 'hooks/use_window_size'
+import styles from './PostHeader.module.scss'
 
 // Types
 type TProps = {

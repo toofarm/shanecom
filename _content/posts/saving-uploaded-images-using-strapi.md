@@ -5,7 +5,7 @@ tags:
 - strapi
 title: Saving uploaded images using Strapi and Next.js
 sub_head: A challenging proposition to say the least
-featured_image: "/uploads/2022_03_17_file_cabinet.jpeg"
+featured_image: "/uploads/compressed/2022_03_17_file_cabinet.jpeg"
 caption: Wikimedia Commons / rrafson
 additional_images: ''
 date_created: 2022-03-21 2:00 PM

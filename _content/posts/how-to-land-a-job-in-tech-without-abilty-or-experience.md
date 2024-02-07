@@ -4,7 +4,7 @@ tags:
 - work
 title: How to land a job in tech without ability or experience
 sub_head: Or, 'The Secret of My Success'
-featured_image: "/uploads/2022_05_10_beaver.jpg"
+featured_image: "/uploads/compressed/2022_05_10_beaver.jpg"
 caption: NasserHalaweh / Wikimedia commons
 additional_images: ''
 date_created: 2022-05-06 2:00 PM

@@ -26,6 +26,7 @@
     "remark-html": "^15.0.1",
     "remark-parse": "^10.0.1",
     "sass": "^1.49.8",
+    "sharp": "^0.33.2",
     "unified": "^10.1.1"
   },
   "devDependencies": {
