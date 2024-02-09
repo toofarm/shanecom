@@ -7,7 +7,7 @@ describe(
         cy.visit('/')
 
         cy.get('h1').should(
-          'contain', 'Welcome to Home!'
+          'contain', 'Hi there, my name\'s Shane'
         )
       }
     )
