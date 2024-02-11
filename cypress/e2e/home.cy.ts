@@ -11,6 +11,34 @@ describe(
         )
       }
     )
+
+    it(
+      'should display a list of recent posts', () => {
+        cy.visit('/')
+
+        cy.get('h2').should(
+          'contain', 'Recent Posts'
+        )
+
+        cy.get('ul').should(
+          'have.length.at.least', 1
+        )
+      }
+    )
+
+    it(
+      'should display a list of recent projects', () => {
+        cy.visit('/')
+
+        cy.get('h2').should(
+          'contain', 'Recent Projects'
+        )
+
+        cy.get('ul').should(
+          'have.length.at.least', 1
+        )
+      }
+    )
   }
 )
 

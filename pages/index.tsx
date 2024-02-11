@@ -52,9 +52,19 @@ const Home: NextPage<TProps> = ({ intro, projects, posts, content }) => {
         </div>
         <div className={styles.lists}>
           <h2>Recent Posts</h2>
-          {posts.map((post) => <PostStub stub={post} type={EContentTypes.POSTS} key={post.title} />)}
+          <ul className={`'posts' ${styles.post_list}`}>
+            {posts.map((post) => <PostStub 
+              stub={post} 
+              type={EContentTypes.POSTS} 
+              key={post.title} />)}
+          </ul>
           <h2>Recent Projects</h2>
-          {projects.map((project) => <PostStub stub={project} type={EContentTypes.PROJECTS} key={project.title} />)}
+          <ul className={`'posts' ${styles.post_list}`}>
+            {projects.map((project) => <PostStub 
+              stub={project} 
+              type={EContentTypes.PROJECTS} 
+              key={project.title} />)}
+          </ul>
         </div>
       </Layout>
     </div>
