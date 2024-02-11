@@ -25,7 +25,7 @@ const PostStub:FC<TProps> = ({ stub, type }) => {
   )
   
   return (
-    <div className={styles.link_wrap}>
+    <li className={styles.link_wrap}>
       <Link href={`/${type}/${stub.slug}`}>
         <a>
           <div className={styles.post_stub}> 
@@ -35,7 +35,7 @@ const PostStub:FC<TProps> = ({ stub, type }) => {
           </div>
         </a>
       </Link>
-    </div>
+    </li>
   )
 }
 
