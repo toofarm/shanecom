@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
-import { getAllContentByType } from './api/get_content'
+import { getAllContentByType } from '../api/get_content'
 import { EContentTypes, TJob, TSkill } from 'types'
-import styles from 'styles/pages/Experience.module.scss'
+import styles from './Experience.module.scss'
 
 // Components
 import HeadStateful from 'components/HeadStateful'
@@ -47,7 +47,8 @@ const Experience:FC<TProps> = ({ jobs, skills }) => {
 
 export const getStaticProps = () => {
   const jobs = 
-    getAllContentByType(EContentTypes.JOBS, 
+    getAllContentByType(
+      EContentTypes.JOBS, 
       ['tags', 
         'title', 
         'company', 
@@ -55,12 +56,17 @@ export const getStaticProps = () => {
         'logo', 
         'start_date', 
         'end_date',
-        'description'])
+        'description']
+    )
     
   const skills = 
-      getAllContentByType(EContentTypes.SKILLS, ['name', 'years', 'keySkill', 'logo'])
+      getAllContentByType(
+        EContentTypes.SKILLS, ['name', 'years', 'keySkill', 'logo']
+      )
 
-  skills.sort((a, b) => {
+  skills.sort((
+    a, b
+  ) => {
     if (a.years && b.years) {
       if (a.years > b.years) return -1
       else if (a.years < b.years) return 1

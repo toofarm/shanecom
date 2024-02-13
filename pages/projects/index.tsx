@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import Layout from 'components/Layout'
-import { getAllContentByType } from './api/get_content'
+import { getAllContentByType } from '../api/get_content'
 import { EContentTypes, TProject } from 'types'
 import styles from 'styles/pages/Posts.module.scss'
 
@@ -32,12 +32,14 @@ const Projects:FC<TProps> = ({ projects }) => {
 
 export const getStaticProps = async () => {
   const projects = 
-    getAllContentByType(EContentTypes.PROJECTS, 
+    getAllContentByType(
+      EContentTypes.PROJECTS, 
       ['tags', 
         'title',
         'featured_image', 
         'date_created',
-        'slug'])
+        'slug']
+    )
   return {
     props: {
       projects

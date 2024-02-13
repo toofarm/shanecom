@@ -4,3 +4,9 @@
 .posts_wrap {
   @include shared.index_page;
 }
+
+.posts_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
