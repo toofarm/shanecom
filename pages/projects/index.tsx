@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import Layout from 'components/Layout'
 import { getAllContentByType } from '../api/get_content'
 import { EContentTypes, TProject } from 'types'
-import styles from 'styles/pages/Posts.module.scss'
+import styles from './Projects.module.scss'
 
 // Components
 import PostStub from 'components/PostStub'
@@ -20,10 +20,12 @@ const Projects:FC<TProps> = ({ projects }) => {
       <Layout>
         <div className={styles.posts_wrap}>
           <h2>Projects</h2>
-          {projects.map((project) => <PostStub 
-            stub={project} 
-            type={EContentTypes.PROJECTS} 
-            key={project.title} />)}
+          <ul className={styles.posts_list}>
+            {projects.map((project) => <PostStub 
+              stub={project} 
+              type={EContentTypes.PROJECTS} 
+              key={project.title} />)}
+          </ul>
         </div>
       </Layout>
     </>
