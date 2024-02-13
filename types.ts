@@ -66,6 +66,10 @@ export type TSkill = {
   logo: string
 }
 
+export type TParams = {
+  [key: string] : any
+}
+
 // ENUMS
 
 export enum EThemes {

@@ -1,0 +1,16 @@
+---
+label: Tag
+hide_body: true
+fields:
+- name: tag_title
+  type: text
+  config:
+    required: true
+  label: Tag Title
+  description: Must be short and unique
+- name: tag_color
+  type: text
+  config:
+    required: false
+  label: Tag Color
+  description: The color of our tag medallion
