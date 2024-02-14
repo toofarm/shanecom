@@ -1,10 +1,10 @@
 import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
-import { IContent, EContentTypes } from '../../types'
+import { IContent, EContentTypes, TPost, TProject } from '../../types'
 
 
-const getSlugs = (type : EContentTypes) => {
+export const getSlugs = (type : EContentTypes) => {
   const contentUrl = join(
     process.cwd(), `_content/${type}`
   )
@@ -75,3 +75,25 @@ export const getAllContentByType = (
     ) => (postA.date_created > postB.date_created ? -1 : 1))
   return posts
 }
+
+export const getAllContentByTag = (
+  type:EContentTypes = EContentTypes.POSTS, 
+  tag: string, 
+  fields: string[] = []
+) => {
+  const slugs = getSlugs(type)
+  const posts = slugs
+    .map((slug) => getContentBySlug(
+      slug,
+      fields,
+      type
+    ))
+    .filter((post: unknown): post is { tags: string[] } => {
+      return typeof post === 'object' 
+        && post !== null 
+        && Array.isArray((post as { tags: unknown }).tags)
+        && (post as { tags: string[] }).tags.includes(tag)
+    })
+  return posts
+}
+

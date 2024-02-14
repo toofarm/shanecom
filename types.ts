@@ -66,6 +66,11 @@ export type TSkill = {
   logo: string
 }
 
+export type TTag = {
+  name: string;
+  color: string;
+}
+
 export type TParams = {
   [key: string] : any
 }
@@ -83,5 +88,6 @@ export enum EContentTypes {
   PROJECTS = 'projects',
   JOBS = 'jobs',
   INTRO = 'intro',
-  SKILLS = 'skills'
+  SKILLS = 'skills',
+  TAGS = 'tags'
 }
