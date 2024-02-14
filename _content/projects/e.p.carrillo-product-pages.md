@@ -1,20 +1,21 @@
 ---
 tags:
-- typescript
-- wordpress
-- javascript
+  - typescript
+  - wordpress
+  - javascript
 title: E.P. Carrillo Product Pages
 sub_head: A product page face-lift for a storied  cigar maker
-featured_image: "/uploads/2022_03_06_inch-maduro-box-open_1200.png"
-project_web_link: https://www.carrillocigars.com/product/inch-maduro-2/
+featured_image: /uploads/2022_03_06_inch-maduro-box-open_1200.png
+project_web_link: 'https://www.carrillocigars.com/product/inch-maduro-2/'
 project_repo_link: ''
 additional_images: []
 highlighted: false
-date_created: 2021-11-15 4:00 PM
-date_updated: 
+date_created: '2021-11-15 4:00 PM'
+date_updated: null
 caption: E.P. Carrillo
-
+_template: project
 ---
+
 I completed this job while working for [Theo Agency](https://theo.agency/). E.P. Carrillo was a client of the firm's and they wanted to update the look of their product pages, which lived within their WordPress website.
 
 Working off of mocks created by the firm's design team, I built out custom templates to update the product pages' visual design. Achieving the prescribed designs meant adding a variety of custom content fields to the product pages' taxonomy, then updating the product page templates to consume these values and display them to the end user.
