@@ -1,14 +1,14 @@
 import React, { FC } from 'react'
-import { getAllContentByTag, getSlugs, getContentBySlug } from '../api/get_content'
-import { EContentTypes, TPost, TProject, TParams, TTag } from 'types'
+import { getAllContentByType } from '../api/get_content'
+import { EContentTypes, TTag } from 'types'
+import styles from './Tags.module.scss'
 
 // Components
 import Layout from 'components/Layout'
-import PostStub from 'components/PostStub'
 
 // Types
 type TProps = {
-  tags: string[];
+  tags: TTag[];
 }
 
 const Tag:FC<TProps> = ({ tags }) => {
@@ -17,8 +17,16 @@ const Tag:FC<TProps> = ({ tags }) => {
       <Layout>
         <div>
           <h2>Tags</h2>
-          <ul>
-            {tags.map((tag) => <li key={tag}>{tag}</li>)}
+          <ul className={styles.post_list}>
+            {tags.map((tag) => <li 
+              className={styles.tag_item}
+              key={tag.slug}>
+              <a href={`/tags/${tag.slug}`}>
+                <span style={{ backgroundColor: tag.color }}
+                  className={styles.tag_badge}></span>
+                {tag.name}
+              </a>
+            </li>)}
           </ul>
         </div>
       </Layout>
@@ -27,7 +35,10 @@ const Tag:FC<TProps> = ({ tags }) => {
 }
 
 export const getStaticProps = async () => {
-  const tags = getSlugs(EContentTypes.TAGS)
+  const tags = getAllContentByType(
+    EContentTypes.TAGS, ['name', 'slug', 'color']
+  )
+
   return {
     props: {
       tags

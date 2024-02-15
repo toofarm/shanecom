@@ -4,8 +4,9 @@
 
 import React, { FC } from 'react'
 import Layout from 'components/Layout'
-import { getAllContentByTag, getSlugs, getContentBySlug, getAllContentByType } from '../api/get_content'
+import { getAllContentByTag, getAllContentByType, getContentBySlug } from '../api/get_content'
 import { EContentTypes, TPost, TProject, TParams, TTag } from 'types'
+import styles from './Tags.module.scss'
 
 // Components
 import PostStub from 'components/PostStub'
@@ -15,30 +16,40 @@ import HeadStateful from 'components/HeadStateful'
 type TProps = {
   posts: TPost[];
   projects: TProject[];
-  tag: string;
+  tag: TTag;
 }
 
 const Tag:FC<TProps> = ({ posts, projects, tag }) => {
   return (
     <>
-      <HeadStateful pageTitle={tag} />
+      <HeadStateful pageTitle={tag.name} />
       <Layout>
         <div>
-          <h2>{tag}</h2>
-          <h3>Posts</h3>
-          <ul>
-            {posts.map((post) => <PostStub 
-              stub={post} 
-              type={EContentTypes.POSTS} 
-              key={post.title} />)}
-          </ul>
-          <h3>Projects</h3>
-          <ul>
-            {projects.map((project) => <PostStub 
-              stub={project} 
-              type={EContentTypes.PROJECTS} 
-              key={project.title} />)}
-          </ul>
+          <h2>
+            <span style={{ backgroundColor: tag.color }}
+              className={styles.tag_badge}></span>
+            {tag.name}
+          </h2>
+          {(posts.length > 0) && 
+          <>
+            <h3 className={styles.h3}>Posts</h3>
+            <ul className={styles.post_list}>
+              {posts.map((post) => <PostStub 
+                stub={post} 
+                type={EContentTypes.POSTS} 
+                key={post.title} />)}
+            </ul>
+          </>}
+          {(projects.length > 0) && 
+          <>
+            <h3 className={styles.h3}>Projects</h3>
+            <ul className={styles.post_list}>
+              {projects.map((project) => <PostStub 
+                stub={project} 
+                type={EContentTypes.PROJECTS} 
+                key={project.title} />)}
+            </ul>
+          </>}
         </div>
       </Layout>
     </>
@@ -67,18 +78,25 @@ export const getStaticProps = async ({ params }:TParams) => {
         'date_created',
         'slug']
     )
+
+  const tag = getContentBySlug(
+      slug as string, 
+      ['name', 'color'], 
+      EContentTypes.TAGS
+  )
+    
   return {
     props: {
       posts,
       projects,
-      tag: slug
+      tag
     }
   }
 }
 
 export const getStaticPaths = async () => {
   const tags = getAllContentByType(
-    EContentTypes.PROJECTS, ['slug']
+    EContentTypes.TAGS, ['name']
   )
   return {
     paths: tags.map((tag) => {

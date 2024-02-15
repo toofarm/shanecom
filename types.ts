@@ -69,6 +69,7 @@ export type TSkill = {
 export type TTag = {
   name: string;
   color: string;
+  slug: string;
 }
 
 export type TParams = {

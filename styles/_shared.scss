@@ -21,3 +21,13 @@
     }
   }
 }
+
+@mixin headline3 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+    font-size: 2rem;
+    display: block;
+    color: var(primaryText);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid $light-grey;
+}
