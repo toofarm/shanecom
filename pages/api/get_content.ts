@@ -1,7 +1,7 @@
 import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
-import { IContent, EContentTypes } from '../../types'
+import { IContent, EContentTypes, TTag } from '../../types'
 import format from 'date-fns/format'
 
 export const getSlugs = (type : EContentTypes) => {
@@ -110,7 +110,7 @@ export const getAllContentByTag = (
       return typeof post === 'object' 
         && post !== null 
         && Array.isArray((post as { tags: unknown }).tags)
-        && (post as { tags: string[] }).tags.includes(tag)
+        && (post as { tags: TTag[] }).tags.filter((t) => t.slug === tag).length > 0
     })
   return posts
 }

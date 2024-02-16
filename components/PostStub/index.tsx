@@ -20,7 +20,9 @@ const PostStub:FC<TProps> = ({ stub, type }) => {
           <div className={styles.post_stub}> 
             <h3>{stub.title}</h3>
             <span className={styles.date}>{stub.date_created}</span>
-            <TagCloud tags={stub.tags} />
+            <TagCloud 
+              tags={stub.tags}
+              link={false} />
           </div>
         </a>
       </Link>

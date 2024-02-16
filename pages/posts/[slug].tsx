@@ -43,7 +43,9 @@ const Post:FC<TProps> = ({
           img={post.featured_image} 
           publication_date={post.date_created}
           caption={post.caption} />
-        <TagCloud tags={post.tags} />
+        <TagCloud 
+          tags={post.tags}
+          link={true} />
         <ProgressBar article={article} />
         <div 
           dangerouslySetInnerHTML={{ __html : content }} 

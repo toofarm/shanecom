@@ -40,7 +40,9 @@ const Project:FC<TProps> = ({
           img={project.featured_image} 
           caption={project.caption}
           publication_date={project.date_created} />
-        <TagCloud tags={project.tags} />
+        <TagCloud 
+          tags={project.tags}
+          link={true} />
         <ProjectLinks 
           website={project.project_web_link ? project.project_web_link : undefined}
           repo={project.project_repo_link ? project.project_repo_link : undefined} />
@@ -134,6 +136,7 @@ export const getStaticPaths = async () => {
   const projects = getAllContentByType(
     EContentTypes.PROJECTS, ['slug']
   )
+
   return {
     paths: projects.map((project) => {
       return {

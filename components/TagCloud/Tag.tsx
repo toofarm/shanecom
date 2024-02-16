@@ -1,14 +1,15 @@
 import React, { FC } from 'react'
-import { tagColors } from 'lib/constants'
 import styles from './Tag.module.scss'
 import { TTag } from 'types'
+import Link from 'next/link'
 
 // Types
 type TProps = {
-  tag: TTag
+  tag: TTag;
+  link: boolean;
 }
 
-const Tag:FC<TProps> = ({ tag }) => {
+const Tag:FC<TProps> = ({ tag, link }) => {
 
   const tagStyles = {
     backgroundColor : tag.color ? tag.color : 'red'
@@ -16,7 +17,12 @@ const Tag:FC<TProps> = ({ tag }) => {
 
   return (
     <li style={tagStyles} className={styles.tag_wrap}>
-      {tag.name}
+      {link ? 
+        <Link 
+          href={`/tags/${tag.slug}`}>
+          <a className={styles.tag_link}>{tag.name}</a>
+        </Link> : 
+        tag.name}
     </li>
   )
 }

@@ -48,7 +48,7 @@ export type TJob = {
   date_created: string;
   end_date?: string;
   description: string;
-  tags: string[]
+  tags: TTag[]
   logo: string;
 }
 

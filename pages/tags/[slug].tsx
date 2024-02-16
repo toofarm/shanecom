@@ -96,13 +96,13 @@ export const getStaticProps = async ({ params }:TParams) => {
 
 export const getStaticPaths = async () => {
   const tags = getAllContentByType(
-    EContentTypes.TAGS, ['name']
+    EContentTypes.TAGS, ['slug']
   )
   return {
     paths: tags.map((tag) => {
       return {
         params: {
-          slug: tag.name,
+          slug: tag.slug,
         },
       }
     }),
