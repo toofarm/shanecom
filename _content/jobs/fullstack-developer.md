@@ -9,10 +9,10 @@ description: >-
   building ETL pipelines to writing full stack applications in Docker/Node/React
 logo: /uploads/2022_03_01_theorem-logo-520.png
 tags:
-  - node.js
-  - python
-  - docker
-  - javascript
+  - tag: _content/tags/wordpress.md
+  - tag: _content/tags/react.md
+  - tag: _content/tags/next.md
+  - tag: _content/tags/python.md
 _template: job
 ---
 

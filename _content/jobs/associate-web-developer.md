@@ -9,9 +9,9 @@ description: >-
   this honorable, and sadly since-defunct, publishing house
 logo: /uploads/2022_03_01_rodale_logo.gif
 tags:
-  - wordpress
-  - php
-  - javascript
+  - tag: _content/tags/wordpress.md
+  - tag: _content/tags/javascript.md
+  - tag: _content/tags/php.md
 _template: job
 ---
 

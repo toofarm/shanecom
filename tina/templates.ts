@@ -71,10 +71,18 @@ export function jobFields() {
       label: 'Company logo',
     },
     {
-      type: 'string',
+      type: 'object',
       name: 'tags',
-      label: 'Tags',
+      label: 'tags',
       list: true,
+      fields: [
+        {
+          type: 'reference',
+          label: 'Tag',
+          name: 'tag',
+          collections: ['tags'],
+        },
+      ],
     },
   ] as TinaField[]
 }
@@ -140,10 +148,18 @@ export function postFields() {
 export function projectFields() {
   return [
     {
-      type: 'string',
+      type: 'object',
       name: 'tags',
       label: 'tags',
       list: true,
+      fields: [
+        {
+          type: 'reference',
+          label: 'Tag',
+          name: 'tag',
+          collections: ['tags'],
+        },
+      ],
     },
     {
       type: 'string',

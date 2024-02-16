@@ -1,7 +1,7 @@
 ---
 tags:
-  - tag: _content/tags/jobs.md
-  - tag: _content/tags/life.md
+  - tag: _content/tags/javascript.md
+  - tag: _content/tags/react.md
 title: 'How to make a responsive, sliding mobile menu in React.js'
 sub_head: A few tips for tackling a common design technique
 featured_image: /uploads/compressed/2022_03_07_sliding_door_1024.jpeg

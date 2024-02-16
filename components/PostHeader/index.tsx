@@ -18,10 +18,12 @@ const PostHeader:FC<TProps> = ({ title, sub_head, img, publication_date, caption
   const [pubDate, setPubDate] = useState<string>('')
   const [showImg, setShowImg] = useState<boolean>(false)
  
-  useEffect(() => {
-    setPubDate(format(new Date(publication_date.split(' ')[0]), 'MMMM do, yyyy'))
-    if (width && width <= 767) setShowImg(true)
-  }, [width]) 
+  useEffect(
+    () => {
+      setPubDate(publication_date)
+      if (width && width <= 767) setShowImg(true)
+    }, [width]
+  ) 
 
   const rowStyles = {
     backgroundImage: `url(${img ? img : undefined})`

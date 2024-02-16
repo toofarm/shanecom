@@ -10,10 +10,10 @@ description: >-
   applications
 logo: /uploads/2022_03_01_3q_logo.png
 tags:
-  - google tag manager
-  - google analytics
-  - react.js
-  - javascript
+  - tag: _content/tags/google_tag_manager.md
+  - tag: _content/tags/google_analytics.md
+  - tag: _content/tags/react.md
+  - tag: _content/tags/javascript.md
 _template: job
 ---
 

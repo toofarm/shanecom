@@ -13,7 +13,7 @@ export interface IContent {
 // TYPES
 
 export type TPost = {
-  tags: string[],
+  tags: TTag[],
   title: string;
   sub_head?: string;
   featured_image: string;
@@ -26,7 +26,7 @@ export type TPost = {
 }
 
 export type TProject = {
-  tags: string[];
+  tags: TTag[];
   title: string;
   sub_head: string;
   date_created: string;

@@ -1,7 +1,8 @@
 ---
 tags:
-  - tag: _content/tags/jobs.md
-  - tag: _content/tags/life.md
+  - tag: _content/tags/wordpress.md
+  - tag: _content/tags/react.md
+  - tag: _content/tags/next.md
 title: Making this very website
 sub_head: 'My journey from a pretty bad website, to a pretty good one'
 featured_image: /uploads/compressed/2022_03_01_sunrise.jpeg

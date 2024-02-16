@@ -1,7 +1,7 @@
 ---
 tags:
-  - tag: _content/tags/jobs.md
-  - tag: _content/tags/life.md
+  - tag: _content/tags/typescript.md
+  - tag: _content/tags/svelte.md
 title: First impressions of Svelte
 sub_head: 'Is it better than React? Mostly, yeah'
 featured_image: /uploads/compressed/2022_08_29_svelte_logo-svg.png

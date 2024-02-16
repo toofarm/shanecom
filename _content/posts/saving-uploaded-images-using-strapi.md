@@ -1,7 +1,7 @@
 ---
 tags:
-  - tag: _content/tags/jobs.md
-  - tag: _content/tags/life.md
+  - tag: _content/tags/next.md
+  - tag: _content/tags/react.md
 title: Saving uploaded images using Strapi and Next.js
 sub_head: A challenging proposition to say the least
 featured_image: /uploads/compressed/2022_03_17_file_cabinet.jpeg

@@ -1,6 +1,5 @@
-import React, { FC, useState, useEffect } from 'react'
+import React, { FC } from 'react'
 import { EContentTypes, TPost, TProject } from 'types'
-import format from 'date-fns/format'
 import Link from 'next/link'
 import styles from './PostStub.module.scss'
 
@@ -14,24 +13,13 @@ type TProps = {
 }
 
 const PostStub:FC<TProps> = ({ stub, type }) => {
-  const [date, setDate] = useState<string>('')
-
-  useEffect(
-    () => {
-      console.log(
-        'stub tags', stub.tags
-      )
-      setDate(stub.date_created)
-    }, [stub]
-  )
-  
   return (
     <li className={styles.link_wrap}>
       <Link href={`/${type}/${stub.slug}`}>
         <a>
           <div className={styles.post_stub}> 
             <h3>{stub.title}</h3>
-            <span className={styles.date}>{date}</span>
+            <span className={styles.date}>{stub.date_created}</span>
             <TagCloud tags={stub.tags} />
           </div>
         </a>

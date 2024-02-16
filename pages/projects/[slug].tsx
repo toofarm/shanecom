@@ -15,7 +15,7 @@ import ProjectLinks from 'components/ProjectLinks'
 
 // Types
 type TParams = {
-    [key: string] : any
+    [key: string] : any 
 }
 
 type TProps = {

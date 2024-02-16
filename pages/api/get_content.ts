@@ -57,7 +57,7 @@ export const getContentBySlug = (
       items[field] = data[field]
       items.date_created = data[field]
     } else if (
-      field === 'date_created' && 
+      /^(date_)\w+/.test(field) && 
       typeof data[field] !== 'string') {
       items[field] = format(
         new Date(data.date_created), 'MMMM do, yyyy'
@@ -65,9 +65,6 @@ export const getContentBySlug = (
     }
   })
 
-  console.log(
-    'items', items
-  )
   return items
 }
 
@@ -93,7 +90,7 @@ export const getAllContentByType = (
     ))
     .sort((
       postA, postB
-    ) => (postA.date_created > postB.date_created ? -1 : 1))
+    ) => (new Date(postA.date_created) > new Date(postB.date_created) ? -1 : 1))
   return posts
 }
 
