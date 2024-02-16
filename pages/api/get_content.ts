@@ -60,7 +60,7 @@ export const getContentBySlug = (
       /^(date_)\w+/.test(field) && 
       typeof data[field] !== 'string') {
       items[field] = format(
-        new Date(data.date_created), 'MMMM do, yyyy'
+        new Date(data.date_created), 'MMMM d, yyyy'
       )
     }
   })

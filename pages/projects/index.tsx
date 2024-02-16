@@ -42,6 +42,7 @@ export const getStaticProps = async () => {
         'date_created',
         'slug']
     )
+
   return {
     props: {
       projects
