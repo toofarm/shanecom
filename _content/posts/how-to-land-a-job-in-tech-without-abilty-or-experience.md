@@ -1,16 +1,15 @@
 ---
 tags:
-  - life
-  - work
+  - tag: _content/tags/jobs.md
+  - tag: _content/tags/life.md
 title: How to land a job in tech without ability or experience
 sub_head: 'Or, ''The Secret of My Success'''
 featured_image: /uploads/compressed/2022_05_10_beaver.jpg
 caption: NasserHalaweh / Wikimedia commons
 additional_images: ''
-date_created: '2022-05-06 2:00 PM'
-date_updated: null
+date_created: 2022-05-06T07:00:00.000Z
+date_updated: 1970-01-01T00:00:00.000Z
 highlighted: false
-_template: post
 ---
 
 This past week I read [Lowly Midwestern Engineer's article](https://lowlyswe.substack.com/p/my-experience-getting-a-tech-job) about finding a job in tech without any industry experience.
@@ -57,17 +56,17 @@ A word of advice: if you're going to attend a bootcamp, spend the smallest amoun
 
 For-profit bootcamps will saddle you with as much as $17k in non-dischargable debt, which is crazy, especially when you consider another of my core theses:
 
-> ### Upon completing a bootcamp, you will not be ready to work a programming job
+> Upon completing a bootcamp, you will not be ready to work a programming job
 
 Bootcamps are great starting points, but after graduating from a 3-month software development course, you're still looking at 6-to-12 months worth of work before you're hire-able. In total, I'd say it takes about a year to go from "not a developer" to "developer"; and that's a year in which your full-time, 40-hour-a-week occupation is learning to code.
 
-I didn't know this going in, so it was pure luck that led me to pick the [Full Stack Web Development program at CUNY Brooklyn](https://cuny-catalog.skillstorm.com/courses/cuny-full-stack-java-development) over a number of pricier bootcamps. 
+I didn't know this going in, so it was pure luck that led me to pick the [Full Stack Web Development program at CUNY Brooklyn](https://cuny-catalog.skillstorm.com/courses/cuny-full-stack-java-development) over a number of pricier bootcamps.
 
-The program at CUNY provided a less robust background than some of the private bootcamps, but its sticker price was $2,500. [General Assembly](https://generalassemb.ly/education/software-engineering-immersive/portland), by contrast, was around that time charging $13,000 for its fullstack course. 
+The program at CUNY provided a less robust background than some of the private bootcamps, but its sticker price was $2,500. [General Assembly](https://generalassemb.ly/education/software-engineering-immersive/portland), by contrast, was around that time charging $13,000 for its fullstack course.
 
 To my mind, the biggest advantage of attending a bootcamp is having someone around who can help you get past the brick-wall frustrations you run into as a junior developer. I'm certain that had I not attended a bootcamp, I would have given up on web development completely when I got to server-side scripting. Instead, a jovial man named Julio explained to me that PHP executes on a different machine than Javascript, and with that knowledge I was able to keep going.
 
-I've heard about people having negative experiences of bootcamps, and there are a couple things particular to my experience that made it worthwhile. For one, I _worked_ while attending that class. Not only did I do weeks worth of prep work, but I pushed myself to turn in ridiculously ambitious projects during the course.
+I've heard about people having negative experiences of bootcamps, and there are a couple things particular to my experience that made it worthwhile. For one, I *worked* while attending that class. Not only did I do weeks worth of prep work, but I pushed myself to turn in ridiculously ambitious projects during the course.
 
 I was also prepared to continue studying after I graduated. I held myself to a comically high standard when starting out, and pushed myself to keep working until my projects resembled something professional.
 
@@ -77,29 +76,29 @@ Success, in software development as in other things, is more often a result of e
 
 Since I had never worked in tech, I concocted a scheme to use my existing skills as a bridge into the industry.
 
-This plan worked pretty well. Shortly after graduating from the bootcamp, I was offered a job with a publishing house that consisted of 50% content writing and 50% development work on a couple of Wordpress sites. 
+This plan worked pretty well. Shortly after graduating from the bootcamp, I was offered a job with a publishing house that consisted of 50% content writing and 50% development work on a couple of Wordpress sites.
 
 The publishing house, I soon discovered, had entered dire financial straits; a sale was eminent. Working for a failing company, however, turned out to be a good deal. Management gave me free reign to pursue whichever  development projects I pleased, and when the ship sank in earnest, I received a sizeable "sorry for giving you the sack" bonus, which kept me happy and healthy while I traded up into a full-time development job.
 
-Though the journey since has involved a couple twists, it's fair to summarize the trajectory as upward-facing, with each chapter bringing more complex technical responsibilities and more Scrooge McDuck-ian amounts of compensation. 
+Though the journey since has involved a couple twists, it's fair to summarize the trajectory as upward-facing, with each chapter bringing more complex technical responsibilities and more Scrooge McDuck-ian amounts of compensation.
 
 Once you're in, as they say, you're in.
 
 ## The secret(s) of my success
 
-Both in my bootcamp cohort and among my acquaintances, I've seen people struggle to find tech jobs, or else wash out of the industry entirely. 
+Both in my bootcamp cohort and among my acquaintances, I've seen people struggle to find tech jobs, or else wash out of the industry entirely.
 
-My relative success owes in my opinion to the fact that I simply enjoy making things with code. 
+My relative success owes in my opinion to the fact that I simply enjoy making things with code.
 
 Banging my head for hours against a difficult coding problem, then breaking through that difficulty, is intensely satisfying to me. I can spend 6 or 8 or 10 hours working in this mode and feel good about it at the end of the day.
 
 Programming has never been intuitive for me, nor has any other activity involving high levels of abstraction. In high school, I barely passed trigonometry and bowed out of calculus entirely; I majored in English Literature in college, and only passed the required Intro to Statistics course on the strength of an essay I turned in for extra credit.
 
-That I have had meager success as a software engineer owes largely to the fact that I enjoy doing it. 
+That I have had meager success as a software engineer owes largely to the fact that I enjoy doing it.
 
-Because I get so much enjoyment from writing software, I've spent a huge number of hours doing so, and, despite myself, developed competency in the discipline. 
+Because I get so much enjoyment from writing software, I've spent a huge number of hours doing so, and, despite myself, developed competency in the discipline.
 
-I'm not among the world's programming elite, nor will I ever be; in order to develop that kind of talent, you have to start when you're a teenager. I began programming in earnest shortly before I turned 30, and suffer from the natural handicap of a mind most comfortable with stories and feelings. 
+I'm not among the world's programming elite, nor will I ever be; in order to develop that kind of talent, you have to start when you're a teenager. I began programming in earnest shortly before I turned 30, and suffer from the natural handicap of a mind most comfortable with stories and feelings.
 
 However, with moderate intelligence, tenacity, and a propitious job market, I've managed to make it work.
 

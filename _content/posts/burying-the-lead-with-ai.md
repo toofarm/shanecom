@@ -1,31 +1,30 @@
 ---
 tags:
-- AI
-- jobs
-- the future
+  - tag: _content/tags/jobs.md
+  - tag: _content/tags/life.md
 title: Burying the Lede in the Gen AI Debate
 sub_head: Hand-wringing over AI and jobs neglects a wider story
-featured_image: "/uploads/phillip-glickman-toy-robot.jpg"
-caption: 'Photo by Phillip Glickman'
+featured_image: /uploads/phillip-glickman-toy-robot.jpg
+caption: Photo by Phillip Glickman
 additional_images: ''
-date_created: 2024-02-05 2:00 PM
-date_updated: 
+date_created: 2024-02-05T22:00:00.000Z
+date_updated: 1970-01-01T00:00:00.000Z
 highlighted: true
-
 ---
+
 In the discussion surrounding generative AI, people seem most curious about whose jobs will wind up on the chopping block. Important information, to be sure, but it's also a framing that neglects the technology's wider impacts.
 
 Last week, the Burning Glass Institute's [report on AI and the workplace](https://www.burningglassinstitute.org/research/generative-artificial-intelligence-and-the-workforce) became the latest of several studies to prompt a cycle of frightening headlines about the future of knowledge work.
 
-_The New York Times_ provides the model here:
+*The New York Times* provides the model here:
 
 ["Generative A.I.’s Biggest Impact Will Be in Banking and Tech, Report Says"](https://www.nytimes.com/2024/02/01/business/ai-impact-jobs.html)
 
-Though workers in banking and tech doubtless find this information useful, a closer look at the report reveals that the _Times_ has buried the lead.
+Though workers in banking and tech doubtless find this information useful, a closer look at the report reveals that the *Times* has buried the lead.
 
 From page 12:
 
->Given the broad potential for human labor to be displaced by AI, increases in productivity will generate disproportionate returns for investors and senior employees at tech companies, many of whom are already among the wealthiest people in the U.S. Thus, the U.S. economy, already characterized by high levels of inequality, will see further economic stratification and increased concentration of wealth.
+> Given the broad potential for human labor to be displaced by AI, increases in productivity will generate disproportionate returns for investors and senior employees at tech companies, many of whom are already among the wealthiest people in the U.S. Thus, the U.S. economy, already characterized by high levels of inequality, will see further economic stratification and increased concentration of wealth.
 
 In other words, the wealthy stand to reap the majority of the economic rewards derived from generative AI. And if the technology fulfills even half of its promises, there will be rewards aplenty.
 

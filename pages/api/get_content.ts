@@ -1,8 +1,8 @@
 import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
-import { IContent, EContentTypes, TPost, TProject } from '../../types'
-
+import { IContent, EContentTypes } from '../../types'
+import format from 'date-fns/format'
 
 export const getSlugs = (type : EContentTypes) => {
   const contentUrl = join(
@@ -36,17 +36,38 @@ export const getContentBySlug = (
   }
 
   fields.forEach((field) => {
+    if (typeof data[field] !== 'undefined') {
+      items[field] = data[field]
+    }
+
     if (field === 'slug') items[field] = realSlug
     if (field === 'content') items[field] = content
+    if (field === 'tags' && data.tags) {
+      items[field] = data.tags.map((tag: { tag: string }) => {
+        return getContentBySlug(
+          tag.tag.split('/')[2].split('.')[0] as string,
+          ['name', 'color', 'slug'],
+          EContentTypes.TAGS
+        )
+      })
+    }
+    
     // We do this so we can sort Jobs as if they were Posts/Projects
     if (field === 'start_date') {
       items[field] = data[field]
       items.date_created = data[field]
-    }
-    if (typeof data[field] !== 'undefined') {
-      items[field] = data[field]
+    } else if (
+      field === 'date_created' && 
+      typeof data[field] !== 'string') {
+      items[field] = format(
+        new Date(data.date_created), 'MMMM do, yyyy'
+      )
     }
   })
+
+  console.log(
+    'items', items
+  )
   return items
 }
 

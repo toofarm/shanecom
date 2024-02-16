@@ -18,9 +18,10 @@ const PostStub:FC<TProps> = ({ stub, type }) => {
 
   useEffect(
     () => {
-      setDate(format(
-        new Date(stub.date_created.split(' ')[0]), 'MMMM do, yyyy'
-      ))
+      console.log(
+        'stub tags', stub.tags
+      )
+      setDate(stub.date_created)
     }, [stub]
   )
   

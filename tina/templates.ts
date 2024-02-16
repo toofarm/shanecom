@@ -81,10 +81,18 @@ export function jobFields() {
 export function postFields() {
   return [
     {
-      type: 'string',
+      type: 'object',
       name: 'tags',
       label: 'tags',
       list: true,
+      fields: [
+        {
+          type: 'reference',
+          label: 'Tag',
+          name: 'tag',
+          collections: ['tags'],
+        },
+      ],
     },
     {
       type: 'string',
@@ -115,7 +123,7 @@ export function postFields() {
       type: 'datetime',
       name: 'date_created',
       label: 'Date created',
-      required: true,
+      required: true
     },
     {
       type: 'datetime',

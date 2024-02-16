@@ -1,20 +1,18 @@
 ---
 tags:
-  - node.js
-  - next.js
-  - strapi
+  - tag: _content/tags/jobs.md
+  - tag: _content/tags/life.md
 title: Saving uploaded images using Strapi and Next.js
 sub_head: A challenging proposition to say the least
 featured_image: /uploads/compressed/2022_03_17_file_cabinet.jpeg
 caption: Wikimedia Commons / rrafson
 additional_images: ''
-date_created: '2022-03-21 2:00 PM'
-date_updated: null
+date_created: 2022-03-21T07:00:00.000Z
+date_updated: 1970-01-01T00:00:00.000Z
 highlighted: false
-_template: post
 ---
 
-I recently had to implement a feature in a web app that allowed users to upload images.  
+I recently had to implement a feature in a web app that allowed users to upload images.
 
 The frontend of this app was built in [Next.js](https://nextjs.org/) and connections to our database were handled via a [Strapi](https://strapi.io/) API.
 
@@ -34,18 +32,20 @@ In order to authenticate users, we passed all API calls through a proxy, which w
 
 This meant that when uploading our photos, we had to make two API calls:
 
-1. _Call the Next.js proxy from the browser_
-2. _Once we've authenticated, make a call server-side from Next.js to Strapi, passing the uploaded image as a payload_
+1. *Call the Next.js proxy from the browser*
+2. *Once we've authenticated, make a call server-side from Next.js to Strapi, passing the uploaded image as a payload*
 
 Within Next.js, our app structure looked like this:
 
-    ...
-    --/components
-    --/pages
-    ----/api
-    ------/proxy
-    ------upload.ts
-    ----contactUs.tsx
+```
+...
+--/components
+--/pages
+----/api
+------/proxy
+------upload.ts
+----contactUs.tsx
+```
 
 Everything within the /api directory executes on the server, including the call to Strapi, which lives in upload.ts.
 
@@ -69,10 +69,10 @@ We eventually concluded that in order to reconstitute the images as FormData, we
 
 This meant our file upload workflow actually had four stages:
 
-1. _User attaches file, sends to Next.js API route_
-2. _Next.js stores image in server-side file system_ 
-3. _Next.js passes stored image to Strapi as FormData_ 
-4. _Next.js deletes image from server-side file system_
+1. *User attaches file, sends to Next.js API route*
+2. *Next.js stores image in server-side file system*
+3. *Next.js passes stored image to Strapi as FormData*
+4. *Next.js deletes image from server-side file system*
 
 In order to implement this solution, we used [Multer](https://www.npmjs.com/package/multer) and [fs](https://nodejs.org/api/fs.html) in our Next.js API endpoint. Multer helped us parse the incoming form data, then we used fs to write our form data to the local file system.
 
@@ -84,8 +84,8 @@ After confirming that Strapi had saved the images successfully in our database, 
 
 Your own implementation of this workaround will likely vary based on which stack you're using, but the workflow should remain roughly the same:
 
-1. _Upload file to SSR (Server-Side Rendering) server_
-2. _Save file in SSR server-side file system_
-3. _Upload as FormData from SSR file system to backend API_
+1. *Upload file to SSR (Server-Side Rendering) server*
+2. *Save file in SSR server-side file system*
+3. *Upload as FormData from SSR file system to backend API*
 
 I hope this saves someone a headache!
