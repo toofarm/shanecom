@@ -7,6 +7,7 @@
     "build": "tinacms build && next build",
     "start": "next start",
     "lint": "next lint",
+    "next:build": "next build",
     "cy:open-only": "cypress open",
     "cy:run-only": "cypress run",
     "cy:open": "start-server-and-test dev 3000 cy:open-only",
