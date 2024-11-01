@@ -19,8 +19,9 @@ const Tag:FC<TProps> = ({ tag, link }) => {
     <li style={tagStyles} className={styles.tag_wrap}>
       {link ? 
         <Link 
-          href={`/tags/${tag.slug}`}>
-          <a className={styles.tag_link}>{tag.name}</a>
+          href={`/tags/${tag.slug}`}
+          className={styles.tag_link}>
+          {tag.name}
         </Link> : 
         tag.name}
     </li>

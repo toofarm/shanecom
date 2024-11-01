@@ -12,17 +12,13 @@ const ProjectLinks:FC<TProps> = ({ repo, website }) => {
   return (
     <ul className={styles.project_links}>
       {website && <li>
-        <Link href={website}>
-          <a target='_blank'>
+        <Link href={website} target='_blank'>
             Live
-          </a>
         </Link>
       </li>}
       {repo && <li>
-        <Link href={repo}>
-          <a target='_blank'>
+        <Link href={repo} target='_blank'>
             Repo 
-          </a>
         </Link>
       </li>}
     </ul>

@@ -12,14 +12,20 @@ const Footer:FC = () => {
   const copyEmail = () => {
     navigator.clipboard.writeText('toofarm@gmail.com')
     setCopyMsg('Email copied!')
-    setTimeout(() => {
-      setCopyMsg('Click "Email" to copy toofarm@gmail.com')
-    }, 5000)
+    setTimeout(
+      () => {
+        setCopyMsg('Click "Email" to copy toofarm@gmail.com')
+      }, 5000
+    )
   }
 
-  useEffect(() => {
-    setYear(format(new Date(), 'yyyy'))
-  }, [])
+  useEffect(
+    () => {
+      setYear(format(
+        new Date(), 'yyyy'
+      ))
+    }, []
+  )
 
   return (
     <footer className={styles.footer_wrap}>
@@ -37,17 +43,13 @@ const Footer:FC = () => {
           <div className={styles.copy_msg}>{copyMsg}</div>
         </li>
         <li>
-          <Link href='https://github.com/toofarm'>
-            <a target='_blank'>
+          <Link href='https://github.com/toofarm' target='_blank'>
               GitHub
-            </a>
           </Link>
         </li>
         <li>
-          <Link href='https://www.linkedin.com/in/shaners/'>
-            <a target='_blank'>
+          <Link href='https://www.linkedin.com/in/shaners/' target='_blank'>
               LinkedIn
-            </a>
           </Link>
         </li>
       </ul>
