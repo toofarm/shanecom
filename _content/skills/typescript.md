@@ -1,5 +1,5 @@
 ---
-years: 3
+years: 4
 name: TypeScript
 keySkill: false
 date_started: 2020-02
