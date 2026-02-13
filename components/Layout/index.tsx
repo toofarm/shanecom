@@ -10,7 +10,7 @@ import Header from 'components/Header'
 import Footer from 'components/Footer'
 import Script from 'next/script'
 
-const Layout:FC = ({ children }) => {
+const Layout:FC<{ children: React.ReactNode }> = ({ children }) => {
   const dispatch = useAppDispatch()
   const theme = useAppSelector(state => state.theme)
 

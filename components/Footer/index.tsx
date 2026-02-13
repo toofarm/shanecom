@@ -37,17 +37,13 @@ const Footer:FC = () => {
           <div className={styles.copy_msg}>{copyMsg}</div>
         </li>
         <li>
-          <Link href='https://github.com/toofarm'>
-            <a target='_blank'>
-              GitHub
-            </a>
+          <Link href='https://github.com/toofarm' target='_blank'>
+            GitHub
           </Link>
         </li>
         <li>
-          <Link href='https://www.linkedin.com/in/shaners/'>
-            <a target='_blank'>
-              LinkedIn
-            </a>
+          <Link href='https://www.linkedin.com/in/shaners/' target='_blank'>
+            LinkedIn
           </Link>
         </li>
       </ul>
