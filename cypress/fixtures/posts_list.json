@@ -1,0 +1,44 @@
+[
+  {
+    "date_created": "2024-02-05 2:00 PM",
+    "tags": ["AI", "jobs", "the future"],
+    "title": "Burying the Lede in the Gen AI Debate",
+    "featured_image": "/uploads/phillip-glickman-toy-robot.jpg",
+    "slug": "burying-the-lead-with-ai"
+  },
+  {
+    "date_created": "2022-09-02 2:00 PM",
+    "tags": ["react.js", "svelte", "javascript"],
+    "title": "First impressions of Svelte",
+    "featured_image": "/uploads/compressed/2022_08_29_svelte_logo-svg.png",
+    "slug": "first-impressions-of-svelte"
+  },
+  {
+    "date_created": "2022-05-06 2:00 PM",
+    "tags": ["life", "work"],
+    "title": "How to land a job in tech without ability or experience",
+    "featured_image": "/uploads/compressed/2022_05_10_beaver.jpg",
+    "slug": "how-to-land-a-job-in-tech-without-abilty-or-experience"
+  },
+  {
+    "date_created": "2022-03-21 2:00 PM",
+    "tags": ["node.js", "next.js", "strapi"],
+    "title": "Saving uploaded images using Strapi and Next.js",
+    "featured_image": "/uploads/compressed/2022_03_17_file_cabinet.jpeg",
+    "slug": "saving-uploaded-images-using-strapi"
+  },
+  {
+    "date_created": "2022-03-09 6:00 AM",
+    "tags": ["react.js", "javascript", "css"],
+    "title": "How to make a responsive, sliding mobile menu in React.js",
+    "featured_image": "/uploads/compressed/2022_03_07_sliding_door_1024.jpeg",
+    "slug": "how-to-make-a-responsive-sliding-mobile-menu-in-react.js"
+  },
+  {
+    "date_created": "2022-03-01 4:00 PM",
+    "tags": ["next.js", "wordpress", "javascript"],
+    "title": "Making this very website",
+    "featured_image": "/uploads/compressed/2022_03_01_sunrise.jpeg",
+    "slug": "making-this-very-website"
+  }
+]

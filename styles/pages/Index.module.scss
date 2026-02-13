@@ -58,6 +58,12 @@
   }
 }
 
+.post_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 // Mobile
 @media screen and (max-width: $mobile) {
   .intro_grid {

@@ -1,7 +1,7 @@
 import React, { FC, useState, useEffect } from 'react'
-import styles from './PostHeader.module.scss'
 import format from 'date-fns/format'
 import useWindowSize from 'hooks/use_window_size'
+import styles from './PostHeader.module.scss'
 
 // Types
 type TProps = {
@@ -18,10 +18,12 @@ const PostHeader:FC<TProps> = ({ title, sub_head, img, publication_date, caption
   const [pubDate, setPubDate] = useState<string>('')
   const [showImg, setShowImg] = useState<boolean>(false)
  
-  useEffect(() => {
-    setPubDate(format(new Date(publication_date.split(' ')[0]), 'MMMM do, yyyy'))
-    if (width && width <= 767) setShowImg(true)
-  }, [width]) 
+  useEffect(
+    () => {
+      setPubDate(publication_date)
+      if (width && width <= 767) setShowImg(true)
+    }, [width]
+  ) 
 
   const rowStyles = {
     backgroundImage: `url(${img ? img : undefined})`

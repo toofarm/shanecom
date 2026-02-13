@@ -1,17 +1,16 @@
 ---
 tags:
-  - next.js
-  - wordpress
-  - javascript
+  - tag: _content/tags/wordpress.md
+  - tag: _content/tags/react.md
+  - tag: _content/tags/next.md
 title: Making this very website
 sub_head: 'My journey from a pretty bad website, to a pretty good one'
-featured_image: /uploads/2022_03_01_sunrise.jpeg
-additional_images: ''
-date_created: '2022-03-01 4:00 PM'
-date_updated: null
-highlighted: false
+featured_image: /uploads/compressed/2022_03_01_sunrise.jpeg
 caption: ''
-_template: post
+additional_images: ''
+date_created: 2022-03-01T08:00:00.000Z
+date_updated: 1970-01-01T00:00:00.000Z
+highlighted: false
 ---
 
 The website you're viewing represents a long-overdue refactor of my [original portfolio site](http://oldsite.shanemadethat.com/), which I'd held together with duct tape and baling wire for far too many years.
@@ -22,7 +21,7 @@ The website you're viewing represents a long-overdue refactor of my [original po
 
 I built my original portfolio site shortly after completing a coding bootcamp.
 
-Still new to development, I missed a huge amount of common-sense improvements that would have made my experience easier. 
+Still new to development, I missed a huge amount of common-sense improvements that would have made my experience easier.
 
 These problems included:
 
@@ -30,7 +29,7 @@ These problems included:
 * **Hard-coded content** - It's difficult in retrospect to believe that I did this, but all the content in my previous site was hard-coded into the app
 * **Excessive focus on design, not enough focus on function** - As a developer, I think the first question should be "how does it work?", rather than "how does it look?"
 
-Given how little I knew at the time, I'm not mad about how my original portfolio turned out. However, my ability as a developer has increased significantly since then, and return voyages to my portfolio's codebase sparked professional annoyance at having to work with something that was just so _bad_. The time had arrived to do something different.
+Given how little I knew at the time, I'm not mad about how my original portfolio turned out. However, my ability as a developer has increased significantly since then, and return voyages to my portfolio's codebase sparked professional annoyance at having to work with something that was just so *bad*. The time had arrived to do something different.
 
 ## Plan of attack
 
@@ -60,7 +59,7 @@ I've worked with WordPress many times , and for that reason I originally chose W
 
 Since the advent of [WordPress's REST API](https://developer.wordpress.org/rest-api/), it's been possible to use WordPress as a headless CMS. Though I appreciate WordPress's efforts to make their platform work within the contemporary web ecosystem, I nonetheless found WordPress a difficult choice for a headless project.
 
-WordPress certainly has a REST API, but that API doesn't come completely built out, and instead relies on the end user to build custom endpoints and functionality for many common use cases. 
+WordPress certainly has a REST API, but that API doesn't come completely built out, and instead relies on the end user to build custom endpoints and functionality for many common use cases.
 
 For instance, retrieving the 'Front page' of your WordPress site from the REST API requires hand-coding a custom endpoint. Same goes for custom post types and content fields; if you plan on extending WordPress at all in the course of development, you're essentially signing yourself up to hand-code your own API.
 

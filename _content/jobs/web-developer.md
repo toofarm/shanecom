@@ -9,9 +9,9 @@ description: >-
   Wordpress-based websites for a variety of clients
 logo: /uploads/2022_03_01_logo_white_ny_web_blk_100.png
 tags:
-  - javascript
-  - wordpress
-  - php
+  - tag: _content/tags/javascript.md
+  - tag: _content/tags/wordpress.md
+  - tag: _content/tags/php.md
 _template: job
 ---
 

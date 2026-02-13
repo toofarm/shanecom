@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
 import Layout from 'components/Layout'
-import { getAllContentByType } from './api/get_content'
+import { getAllContentByType } from '../api/get_content'
 import { EContentTypes, TPost } from 'types'
-import styles from 'styles/pages/Posts.module.scss'
+import styles from './Posts.module.scss'
 
 // Components
 import PostStub from 'components/PostStub'
@@ -20,10 +20,12 @@ const Posts:FC<TProps> = ({ posts }) => {
       <Layout>
         <div className={styles.posts_wrap}>
           <h2>Posts</h2> 
-          {posts.map((post) => <PostStub 
-            type={EContentTypes.POSTS}
-            stub={post} 
-            key={post.title} />)}
+          <ul className={styles.posts_list}>
+            {posts.map((post) => <PostStub 
+              type={EContentTypes.POSTS}
+              stub={post} 
+              key={post.title} />)}
+          </ul>
         </div>
       </Layout>
     </>
@@ -32,12 +34,14 @@ const Posts:FC<TProps> = ({ posts }) => {
 
 export const getStaticProps = async () => {
   const posts = 
-    getAllContentByType(EContentTypes.POSTS, 
+    getAllContentByType(
+      EContentTypes.POSTS, 
       ['tags', 
         'title',
         'featured_image', 
         'date_created',
-        'slug'])
+        'slug']
+    )
   return {
     props: {
       posts

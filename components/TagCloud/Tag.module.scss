@@ -6,11 +6,21 @@
 }
 
 .tag_wrap {
-  display: inline-block;
-  padding: 0.3rem;
   background-color: red;
   border-radius: 4px;
-  font-size: 12px;
   color: $highlight-text;
+  display: inline-block;
+  font-size: 12px;
   margin: 0.5rem 0.5rem 0.5rem 0;
+  padding: 0.3rem;
+}
+
+.tag_link {
+
+  @media screen and (min-width: $mobile){
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
 }

@@ -13,7 +13,7 @@ export interface IContent {
 // TYPES
 
 export type TPost = {
-  tags: string[],
+  tags: TTag[],
   title: string;
   sub_head?: string;
   featured_image: string;
@@ -26,7 +26,7 @@ export type TPost = {
 }
 
 export type TProject = {
-  tags: string[];
+  tags: TTag[];
   title: string;
   sub_head: string;
   date_created: string;
@@ -48,7 +48,7 @@ export type TJob = {
   date_created: string;
   end_date?: string;
   description: string;
-  tags: string[]
+  tags: TTag[]
   logo: string;
 }
 
@@ -66,6 +66,16 @@ export type TSkill = {
   logo: string
 }
 
+export type TTag = {
+  name: string;
+  color: string;
+  slug: string;
+}
+
+export type TParams = {
+  [key: string] : any
+}
+
 // ENUMS
 
 export enum EThemes {
@@ -79,5 +89,6 @@ export enum EContentTypes {
   PROJECTS = 'projects',
   JOBS = 'jobs',
   INTRO = 'intro',
-  SKILLS = 'skills'
+  SKILLS = 'skills',
+  TAGS = 'tags'
 }
