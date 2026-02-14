@@ -6,7 +6,7 @@ title: Saving uploaded images using Strapi and Next.js
 sub_head: A challenging proposition to say the least
 featured_image: /uploads/compressed/2022_03_17_file_cabinet.jpeg
 caption: Wikimedia Commons / rrafson
-additional_images: ''
+additional_images: ""
 date_created: 2022-03-21T07:00:00.000Z
 date_updated: 1970-01-01T00:00:00.000Z
 highlighted: false

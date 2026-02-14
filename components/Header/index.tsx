@@ -37,14 +37,12 @@ const Header:FC = () => {
   return (
     <header className={styles.header}>
       <Link href='/'>
-        <a>
           <Image
             src={`/${theme === EThemes.LIGHT ? 'shane_logo_v2.png' : 'shane_logo_light.png'}`}
             alt='Shane Made That'
             width={120}
             height={75}
           />
-        </a>
       </Link>
       <nav className={`${showNav ? styles.pull_right : ''} ${styles.navigation}`}>
         <ul>

@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useRef } from 'react'
 import { getAllContentByType, getContentBySlug } from 'pages/api/get_content'
 import { EContentTypes, TProject, IContent } from 'types'
 import { markdownToHtml, findArrayIndex } from 'lib'
@@ -12,6 +12,7 @@ import PostHeader from 'components/PostHeader'
 import TagCloud from 'components/TagCloud'
 import ArticleFooter from 'components/ArticleFooter'
 import ProjectLinks from 'components/ProjectLinks'
+import ProgressBar from 'components/ProgressBar'
 
 // Types
 type TParams = {
@@ -30,10 +31,13 @@ const Project:FC<TProps> = ({
   prevPost, 
   nextPost, 
   content }) => {
+  const article = useRef<HTMLDivElement>(null)
+
   return (
     <>
       <HeadStateful pageTitle={project.title} />
       <Layout>
+        <ProgressBar article={article} />
         <PostHeader 
           title={project.title} 
           sub_head={project.sub_head} 
@@ -46,7 +50,10 @@ const Project:FC<TProps> = ({
         <ProjectLinks 
           website={project.project_web_link ? project.project_web_link : undefined}
           repo={project.project_repo_link ? project.project_repo_link : undefined} />
-        <div dangerouslySetInnerHTML={{ __html : content }} className={styles.post_content}>
+        <div 
+          dangerouslySetInnerHTML={{ __html : content }} 
+          className={styles.post_content} 
+          ref={article}>
         </div>
         <ArticleFooter 
           type={EContentTypes.PROJECTS}

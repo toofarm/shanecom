@@ -15,9 +15,7 @@ const HeaderLink:FC<TProps> = ({ href, displayName }) => {
   return (
     <li className={`${router.asPath === href ? styles.active_route : ''}`}>
       <Link href={href}>
-        <a>
           {displayName}
-        </a>
       </Link>
     </li>
   )

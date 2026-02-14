@@ -3,7 +3,7 @@ tags:
   - tag: _content/tags/jobs.md
   - tag: _content/tags/life.md
 title: How to land a job in tech without ability or experience
-sub_head: 'Or, ''The Secret of My Success'''
+sub_head: Or, The Secret of My Success
 featured_image: /uploads/compressed/2022_05_10_beaver.jpg
 caption: NasserHalaweh / Wikimedia commons
 additional_images: ''
