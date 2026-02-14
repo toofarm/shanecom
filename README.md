@@ -1,10 +1,10 @@
-# Shanecom
+# 🌐 Shanecom
 
 A personal CMS
 
-Bootstrapped via Next.js, content managed via TinaCMS (formerly Forestry.io)
+Presentation layer in Next.js, content managed via [TinaCMS](https://www.npmjs.com/package/tinacms) (formerly Forestry.io)
 
-## Project structure
+## 📁 Project structure
 
 All site content types lives in `_content`. This directory contains markdown files, which adhere to a data taxonomy laid out in TinaCMS.
 
