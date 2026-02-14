@@ -3,6 +3,7 @@ import { useAppDispatch, useAppSelector } from 'hooks/use_redux'
 import { setTheme } from 'store/modules/theme'
 import { EThemes } from 'types'
 import applyTheme from 'lib/applyTheme'
+import { getThemeFromCookie, setThemeCookie } from 'lib/themeCookie'
 import styles from './Layout.module.scss'
 
 // Components
@@ -14,16 +15,25 @@ const Layout:FC<{ children: React.ReactNode }> = ({ children }) => {
   const dispatch = useAppDispatch()
   const theme = useAppSelector(state => state.theme)
 
+  // Initialize theme from cookie or system preference, and persist to cookie
   useEffect(() => {
-    if (theme === EThemes.SYSTEM && 
-        typeof window !== 'undefined' && 
-        window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      dispatch(setTheme(EThemes.DARK))
+    if (typeof window === 'undefined') return
+    const cookieTheme = getThemeFromCookie()
+    if (cookieTheme !== null) {
+      dispatch(setTheme(cookieTheme))
+    } else {
+      const preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+      const systemTheme = preferDark ? EThemes.DARK : EThemes.LIGHT
+      dispatch(setTheme(systemTheme))
+      setThemeCookie(systemTheme)
     }
-  }, [])
-  
+  }, [dispatch])
+
   useEffect(() => {
     applyTheme(theme)
+    if (theme === EThemes.LIGHT || theme === EThemes.DARK) {
+      setThemeCookie(theme)
+    }
   }, [theme])
 
   return (
