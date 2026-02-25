@@ -60,7 +60,7 @@ Running at 2AM UTC each day, this pipeline polls the MLB API for fresh game data
 
 As mentioned above, my database for this project is organized via a star schema. This is obviously different than the format in which the MLB offers game data, so prior to loading it into my database, I have to organize player stats by game, calculate player advanced metrics, and extract my dimension data for insertion into its appropriate tables.
 
-In order to insure my data integrity, I validate my payload after calling the API, and after each transform. This also helps guarantee that my DAG remains idemponent — returning the same results for each date range, each time the process is called. 
+In order to ensure my data integrity, I validate my payload after calling the API, and after each transform. This also helps guarantee that my DAG remains idemponent — returning the same results for each date range, each time the process is called. 
 
 ### Prediction Pipeline
 
