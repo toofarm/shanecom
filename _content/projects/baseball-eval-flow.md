@@ -3,6 +3,7 @@ tags:
   - tag: _content/tags/airflow.md
   - tag: _content/tags/data-engineering.md
   - tag: _content/tags/machine-learning.md
+  - tag: _content/tags/baseball.md
 title: Baseball Stats ETL and Prediction Flow
 sub_head: A baseball stats project that uses data engineering and machine learning for predictive analytics
 featured_image: /uploads/compressed/2048px-Zack_Greinke.jpg
