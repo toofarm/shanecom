@@ -23,7 +23,7 @@ const Tag:FC<TProps> = ({ tag, link }) => {
           className={styles.tag_link}>
           {tag.name}
         </Link> : 
-        tag.name}
+        <span>{tag.name}</span>}
     </li>
   )
 }

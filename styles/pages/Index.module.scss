@@ -64,6 +64,15 @@
   padding: 0;
 }
 
+.view_all_link {
+  @include shared.link;
+  display: block;
+  margin-top: 1rem;
+  text-align: right;
+  font-size: 1rem;
+  font-style: italic;
+}
+
 // Mobile
 @media screen and (max-width: $mobile) {
   .intro_grid {

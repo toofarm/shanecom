@@ -22,7 +22,11 @@ const ArticleFooter: FC<TProps> = ({
         &#8592; previous
           </h5>
           <Link href={`/${type}/${prev.slug}`}>
+<<<<<<< HEAD
             {prev.title ? prev.title : 'Previous Post'}
+=======
+              {prev.title ? prev.title : 'Previous Post'}
+>>>>>>> origin/master
           </Link>
         </>}
       </div>
@@ -34,9 +38,7 @@ const ArticleFooter: FC<TProps> = ({
           </h5>
           <Link 
             href={`/${type}/${next.slug}`}>
-            <a>
               {next.title ? next.title : 'Next Post'}
-            </a>
           </Link>
         </>}
       </div>

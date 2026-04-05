@@ -59,8 +59,12 @@
   }
   code {
     font-size: 1.25rem;
-    color: #e5e0db;
+    color: #e78e2f;
     padding: 0.258rem 0;
+    display: inline-block;
+    background-color: #2f2f2f;
+    padding: 0.15rem 0.45rem;
+    border-radius: 0.5rem;
   }
   blockquote {
     border-left: 4px solid $flag;

@@ -9,6 +9,7 @@ import styles from 'styles/pages/Index.module.scss'
 import Layout from 'components/Layout'
 import HeadStateful from 'components/HeadStateful'
 import PostStub from 'components/PostStub'
+import Link from 'next/link'
 
 // Types
 type TProps = {
@@ -58,6 +59,7 @@ const Home: NextPage<TProps> = ({ intro, projects, posts, content }) => {
               type={EContentTypes.POSTS} 
               key={post.title} />)}
           </ul>
+          <Link href='/posts' className={styles.view_all_link}>View all posts</Link>
           <h2>Recent Projects</h2>
           <ul className={`'posts' ${styles.post_list}`}>
             {projects.map((project) => <PostStub 
@@ -65,6 +67,7 @@ const Home: NextPage<TProps> = ({ intro, projects, posts, content }) => {
               type={EContentTypes.PROJECTS} 
               key={project.title} />)}
           </ul>
+          <Link href='/projects' className={styles.view_all_link}>View all projects</Link>
         </div>
       </Layout>
     </div>

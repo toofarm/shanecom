@@ -57,5 +57,5 @@ $progressVars: (
 /*-webkit-progress-value is to style the progress bar.*/
 .progress[value]::-webkit-progress-value {
   background-color: progVar(progressBarColor);
-  border-radius: progVar(progressBorderRadius);
+  border-radius: 0 progVar(progressBorderRadius) progVar(progressBorderRadius) 0;
 }

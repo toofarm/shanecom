@@ -20,8 +20,10 @@ const PostHeader:FC<TProps> = ({ title, sub_head, img, publication_date, caption
  
   useEffect(
     () => {
-      setPubDate(publication_date)
+      if (!pubDate) setPubDate(publication_date)
+        
       if (width && width <= 767) setShowImg(true)
+      else setShowImg(false)
     }, [width]
   ) 
 

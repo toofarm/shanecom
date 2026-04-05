@@ -1,21 +1,11 @@
-# Shanecom
+# 🌐 Shanecom
 
-Bootstrapped via Next.js, content managed via Forestry.io
+A personal CMS
 
-## Getting Started
+Presentation layer in Next.js, content managed via [TinaCMS](https://www.npmjs.com/package/tinacms) (formerly Forestry.io)
 
-First, run the development server:
+## 📁 Project structure
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+All site content types lives in `_content`. This directory contains markdown files, which adhere to a data taxonomy laid out in TinaCMS.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+At build time, Next.js converts the markdown files to HTML and uses SSG to generate application routes.

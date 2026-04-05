@@ -1,5 +1,5 @@
 ---
-years: 6
+years: 7
 name: Javascript
 keySkill: true
 date_started: 2017-06
