@@ -3,7 +3,7 @@ tags:
   - tag: _content/tags/typescript.md
   - tag: _content/tags/svelte.md
 title: Harmony - A Google Chrome Extension
-sub_head: A web extension that helps return control of the internet to the user
+sub_head: A web browser extension that helps return control of the internet to the user
 featured_image: /uploads/harmoney-user-view-1280.jpg
 caption: Harmony in action
 project_web_link: "https://chromewebstore.google.com/detail/harmony/aldpcfmldgfdmglbpiffcaalmblbmhne"
@@ -18,5 +18,5 @@ Harmony helps return control of the internet to the user. A Google Chrome plugin
 
 Use the the extension to set and monitor time limits for any of the above, or disable the addictive features that make those apps so pernicious.
 
-Support for more domains and more blocking features will be coming shortly. 
+Support for more domains and more blocking features to come shortly. If you have features you'd like to see, let me know and I'll try to get them in future iterations of the plugin.
 
