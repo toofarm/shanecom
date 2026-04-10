@@ -17,7 +17,6 @@ import ProgressBar from 'components/ProgressBar'
 type TParams = {
     [key: string] : any
 }
-
 type TProps = {
     post: TPost,
     prevPost: IContent,
