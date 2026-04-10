@@ -22,11 +22,7 @@ const ArticleFooter: FC<TProps> = ({
         &#8592; previous
           </h5>
           <Link href={`/${type}/${prev.slug}`}>
-<<<<<<< HEAD
-            {prev.title ? prev.title : 'Previous Post'}
-=======
               {prev.title ? prev.title : 'Previous Post'}
->>>>>>> origin/master
           </Link>
         </>}
       </div>

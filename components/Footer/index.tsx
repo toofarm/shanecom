@@ -44,20 +44,12 @@ const Footer:FC = () => {
         </li>
         <li>
           <Link href='https://github.com/toofarm' target='_blank'>
-<<<<<<< HEAD
-              GitHub
-=======
             GitHub
->>>>>>> origin/master
           </Link>
         </li>
         <li>
           <Link href='https://www.linkedin.com/in/shaners/' target='_blank'>
-<<<<<<< HEAD
-              LinkedIn
-=======
             LinkedIn
->>>>>>> origin/master
           </Link>
         </li>
       </ul>
