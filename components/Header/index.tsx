@@ -15,9 +15,11 @@ const Header:FC = () => {
   const { width } = useWindowResize()
   const dispatch = useAppDispatch()
 
-  useEffect(() => {
-    if (width && width <= 767) setShowNav(false)
-  }, [width])
+  useEffect(
+    () => {
+      if (width && width <= 767) setShowNav(false)
+    }, [width]
+  )
 
   const routes = [
     {
@@ -37,12 +39,12 @@ const Header:FC = () => {
   return (
     <header className={styles.header}>
       <Link href='/'>
-          <Image
-            src={`/${theme === EThemes.LIGHT ? 'shane_logo_v2.png' : 'shane_logo_light.png'}`}
-            alt='Shane Made That'
-            width={120}
-            height={75}
-          />
+        <Image
+          src={`/${theme === EThemes.LIGHT ? 'shane_logo_v2.png' : 'shane_logo_light.png'}`}
+          alt='Shane Made That'
+          width={120}
+          height={75}
+        />
       </Link>
       <nav className={`${showNav ? styles.pull_right : ''} ${styles.navigation}`}>
         <ul>
