@@ -12,14 +12,20 @@ const Footer:FC = () => {
   const copyEmail = () => {
     navigator.clipboard.writeText('toofarm@gmail.com')
     setCopyMsg('Email copied!')
-    setTimeout(() => {
-      setCopyMsg('Click "Email" to copy toofarm@gmail.com')
-    }, 5000)
+    setTimeout(
+      () => {
+        setCopyMsg('Click "Email" to copy toofarm@gmail.com')
+      }, 5000
+    )
   }
 
-  useEffect(() => {
-    setYear(format(new Date(), 'yyyy'))
-  }, [])
+  useEffect(
+    () => {
+      setYear(format(
+        new Date(), 'yyyy'
+      ))
+    }, []
+  )
 
   return (
     <footer className={styles.footer_wrap}>
