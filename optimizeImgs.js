@@ -25,6 +25,11 @@ async function optimizeImages(
         outputDirectory, file
       )
 
+      // Skip subdirectories, only process files in the input directory
+      if (fs.statSync(inputFilePath).isDirectory()) {
+        continue
+      }
+
       // Check if the current file is an image (you may want to add more image file extensions)
       if (file.match(/\.(jpg|jpeg|png)$/i)) {
         // Process and optimize the image using sharp
